@@ -1,0 +1,63 @@
+<unit name_height="2.3"  accept="Bip01 Spine1" speed="8">
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"></atcion>
+	</actions>	
+	<actions name="attack">
+		<atcion time="0" type="skill_release"></atcion> 
+		<atcion time="0" type="anim" name="attack1"></atcion>
+
+	   	<atcion time="0" type="action_wait" v0="0.5"></atcion>	  
+	   	<atcion time="0" type="show_effect_object" name="effect_0"></atcion>	
+	   	
+		<atcion time="0" type="entity_link" bone="Bip01 L Hand" name="effect/common/link_light" follow="1" remove_time="0.4" /> 
+		<atcion time="0" type="entity_link" bone="Bip01 R Hand" name="effect/common/link_light" follow="1" remove_time="0.4" /> 			
+	   	<atcion time="0" type="sound"  sound="effect/sound/lightning_2"></atcion>		   	   	
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_light_samll" remove_time="3" /> 
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		<atcion time="0" type="skill_export" export="0.3"></atcion>
+	   	<atcion time="0" type="action_wait" v0="0.1"></atcion>	
+		<atcion time="0" type="skill_export" export="0.3"></atcion>
+	   	<atcion time="0" type="action_wait" v0="0.1"></atcion>			
+		<atcion time="0" type="skill_export" export="0.4"></atcion>
+	   	<atcion time="0" type="action_wait" v0="0.4"></atcion>	  
+
+		<atcion time="0" type="skill_end"></atcion>
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="jn01">
+		<atcion time="0" type="skill_release"></atcion>
+		
+		<atcion time="0" type="anim" name="attack2"></atcion>
+		<atcion time="0" type="entity_bone" bone="Bip01 R Hand" name="unit/ts_cw002/sf01"  remove_time="2" /> 
+	   	<atcion time="0" type="sound"  sound="sound/Lightning_Hand01"></atcion>	
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>				
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>	
+		<atcion time="0" type="entity"  name="unit/ts_cw002/jn01_a01" remove_time="2"></atcion>
+		<atcion time="0" type="action_wait" v0="1.1"></atcion>	
+		<atcion time="0" type="entity"  name="unit/ts_cw002/jn01_a02" remove_time="2"></atcion>
+	   	<atcion time="0" type="sound"  sound="effect/sound/lightning_2"></atcion>	
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_light_samll" remove_time="1" /> 
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		<atcion time="0" type="skill_export" export="1"></atcion>		
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>	
+	   	<atcion time="0" type="sound"  sound="effect/sound/lightning_2"></atcion>	
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>	
+	   	<atcion time="0" type="sound"  sound="effect/sound/lightning_2"></atcion>	
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>	
+	   	<atcion time="0" type="sound"  sound="effect/sound/lightning_2"></atcion>	
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>	
+	   	<atcion time="0" type="sound"  sound="effect/sound/lightning_2"></atcion>	
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>	
+	   	<atcion time="0" type="sound"  sound="effect/sound/lightning_2"></atcion>	
+		
+		
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>	
+		
+		
+		<atcion time="0" type="skill_end"></atcion>
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 	
+</unit>

@@ -1,0 +1,120 @@
+<unit name_height="4.2"  accept="Bip01 Spine" speed="8">
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"></atcion>
+	</actions>	
+	<actions name="win">
+		<atcion time="0" type="anim" name="win"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions>	
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"></atcion>
+		<atcion time="0.5" type="action" name="ready"></atcion>
+	</actions>	 
+	<actions name="jq01">
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="entity"  name="effect/npc/s_juq_a01" remove_time="10"></atcion>
+	</actions>
+	
+	<actions name="attack">
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="anim" name="attack1"></atcion>
+		
+		<atcion time="0" type="action_wait" v0="0.3"></atcion>	
+				
+		<atcion time="0" type="goto_target"></atcion>
+		
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>	
+				
+	    <atcion time="0" type="entity"  name="unit/ts_bot124/bot124_atk1_a01" remove_time="1" /> 
+			    
+		<atcion time="0" type="sound"  sound="sound/jian_a03"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_All_SwordSkill_metal_blue" follow="0" remove_time="1" /> 
+		<atcion time="0" type="skill_export" export="0.5"></atcion> 
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		
+		<atcion time="0" type="action_wait" v0="0.3"></atcion>	
+				
+	    <atcion time="0" type="entity"  name="unit/ts_bot124/bot124_atk1_a02" remove_time="1" /> 
+			    
+		<atcion time="0" type="sound"  sound="sound/jian_a03"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_All_SwordSkill_metal_blue" follow="0" remove_time="1" /> 
+		<atcion time="0" type="skill_export" export="0.5"></atcion> 
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>	
+				
+		<atcion time="0" type="goto_home"></atcion>
+		
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>	
+				
+		<atcion time="0" type="skill_end"></atcion>	
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 		
+	
+	<actions name="jn02">
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="anim" name="attack3"></atcion>
+		<atcion time="0.2" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_bot124/bot124_atk2_s01" remove_time="1" /> 
+	    <atcion time="0.2" type="entity_bone" bone="Bip01 Prop2" name="unit/ts_bot124/bot124_atk2_s01" remove_time="1" /> 
+		<atcion time="0" type="action_wait" v0="0.9"></atcion>	
+				
+		<atcion time="0" type="goto_target"></atcion>
+		
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>				 
+			    
+	    <atcion time="0" type="entity"  name="unit/ts_bot124/bot124_atk2_a01" remove_time="1" /> 
+			    
+		<atcion time="0" type="sound"  sound="sound/jian_a01"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_All_SwordSkill_metal_blue" follow="0" remove_time="1" /> 
+		<atcion time="0" type="skill_export" export="0.4"></atcion> 
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+	    
+		<atcion time="0" type="action_wait" v0="0.35"></atcion>
+			    
+	    <atcion time="0" type="show_effect_object"  name="effect_0" remove_time="1" /> 			    
+		<atcion time="0" type="sound"  sound="sound/jian_a03"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+		<atcion time="0" type="skill_export" export="0.6"></atcion> 
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>
+				
+	    <atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_All_SwordSkill_metal_blue" follow="0" remove_time="1" /> 
+		
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>
+		
+		<atcion time="0" type="goto_home"></atcion>
+
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>
+				
+		<atcion time="0" type="skill_end"></atcion>	
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 	
+		
+	<actions name="jn01">
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="anim" name="attack3"></atcion>
+		<atcion time="0.2" type="goto_target"></atcion>
+			
+	    <atcion time="0.2" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_bot124/bot124_atk2_s01" remove_time="2" /> 
+	    <atcion time="0.2" type="entity_bone" bone="Bip01 Prop2" name="unit/ts_bot124/bot124_atk2_s01" remove_time="2" /> 
+	    <atcion time="1.2" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_bot124/bot124_atk2_tr01" remove_time="0.3" /> 
+	    <atcion time="1.2" type="entity_bone" bone="Bip01 Prop2" name="unit/ts_bot124/bot124_atk2_tr01" remove_time="0.3" /> 
+	    <atcion time="1.4" type="entity"  name="unit/ts_bot124/bot124_atk2_a01" remove_time="1" /> 
+		<atcion time="1.4" type="sound"  sound="sound/UnarmedAttackMediumA"></atcion>
+		<atcion time="1.4" type="target_action" name="injured"></atcion>
+	    <atcion time="1.4" type="target_entity_bone" bone="accept" name="effect/sj_001" remove_time="1" /> 
+		<atcion time="1.4" type="shake_cam" shake="0.2" /> 	
+		<atcion time="1.4" type="skill_export" export="1"></atcion> 
+		
+		<atcion time="1.8" type="goto_home"></atcion>
+		
+		
+		<atcion time="2.7" type="skill_end"></atcion>	
+		<atcion time="2.8" type="action" name="ready"></atcion>
+	</actions> 	
+</unit>

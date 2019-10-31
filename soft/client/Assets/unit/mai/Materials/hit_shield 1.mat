@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: hit_shield 1
+  m_Shader: {fileID: 4800000, guid: 79e9d493d5be18949b2b71970110baef, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DisT01:
+        m_Texture: {fileID: 2800000, guid: 899c5fd66853a0a4a976e047fe41bfd7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 580b853b5085f0243859deaa3ead51e6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: 175a382331999f547907b52efeef290b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _T01:
+        m_Texture: {fileID: 2800000, guid: 6a49564304695e0409991cb6be46a481, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _T01Dis:
+        m_Texture: {fileID: 2800000, guid: b967253fd9fd9304e84e0146afd4bdf1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _T02:
+        m_Texture: {fileID: 2800000, guid: aa4129b087e0ba74fbf8e5f26ea73e8e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex01:
+        m_Texture: {fileID: 2800000, guid: 6a49564304695e0409991cb6be46a481, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex02:
+        m_Texture: {fileID: 2800000, guid: 09f21275fc62c6543838d51934771876, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mask:
+        m_Texture: {fileID: 2800000, guid: 1d820387b58ad83409b8cafe09db364a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mask01:
+        m_Texture: {fileID: 2800000, guid: 5f0c62ac693076d48be610b3ccc16037, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mask_t02:
+        m_Texture: {fileID: 2800000, guid: 09f21275fc62c6543838d51934771876, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _niuqu:
+        m_Texture: {fileID: 2800000, guid: b967253fd9fd9304e84e0146afd4bdf1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _niuqu_T01:
+        m_Texture: {fileID: 2800000, guid: b967253fd9fd9304e84e0146afd4bdf1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DisT01Power: 0.15
+    - _Intensity_Mask: 1.5
+    - _Intensity_T02: 3
+    - _PanX_T02: 20
+    - _PanY_DisT01: -0.5
+    - _PanY_Mask: 0
+    - _PanY_T01: -20
+    - _PanY_T01Dis: -15
+    - _PanY_T02: 1
+    - _T01DisPower: 0.2
+    - _T02_sudu: -50
+    - _niuqu_sudu: -20
+    - _niuqudu: 0.2
+    - _sudu: -20
+    - _sudu_T02: -50
+    - _sudu_niuqu: -20
+    - _uvpan_t02: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color_T01: {r: 0.9044118, g: 0.35259217, b: 0.053200692, a: 1}
+    - _Color_T02: {r: 0.8897059, g: 0.27611563, b: 0, a: 1}

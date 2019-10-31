@@ -1,0 +1,13 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+    {% include "form.html" %}
+	<div>
+		<div>
+            <div>你好,{{ username }}</div>
+			<div><a href="{% url 'logout' %}">退出</a></div>
+			<h1>没有访问权限</h1>
+		</div>
+	</div>
+</body>
+</html>

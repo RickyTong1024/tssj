@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index guild_guid 0
+
+message guild_fight_t {
+	uint64  guid					= 1;
+	int32   guild_server			= 2;
+	string  guild_name				= 3;
+	uint64  guild_guid				= 4;
+	uint64  target_guild_guid		= 5;
+	int32   guild_icon				= 6;
+	int32   guild_level            = 7;
+	
+	repeated uint64  target_guids			= 10;
+	repeated string  target_names			= 11;
+	repeated int32   target_templates		= 12;
+	repeated int32   target_levels			= 13;
+	repeated int32   target_bat_effs		= 14;
+	repeated int32   target_vips			= 15;
+	repeated int32   target_achieves		= 16;
+	repeated int32	 target_defense_nums	= 17;
+	repeated int32   guard_points			= 18;
+	repeated int32   guard_gongpuo          = 19;
+	repeated int32   win_nums				= 20;
+	repeated int32   lose_nums				= 21;
+}

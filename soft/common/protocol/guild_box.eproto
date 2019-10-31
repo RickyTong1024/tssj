@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index guild_guid 0
+
+message guild_box_t {
+	uint64 guid			= 1;
+	uint64 guild_guid		= 2;
+	int32  mceng           = 3;
+	int32  mindex          = 4;
+	repeated int32  reward_ids		= 5;
+	repeated uint64 reward_guids    = 6;
+	repeated string reward_names    = 7;
+	repeated int32  reward_achieves = 8;
+}

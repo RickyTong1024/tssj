@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index guild_guid 0
+
+message guild_red_t {
+	uint64 guid			= 1;
+	uint64 guild_guid		= 2;
+    string create_name     = 3;
+	int32  create_id       = 4;
+	int32  create_vip      = 5;
+	int32  create_achieve  = 6;
+	int32  template_id     = 7;
+	uint64 time            = 8;
+    string text			= 9;
+    int32  remain          = 10;
+	int32  nalflag			= 11;
+	
+	repeated uint64 player_guid     = 20;
+	repeated int32  player_ids		= 21;
+	repeated string player_names    = 22;
+	repeated int32  player_vip      = 23;
+	repeated int32  player_achieve  = 24;
+	repeated int32  player_jewel    = 25;
+	repeated int32  player_nalflag  = 26;
+}

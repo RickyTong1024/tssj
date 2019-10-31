@@ -1,0 +1,87 @@
+<!-- 被2012 (yaohong) 使用XMLSpy vyh编辑的 (http://www.altova.com) by -->
+<unit name_height="2.3" accept="Bip01 Spine1" speed="8">
+	<part name="body_01">
+		<mesh bone="" part="body" pack="unit/ts_mai/ts_mai" type="body"/>
+	</part>
+	<part name="body_02">
+		<mesh bone="" part="body" pack="unit/ts_mai/ts_maic" type="body"/>
+	</part>
+	<part name="body_03">
+		<mesh bone="" part="body" pack="unit/ts_mai/ts_maid" type="body"/>
+	</part>
+	<part name="body_04">
+		<mesh bone="" part="body" pack="unit/ts_mai/ts_maie" type="body"/>
+	</part>
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"/>
+	</actions>
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"/>
+		<atcion time="0.5" type="action" name="ready"/>
+	</actions>
+	<actions name="win">
+		<atcion time="0" type="anim" name="win"/>
+		<atcion time="2" type="action" name="ready"/>
+	</actions>
+	<actions name="jq01">
+		<atcion time="0" type="anim" name="jq01"/>
+		<atcion time="0" type="entity" name="effect/npc/s_juq_a01" remove_time="10"/>
+	</actions>
+	<actions name="attack">
+		<atcion time="0" type="skill_release"/>
+		<atcion time="0" type="anim" name="attack1"/>
+		<atcion time="0.5" type="sound" sound="sound/ab_cast_fire_01"/>
+		<atcion time="0.5" type="entity_cast" name="unit/ts_mai/Mai_Cast_foldingFan" cast_remove_time="1" bone="Bip01 L Hand" follow="0" effect="effect/AllUnit_Hit_FireExplode02" remove_time="2" skill="0" speed="15" shake="0.2"/>
+		<atcion time="1" type="target_action" name="injured"/>
+		<atcion time="1" type="sound" sound="sound/ab_afx_elec"/>
+		<atcion time="1" type="skill_export" export="1" effect="" skill="" speed=""/>
+		<atcion time="1.2" type="skill_end"/>
+		<atcion time="1.2" type="action" name="ready"/>
+	</actions>
+	<actions name="jn01">
+		<atcion time="0" type="skill_release"/>
+		<atcion time="0" type="anim" name="attack2"/>
+		<atcion time="0.6" type="entity_bone" bone="Bip01 Pelvis" name="unit/ts_mai/Mai_Cast_Skill01" remove_time="1.35"/>
+		<atcion time="0.7" type="sound" sound="sound/FireBomb3"/>
+		<atcion time="1.2" type="goto_target"/>
+		<atcion time="1.4" type="target_action" name="injured"/>
+		<atcion time="1.4" type="target_entity_bone" bone="accept" name="effect/AllUnit_Hit_FireExplode02" follow="0" remove_time="1"/>
+		<atcion time="1.4" type="sound" sound="sound/ab_afx_elec"/>
+		<atcion time="1.4" type="shake_cam" shake="0.2"/>
+		<atcion time="1.4" type="skill_export" export="1"/>
+		<atcion time="2" type="goto_home"/>
+		<atcion time="2.8" type="skill_end"/>
+		<atcion time="2.8" type="action" name="ready"/>
+	</actions>
+	<actions name="jn02">
+		<atcion time="0" type="skill_release"/>
+		<atcion time="0" type="anim" name="attack2"/>
+		<atcion time="0.6" type="entity_bone" bone="Bip01 Pelvis" name="unit/ts_mai/Mai_Cast_Skill02" remove_time="1.35"/>
+		<atcion time="0.7" type="sound" sound="sound/FireBomb3"/>
+		<atcion time="1.2" type="goto_target"/>
+		<atcion time="1.4" type="target_action" name="injured"/>
+		<atcion time="1.4" type="target_entity_bone" bone="accept" name="effect/AllUnit_Hit_FireExplode02" follow="0" remove_time="1"/>
+		<atcion time="1.4" type="sound" sound="sound/ab_afx_elec"/>
+		<atcion time="1.4" type="shake_cam" shake="0.2"/>
+		<atcion time="1.4" type="skill_export" export="1"/>
+		<atcion time="2" type="goto_home"/>
+		<atcion time="2.8" type="skill_end"/>
+		<atcion time="2.8" type="action" name="ready"/>
+	</actions>
+	<actions name="jn03">
+		<atcion time="0" type="skill_release"/>
+		<atcion time="0" type="anim" name="attack2"/>
+		<atcion time="0.6" type="entity_bone" bone="Bip01 Pelvis" name="unit/ts_mai/Mai_Cast_Skill03" remove_time="1.35"/>
+		<atcion time="0.7" type="sound" sound="sound/FireBomb3"/>
+		<atcion time="1.2" type="goto_target"/>
+		<atcion time="1.4" type="target_action" name="injured"/>
+		<atcion time="1.4" type="target_entity_bone" bone="accept" name="effect/AllUnit_Hit_FireExplode" follow="0" remove_time="2"/>
+		<atcion time="1.4" type="sound" sound="sound/ab_afx_elec"/>
+		<atcion time="1.4" type="shake_cam" shake="0.2"/>
+		<atcion time="1.4" type="skill_export" export="1"/>
+		<atcion time="2" type="goto_home"/>
+		<atcion time="2.8" type="skill_end"/>
+		<atcion time="2.8" type="action" name="ready"/>
+	</actions>
+</unit>

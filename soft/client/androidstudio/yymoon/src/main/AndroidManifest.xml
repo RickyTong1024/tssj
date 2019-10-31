@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.wjhe.tsjh24" android:installLocation="auto">
+  <application android:banner="@drawable/app_banner" android:theme="@style/UnityThemeSelector" android:icon="@mipmap/app_icon" android:label="@string/app_name" android:isGame="true">
+    <activity
+        android:name="com.wjhe.tsjh24.MainActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="sensorLandscape"
+        android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+        android:hardwareAccelerated="false">
+        <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+        android:name="com.wjhe.tsjh24.SelectActivity"
+        android:theme="@style/myHalfTrans">
+   </activity>
+    <activity
+        android:name=".wxapi.WXPayEntryActivity"
+        android:exported="true"
+        android:launchMode="singleTop">
+    </activity>
+    <activity
+        android:name="com.alipay.sdk.app.H5PayActivity"
+        android:configChanges="orientation|keyboardHidden|navigation"
+        android:exported="false"
+        android:screenOrientation="behind">
+    </activity>
+    <activity
+        android:name="com.alipay.sdk.auth.AuthActivity"
+        android:configChanges="orientation|keyboardHidden|navigation"
+        android:exported="false"
+        android:screenOrientation="behind">
+    </activity>
+    <!--  appsflyer 渠道区分-->
+    <meta-data android:name="CHANNEL" android:value="yymoon" />
+    <!--  appsflyer 渠道区分 end-->
+  </application>
+
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.software.leanback" android:required="false" />
+
+</manifest>

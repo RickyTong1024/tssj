@@ -1,0 +1,311 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index name 8
+
+message player_t {
+	uint64 guid				= 1;
+	string serverid			= 2;
+	string name				= 3;
+	uint32 template_id			= 4;
+	uint64 birth_time			= 5;
+	uint64 last_daily_time		= 6;
+	uint64 last_week_time		= 7;
+	uint64 last_month_time		= 8;
+	uint64 last_tili_time		= 9;
+	uint64 last_energy_time	= 10;
+	string zsname				= 11;
+	uint64 last_login_time		= 12;
+	uint64 last_check_time		= 13;
+	uint64 last_fight_time		= 14;
+	int32  change_name_num		= 15;
+	int32  change_nalflag_num	= 16;
+	int32  nalflag				= 17;
+	
+	int32 gold					= 20;
+	int32 jewel				= 21;
+	int32 tili					= 22;
+	int32 level				= 23;
+	int32 exp					= 24;
+	int32 jjc_point			= 25;
+	int32 mw_point				= 26;
+	int32 equip_kc_num			= 28;
+	int32 bf					= 29;
+	int32 yuanli				= 30;
+	int32 contribution			= 31;
+	int32 powder				= 33;
+	int32 energy				= 34;
+	int32 medal_point          = 35;
+	int32 luck_point			= 36;
+	int32 huiyi_point			= 37;
+	int32 lieren_point			= 38;
+	int32 bf_max				= 39;
+	int32 bingjing				= 40;
+	int32 xinpian				= 41;
+	int32 youqingdian			= 42;
+	
+	repeated uint64 roles				= 100;
+	repeated uint64 equips				= 101;
+	repeated uint32 item_ids			= 102;
+	repeated int32 item_amount			= 103;
+	repeated uint32 role_template_ids	= 104;
+	repeated uint64 treasures			= 108;
+	int32  treasure_kc_num		= 109;
+	repeated int32  chenghao			= 110;
+	repeated uint64 chengchao_time      = 111;
+	int32  chenghao_on         = 112;
+	repeated uint64  pets				= 113;
+	uint64  pet_on				= 114;
+	
+	int32 mission				= 150;
+	int32 mission_jy			= 151;
+	repeated int32 mission_ids			= 152;
+	repeated int32 mission_star			= 153;
+	repeated int32 mission_cishu_ids	= 154;
+	repeated int32 mission_cishu		= 155;
+	repeated int32 mission_goumai_ids	= 156;
+	repeated int32 mission_goumai		= 157;
+	repeated int32 map_ids				= 158;
+	repeated int32 map_star				= 159;
+	repeated int32 map_reward_get		= 160;
+	int32 yb_finish_num		= 170;
+	repeated uint64 ybq_guids			= 171;
+	int32 yb_type				= 172;
+	int32 yb_level				= 173;
+	uint64 yb_start_time		= 174;
+	uint64 yb_jiasu_time		= 175;
+	int32 yb_refresh_num		= 177;
+	int32 yb_gw_type			= 178;
+	int32 yb_byb_num			= 179;
+	int32 yb_per				= 180;
+	int32 ybq_finish_num		= 181;
+	uint64 ybq_last_time		= 182;
+	int32 ore_finish_num		= 190;
+	int32 ore_nindex			= 191;
+	uint64 ore_last_time		= 192;
+	repeated int32 mission_rewards      = 197;
+	
+	repeated uint64 zhenxing			= 200;
+	repeated int32 duixing				= 201;
+	int32 duixing_id			= 202;
+	int32 duixing_level		= 203;
+	repeated uint64 houyuan				= 204;
+	repeated int32 guanghuan			= 205;
+	repeated int32 guanghuan_level		= 206;
+	int32 guanghuan_id			= 207;
+	
+	uint64 ck2_free_time			= 212;
+	repeated int32 ck_num			= 220;
+	
+	repeated uint32 finished_tasks		= 240;
+	int32 pt_task_num			= 250;
+	int32 jy_task_num			= 251;
+	int32 sj_task_num			= 252;
+	int32 jjie_task_num		= 253;
+	int32 qh_task_num			= 254;
+	int32 jj_task_num			= 255;
+	int32 boss_task_num		= 256;
+	int32 hs_task_num			= 257;
+	int32 ttt_task_num			= 258;
+	int32 bweh_task_num		= 259;
+	int32 bwjl_task_num		= 260;
+    int32 jjcs_task_num        = 261;
+    int32 yb_task_num          = 262;
+	
+	repeated uint32 shoppet_ids			= 270;
+	repeated int32 shoppet_sell			= 271;
+	int32 shoppet_refresh_num  = 272;
+	uint64 shoppet_last_time   = 273;
+	int32 shoppet_num		    = 274;
+	int32 shop1_refresh_num	= 280;
+	repeated uint32 shop1_ids			= 281;
+	repeated int32 shop1_sell			= 282;
+	int32 shop2_refresh_num	= 284;
+	repeated uint32 shop2_ids			= 285;
+	repeated int32 shop2_sell			= 286;
+	int32 shop3_refresh_num	= 288;
+	repeated uint32 shop3_ids			= 289;
+	repeated int32 shop3_sell			= 290;
+	uint64 shop_last_time		= 291;
+	repeated int32 shop_xg_ids			= 292;
+	repeated int32 shop_xg_nums			= 293;
+	int32 shop_refresh_num		= 294;
+	int32 shop_buy_num			= 295;
+	int32 shop4_refresh_num	= 296;
+	repeated uint32 shop4_ids			= 297;
+	repeated int32 shop4_sell			= 298;
+	uint64 huiyi_shop_last_time = 299;
+	
+	repeated int32 active_id			= 300;
+	repeated int32 active_num			= 301;
+	repeated int32 active_reward		= 302;
+	int32 active_score			= 303;
+	repeated int32 active_score_id		= 304;
+	
+	repeated uint64 sports				= 310;
+	int32 max_rank				= 315;
+	
+	uint64 zhouka_time			= 320;
+	uint64 yueka_time			= 321;
+	int32 total_recharge		= 322;
+	int32 vip					= 323;
+	int32 vip_exp				= 324;
+	repeated int32 recharge_ids			= 325;
+	repeated int32 vip_reward_ids		= 326;
+	int32 dj_num				= 327;
+	int32 tili_reward			= 328;
+	int32 first_reward			= 329;
+	int32 online_reward_index	= 330;
+	uint64 online_reward_time	= 331;
+	int32 daily_sign_index		= 332;
+	int32 daily_sign_reward	= 333;
+	int32 daily_sign_num		= 334;
+	repeated int32 libao_nums			= 337;
+	repeated int32 rdz_ids				= 338;
+	repeated int32 rdz_counts			= 339;
+	int32 guest				= 340;
+	int32 total_spend			= 341;
+	int32 daily_sign_flag		= 342;
+	int32 huiyi_chou_num		= 343;
+	
+	int64  boss_leiji_damage	= 350;
+	int64  boss_max_damage		= 351;
+	int32  boss_max_rank		= 352;
+	repeated int32  boss_active_ids	    = 353;
+	repeated int64  boss_active_nums	= 354;
+	repeated int32  boss_active_rewards = 355;
+	int32  boss_num			= 356;
+	uint64 boss_last_time      = 357;
+	uint64 boss_hit_time       = 358;
+	int32  boss_player_level   = 359;
+	
+	int32 hbb_refresh_num		= 360;
+	int32 hbb_num				= 361;
+	int32 hbb_finish_num		= 362;
+	repeated int32 hbb_class_ids		= 363;
+	
+	int32 ttt_dead				= 370;
+	int32 ttt_star				= 371;
+	repeated int32 ttt_reward_ids		= 372;
+	repeated int32 ttt_cur_stars		= 374;
+	repeated int32 ttt_last_stars		= 375;
+	repeated int32 ttt_cur_reward_ids	= 376;
+	int32 ttt_can_reward		= 377;
+	int32 ttt_cz_num			= 378;
+	int32 ttt_mibao            = 379;
+	
+	
+	int32 random_event_num		= 390;
+	uint64 random_event_time	= 391;
+	int32 random_event_id		= 392;
+	
+	uint64 guild				= 400;
+	uint64 last_leave_guild_time = 401;
+	repeated int32  guild_skill_ids		= 402;
+	repeated int32  guild_skill_levels  = 403;
+    repeated uint64 guild_applys        = 404;
+    repeated int32  guild_rewards       = 405;
+	repeated int32  guild_shilians		= 406;
+	int32  guild_num			= 407;
+	int32  guild_buy_num		= 408;
+	repeated int32  guild_honors		= 409;
+	
+	int32 social_shou_num		= 410;
+	
+	uint64 guild_sign_time		= 420;
+	int32  guild_sign_flag     = 421;
+	int32  guild_red_num       = 422;
+	int32  guild_red_num1      = 423;
+	int32  guild_deliver_jewel = 424;
+	int32  guild_rob_jewel     = 425;
+	int32  guild_lnum			= 426;
+	uint64 guild_ltime			= 427;
+	int32  guild_pvp_num       = 428;
+	int32  guild_pvp_buy_num	= 429;
+	
+	
+	repeated int32 dress_ids			= 430;
+	repeated int32 dress_on_ids			= 431;
+	repeated int32 dress_id_bags		= 432;
+	int32 dress_tuzhi			= 433;
+    repeated int32 dress_achieves       = 434;
+    int32 dress_flag           = 435;
+	repeated int32 huiyi_jihuos			= 436;
+	int32 huiyi_shoujidu		= 437;
+	repeated int32 huiyi_zhanpus		= 438;
+	int32 huiyi_zhanpu_flag	= 439;
+	int32 huiyi_zhanpu_num		= 440;
+	int32 huiyi_gaiyun_num		= 441;
+	repeated int32 huiyi_shop_ids		= 442;
+	repeated int32 huiyi_shop_nums		= 443;
+	int32 huiyi_fan_num		= 444;
+	repeated int32 huiyi_jihuo_starts   = 445;
+	int32 huiyi_shoujidu_top   = 446;
+	
+	uint64 treasure_protect_next_time = 460;
+	uint64 treasure_protect_cd_time   = 461;
+	repeated uint64 treasure_reports		   = 463;
+	int32  treasure_first			   = 464;
+	repeated int32  treasure_hechengs		   = 465;
+	
+	repeated uint64 yh_roles						= 500;
+	uint64 yh_time							= 501;
+	int32 yh_hour							= 502;
+	uint64 yh_update_time					= 503;
+	
+	repeated int32  qiyu_mission					= 510;
+	repeated int32  qiyu_hard						= 511;
+	repeated int32  qiyu_suc						= 512;
+	uint64 qiyu_last_time					= 513;
+	
+	repeated int32 sport_shop_rewards   			= 560;
+	repeated int32 ttt_shop_rewards     			= 561;
+	repeated int32 mw_shop_rewards      			= 562;
+	repeated int32 guild_shop_rewards               = 563;
+	repeated int32 guild_shop_ex_rewards			= 564;
+	repeated int32 guild_red_rewards				= 565;
+	
+	int32 pvp_num							= 580;
+	int32 pvp_refresh_num					= 581;
+	int32 pvp_buy_num						= 582;
+	int32 pvp_total						= 583;
+	int32 pvp_hit							= 584;
+	repeated int32 pvp_hit_ids						= 585;
+	repeated int32 by_shops							= 586;
+	repeated int32 by_nums							= 587;
+	repeated int32 by_rewards						= 588;
+	int32 by_reward_num					= 589;
+	int32 by_reward_buy					= 590;
+	int32 by_point							= 591;
+	int32 ds_reward_buy					= 592;
+	int32 ds_reward_num					= 593;
+	int32 ds_point							= 594;
+	int32 ds_duanwei						= 595;
+	int32 ds_hit							= 596;
+	repeated int32 ds_hit_ids						= 597;
+	
+	repeated int32 huodong_pttq_reward      		= 906;
+	repeated int32 huodong_kaifu_finish_ids 		= 907;
+	int32 huodong_czjh_buy			    	= 908;
+	int32 huodong_czjh_index		    	= 909;
+    int32 huodong_vip_libao            	= 910;
+    repeated int32 huodong_week_libao           	= 911;
+	int32 huodong_kaifu_ptfb				= 912;
+	int32 huodong_kaifu_jyfb				= 913;
+	int32 huodong_kaifu_dbfb				= 914;
+	int32 huodong_kaifu_jjc				= 915;
+	repeated int32 huodong_kaifu_dbcz				= 916;
+	int32 huodong_czjh_index1				= 917;
+	int32 huodong_yxhg_tap                 = 918;
+	int32 huodong_yxhg_rmb                 = 919;
+	repeated int32 huodong_yxhg_buzhu_id            = 920;
+	int32 huodong_yxhg_buzhu_day           = 921;
+	repeated int32 huodong_yxhg_fuli_id             = 922;
+	repeated int32 huodong_yxhg_fuli_num            = 923;
+	repeated int32 huodong_yxhg_haoli_id            = 924;
+	uint64 huodong_yxhg_end_time           = 925;
+	uint64 huodong_yxhg_time               = 926;
+	uint64 gag_time                        = 927;
+	int32 google_stat                      = 928;
+}

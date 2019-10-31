@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package dhc;
+
+message global_t {
+	uint64	guid					= 1;
+	repeated int32	huodong_ids				= 2;
+	repeated uint64	huodong_start_times 	= 3;
+	repeated uint64	huodong_end_times		= 4;
+	int32	huodong_count			= 5;
+	repeated int32	pttq_vip_id				= 6;
+	repeated string	pttq_player_name  	 	= 7;
+	repeated int32	kaifu_xg_id				= 8;
+	repeated int32	kaifu_xg_count			= 9;
+	repeated string	zzs_rank_names			= 10;
+	repeated int32	zzs_rank_jewel			= 11;
+	uint64	ore_rank_time			= 18;
+	uint64 guild_refresh_time		= 19;
+	int32  czjh_count				= 20;
+	int32  guild_pvp_zhou			= 21;
+	int32  guild_pvp_suc			= 22;
+	repeated uint64 guild_pvp_ranks			= 23;
+}

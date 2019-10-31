@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package dhc;
+
+message treasure_list_t {
+	uint64 guid				= 1;
+	int32  template_id			= 2;
+	int32  amount				= 3;
+	repeated int32 nalflag				= 4;
+	repeated uint64 player_guid			= 5;
+	repeated int32 player_template		= 6;
+	repeated bytes player_name			= 7;
+	repeated int32 player_level			= 8;
+	repeated int32 player_bt			= 9;
+	repeated int32 player_num			= 10;
+	repeated int32 player_total			= 11;
+	repeated uint64 player_time			= 12;
+	repeated int32 player_first			= 13;
+    repeated int32 player_vip           = 14;
+    repeated int32 player_achieve       = 15;
+	repeated int32 player_chenghao		= 16;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index guild_guid 0
+
+message guild_event_t {
+	uint64 guid			= 1;
+	uint64 guild_guid		= 2;
+    string create_name     = 3;
+	string player_name		= 4;
+	int32 type				= 5;
+	int32 value			= 6;
+    int32 value1           = 7;
+	uint64 time			= 8;
+}

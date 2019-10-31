@@ -1,0 +1,25 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	{% include "form.html" %}
+	<div>
+        <div>
+            <div>你好,{{ username }}</div>
+			<div><a href="{% url 'logout' %}">退出</a></div>
+			<h1>宝物查看</h1>
+		</div>
+		<div class="well">
+            {% csrf_token %}
+			{{ form|as_bootstrap }}
+            {% for baowu in form.baowu %}
+            <div>
+                <div>id：{{ baowu.id }}</div>
+                <div>强化：{{ baowu.enhance }}</div>
+                <div>升星：{{ baowu.jilian }}</div>
+			</div>
+            <hr />
+            {% endfor %}
+		</div>
+	</div>
+</body>
+</html>

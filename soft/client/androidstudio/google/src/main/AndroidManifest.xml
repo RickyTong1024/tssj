@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.calling.angel" xmlns:tools="http://schemas.android.com/tools" android:installLocation="preferExternal">
+  <application  xmlns:tools="http://schemas.android.com/tools" android:theme="@style/UnityThemeSelector" android:icon="@mipmap/app_icon" android:label="@string/app_name" android:isGame="true" android:banner="@drawable/app_banner" android:usesCleartextTraffic="true" >
+    <activity
+        android:name="com.calling.angel.MainActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="sensorLandscape"
+        android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+      </intent-filter>
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+      <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false" />
+    </activity>
+
+      <meta-data android:name="unity.build-id" android:value="82a5180c-5078-4eee-80a8-a009a0c2ad65" />
+      <meta-data android:name="publicbasekey" android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl7r5WAa9oMITjQCOISwK4Ad0CTRYQcN14BBfdM0S3BYuIrVCnCBp1LUGxfr5WEjEy5f4kOgbNIIZf3twkf5uaYhbNcCMsfN+U2RqJgG3ZiNxuApgMol4fZK3YqPjCf0Vlloeo+uPN1DYpQIKO3PtEBwUQXQqBy0s1Zvqif6YCigQ6jKNNPTuQ83mJh1ff9Bn+PqQJwrDfqIYbDlxtbH1pkYANGcrvUyPSdLMfs8BSejMSgSjlud0ZG1kD+LVZRInBgU9kDw9As+VVWH9V0IBtQ+6AtAXb+vBiI2XAwwyAPlZwAeoOgykeBO+u20Ljlrfx/AuCdtVQDwGLbaPyTdS3wIDAQAB" />
+  </application>
+  <!--google用-->
+  <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+</manifest>

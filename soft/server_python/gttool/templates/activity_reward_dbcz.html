@@ -1,0 +1,125 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+    <script src="/static/js/mail.js?10" type="text/javascript"></script>
+     <script src="/static/js/libao.js?10" type="text/javascript"></script>
+	{% include "form.html" %}
+    <div>
+    <a href="{% url 'engine.manage.activity_modify' previous %}"><<<< 返回上一页</a>
+    </div>
+	<div>
+		<div>
+			<h1>当前活动--<font color=red>({{ huodong_name }})</font></h1>
+		</div>
+        <div>
+            <h2>当前档位</h2>
+        </div>
+         <table class="table table-striped table-hover">  
+            <tr>  
+                <td><strong>目标档位ID</strong></td>
+                <td><strong>目标档位Order</strong></td>
+                <td><strong>iosid</strong></td>
+                <td><strong>领奖次数</strong></td>
+				<td><strong>显示钻石</strong></td>
+                <td><strong>奖励内容</strong></td>
+                <td><strong>操作</strong></td>
+            </tr>  
+            {% for line in line %}  
+                <tr> 
+                    <td>{{ line.aid }}</td>
+                    <td>{{ line.order }}</td>  
+                    <td>{{ line.arg1 }}</td>
+                    <td>{{ line.arg2 }}</td>
+					<td>{{ line.arg3 }}</td>
+                    <td name ="libao_reward">{{ line.reward }}</td>
+                    <td><a href="{% url 'engine.manage.activity_reward_delete' line.id %}">删除</a></td>
+                </tr>  
+            {% endfor %}  
+        </table>
+        <div>
+            <h2>添加档位</h2>
+        </div> 
+		<div class="well">
+			<form name="main" class="form-horizontal" action="" method="post">
+				{% csrf_token %}
+				{{ form|as_bootstrap }}
+                <div class="control-group required">
+					<label class="control-label">奖励1</label>
+                    <div class="controls">
+                        <select id="id_reward1_1" name="reward1_1">
+                            <option value="0">无</option>
+                            <option value="1">资源</option>
+                            <option value="2">物品</option>
+                            <option value="4">装备</option>
+                            <option value="6">饰品</option>
+                        </select>
+                        <select id="id_reward1_2" name="reward1_2">
+                        </select>
+                        <input id="id_reward1_3" name="reward1_3" type="text"/>
+                    </div>
+				</div>
+                <div class="control-group required">
+					<label class="control-label">奖励2</label>
+                    <div class="controls">
+                        <select id="id_reward2_1" name="reward2_1">
+                            <option value="0">无</option>
+                            <option value="1">资源</option>
+                            <option value="2">物品</option>
+                            <option value="4">装备</option>
+                            <option value="6">饰品</option>
+                        </select>
+                        <select id="id_reward2_2" name="reward2_2">
+                        </select>
+                        <input id="id_reward2_3" name="reward2_3" type="text"/>
+                    </div>
+				</div>
+                <div class="control-group required">
+					<label class="control-label">奖励3</label>
+                    <div class="controls">
+                        <select id="id_reward3_1" name="reward3_1">
+                            <option value="0">无</option>
+                            <option value="1">资源</option>
+                            <option value="2">物品</option>
+                            <option value="4">装备</option>
+                            <option value="6">饰品</option>
+                        </select>
+                        <select id="id_reward3_2" name="reward3_2">
+                        </select>
+                        <input id="id_reward3_3" name="reward3_3" type="text"/>
+                    </div>
+				</div>
+                <div class="control-group required">
+					<label class="control-label">奖励4</label>
+                    <div class="controls">
+                        <select id="id_reward4_1" name="reward4_1">
+                            <option value="0">无</option>
+                            <option value="1">资源</option>
+                            <option value="2">物品</option>
+                            <option value="4">装备</option>
+                            <option value="6">饰品</option>
+                        </select>
+                        <select id="id_reward4_2" name="reward4_2">
+                        </select>
+                        <input id="id_reward4_3" name="reward4_3" type="text"/>
+                    </div>
+				</div>
+				<div>
+					<input type="button" name ="tijiao" value="创建" class="btn btn-primary" onclick="mask();"/>
+				</div>
+                {% if form.suc %}
+                <script>
+                    alert("创建成功");
+                </script>
+                {% endif %}
+                {% if messages %}
+                {% for message in messages %}
+                <script>
+                    alert("{{ message }}");
+                </script>
+                {% endfor %}
+                {% endif %}
+			</form>
+		</div> 
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<unit name_height="2" accept="Bip01 Spine1">
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"></atcion>
+	</actions>	
+	<actions name="die">
+		<atcion time="0" type="anim" name="die"></atcion>
+	</actions>	
+	<actions name="run">
+		<atcion time="0" type="anim" name="run"></atcion>
+	</actions>	
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"></atcion>
+		<atcion time="0.5" type="action" name="ready"></atcion>
+	</actions>	 
+	<actions name="win">
+		<atcion time="0" type="anim" name="win01"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions>	 		
+	
+</unit>

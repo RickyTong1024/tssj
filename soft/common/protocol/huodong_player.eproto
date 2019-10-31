@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index huodong_guid 0
+
+message huodong_player_t {
+	uint64 guid			= 1;
+	uint64 huodong_guid 	= 2;
+	uint64 player_guid     = 3;
+	int32 arg1 			= 4;
+	int32 arg2		 		= 5;
+	int32 arg3 			= 6;
+	int32 arg4				= 7;
+	int32 arg5				= 8;
+	int32 arg6             = 9;
+	int32 arg7             = 10;
+	repeated int32 args1 			= 20;
+	repeated int32 args2 	        = 21;
+	repeated int32 args3			= 22;
+	repeated int32 args4            = 23;
+	repeated int32 args5            = 24;
+	repeated int64 args6			= 25;
+	repeated int64 args7			= 26;
+	repeated uint64 args8			= 27;
+	repeated int32 args9			= 28;
+
+	repeated uint64 times			= 30;
+	uint64 start           = 31;
+	uint64 end             = 32;
+	
+	repeated int64 extra_data1		= 40;
+	repeated int64 extra_data2		= 41;
+	repeated int64 extra_data3		= 42;
+	repeated int64 extra_data4		= 43;
+	repeated int64 extra_data5		= 44;
+	repeated int64 extra_data6		= 45;
+}

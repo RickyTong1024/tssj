@@ -1,0 +1,145 @@
+<unit name_height="2.3"  accept="Bip01 Spine1" speed="8">
+
+
+    <part name="body_01">
+		<mesh bone="" part="body" pack="unit/ts_yukari/ts_yukari" type="body"/>
+	</part>
+	
+	<part name="body_02">
+		<mesh bone="" part="body" pack="unit/ts_yukari/ts_yukaric" type="body"/>
+	</part>
+	<part name="body_03">
+		<mesh bone="" part="body" pack="unit/ts_yukari/ts_yukarid" type="body"/>
+	</part>
+	<part name="body_04">
+		<mesh bone="" part="body" pack="unit/ts_yukari/ts_yukarie" type="body"/>
+	</part>
+	
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"></atcion>
+	</actions>	
+	<actions name="win">
+		<atcion time="0" type="anim" name="win"></atcion>
+		<atcion time="2.05" type="action" name="ready"></atcion>
+	</actions>	
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"></atcion>
+		<atcion time="0.5" type="action" name="ready"></atcion>
+	</actions>	 
+	<actions name="jq01">
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="entity"  name="effect/npc/s_juq_a01" remove_time="10"></atcion>
+	</actions>
+	<actions name="attack">
+		<atcion time="0" type="skill_release"></atcion>
+		
+		
+		<atcion time="0" type="anim" name="attack1"></atcion>
+		<atcion time="0" type="action_wait" v0="0.15"></atcion>
+	    <atcion time="0" type="target_entity"  name="unit/ts_yukari/atk1_a01" remove_time="4" /> 
+		<atcion time="0" type="sound"  sound="sound/ab_cast_fire_01"></atcion>
+		<atcion time="0" type="action_wait" v0="0.4"></atcion>
+		<atcion time="0" type="sound"  sound="sound/mcx20070509b"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="accept" name="effect/npc/p_sj_mf01" remove_time="1" /> 
+		<atcion time="0" type="skill_export" export="1"></atcion> 
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		
+		<atcion time="0" type="action_wait" v0="0.3"></atcion>
+		
+		<atcion time="0" type="skill_end"></atcion>	
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 		
+	<actions name="jn01">
+		<atcion time="0" type="skill_release"></atcion>
+		
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jn215"></atcion>
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="entity"  name="unit/ts_yukari/jn01_s01" remove_time="3"></atcion>
+		<atcion time="0" type="sound"  sound="sound/FairyTale_SFX_01"></atcion>
+	    <atcion time="0" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_yukari/jn01_wp01" remove_time="4" /> 
+	    <atcion time="0" type="target_entity"  name="unit/ts_yukari/jn_s01" remove_time="2" /> 
+		
+		<atcion time="0" type="action_wait" v0="0.8"></atcion>
+		
+		<atcion time="0" type="anim" name="attack2"></atcion>
+		<atcion time="0" type="action_wait" v0="0.6"></atcion>
+		<atcion time="0" type="entity"  name="unit/ts_yukari/jn01_c01" remove_time="3"></atcion>
+		<atcion time="0" type="action_wait" v0="0.25"></atcion>
+		<atcion time="0" type="sound"  sound="sound/boom001"></atcion>	
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_ice" remove_time="1" /> 
+	    <atcion time="0" type="target_entity"  name="unit/ts_yukari/jn02_b01" remove_time="2" /> 
+		<atcion time="0" type="skill_export" export="1"></atcion> 
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		<atcion time="0" type="action_wait" v0="0.15"></atcion>
+		
+		
+		<atcion time="0" type="action_wait" v0="0.5"></atcion>
+		
+		<atcion time="0" type="skill_end"></atcion>	
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 			
+	<actions name="jn02">
+		<atcion time="0" type="skill_release"></atcion>
+		
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jn215"></atcion>
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="entity"  name="unit/ts_yukari/jn02_s01" remove_time="3"></atcion>
+		<atcion time="0" type="sound"  sound="sound/FairyTale_SFX_01"></atcion>
+	    <atcion time="0" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_yukari/jn01_wp01" remove_time="4" /> 
+	    <atcion time="0" type="target_entity"  name="unit/ts_yukari/jn_s02" remove_time="2" /> 
+		
+		<atcion time="0" type="action_wait" v0="0.8"></atcion>
+		
+		<atcion time="0" type="anim" name="attack2"></atcion>
+		<atcion time="0" type="action_wait" v0="0.6"></atcion>
+		<atcion time="0" type="entity"  name="unit/ts_yukari/jn02_c01" remove_time="3"></atcion>
+		<atcion time="0" type="sound"  sound="sound/IceBlastImpact"></atcion>	
+		<atcion time="0" type="action_wait" v0="0.25"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_ice" remove_time="1" /> 
+	    <atcion time="0" type="target_entity"  name="unit/ts_yukari/jn01_b01" remove_time="2" /> 
+		<atcion time="0" type="skill_export" export="1"></atcion> 
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		<atcion time="0" type="action_wait" v0="0.15"></atcion>
+		
+		
+		<atcion time="0" type="action_wait" v0="0.5"></atcion>
+		
+		<atcion time="0" type="skill_end"></atcion>	
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 				
+	<actions name="jn03">
+		<atcion time="0" type="skill_release"></atcion>
+		
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jn215"></atcion>
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="entity"  name="unit/ts_yukari/jn03_s01" remove_time="3"></atcion>
+		<atcion time="0" type="sound"  sound="sound/FairyTale_SFX_01"></atcion>
+	    <atcion time="0" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_yukari/jn01_wp01" remove_time="4" /> 
+	    <atcion time="0" type="target_entity"  name="unit/ts_yukari/jn_s03" remove_time="2" /> 
+		
+		<atcion time="0" type="action_wait" v0="0.8"></atcion>
+		
+		<atcion time="0" type="anim" name="attack2"></atcion>
+		<atcion time="0" type="action_wait" v0="0.6"></atcion>
+		<atcion time="0" type="entity"  name="unit/ts_yukari/jn03_c01" remove_time="3"></atcion>
+		<atcion time="0" type="action_wait" v0="0.25"></atcion>
+		<atcion time="0" type="sound"  sound="sound/ftjianzhan01"></atcion>	
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_ice" remove_time="1" /> 
+	    <atcion time="0" type="target_entity"  name="unit/ts_yukari/jn03_b01" remove_time="2" /> 
+		<atcion time="0" type="skill_export" export="1"></atcion> 
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		<atcion time="0" type="action_wait" v0="0.15"></atcion>
+		
+		
+		<atcion time="0" type="action_wait" v0="0.5"></atcion>
+		
+		<atcion time="0" type="skill_end"></atcion>	
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 						
+</unit>

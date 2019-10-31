@@ -1,0 +1,181 @@
+<!-- 被2012 (yaohong) 使用XMLSpy vyh编辑的 (http://www.altova.com) by -->
+<unit name_height="2.3" accept="Bip01 Spine1" speed="8">
+	<part name="body_01">
+		<mesh bone="" part="body" pack="unit/ts_kurumi/ts_kurumi" type="body"/>
+	</part>
+	<part name="body_02">
+		<mesh bone="" part="body" pack="unit/ts_kurumi/ts_kurumic" type="body"/>
+	</part>
+	<part name="body_03">
+		<mesh bone="" part="body" pack="unit/ts_kurumi/ts_kurumid" type="body"/>
+	</part>
+	<part name="body_04">
+		<mesh bone="" part="body" pack="unit/ts_kurumi/ts_kurumie" type="body"/>
+	</part>
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"/>
+	</actions>
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"/>
+		<atcion time="0.5" type="action" name="ready"/>
+	</actions>
+	<actions name="win">
+		<atcion time="0" type="anim" name="win"/>
+		<atcion time="2" type="action" name="ready"/>
+	</actions>
+	<actions name="attack">
+		<atcion time="0" type="skill_release"/>
+		<atcion time="0" type="anim" name="attack1"/>
+		<atcion time="0" type="action_wait" v0="0.3"/>
+		<atcion time="0" type="copy_effect_object_ex" name="Rgunfire" remove_time="1"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.15"/>
+		<atcion time="0" type="action_wait" v0="0.2"/>
+		<atcion time="0" type="copy_effect_object_ex" name="Lgunfire" remove_time="1"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.15"/>
+		<atcion time="0" type="action_wait" v0="0.2"/>
+		<atcion time="0" type="copy_effect_object_ex" name="Rgunfire" remove_time="1"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.15"/>
+		<atcion time="0" type="action_wait" v0="0.2"/>
+		<atcion time="0" type="copy_effect_object_ex" name="Lgunfire" remove_time="1"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.15"/>
+		<atcion time="0" type="action_wait" v0="0.2"/>
+		<atcion time="0" type="copy_effect_object_ex" name="Rgunfire" remove_time="1"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.2"/>
+		<atcion time="0" type="action_wait" v0="0.2"/>
+		<atcion time="0" type="copy_effect_object_ex" name="Lgunfire" remove_time="1"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.2"/>
+		<atcion time="0" type="action_wait" v0="0.2"/>
+		<atcion time="0" type="skill_end"/>
+		<atcion time="0" type="action" name="ready"/>
+	</actions>
+	<actions name="jn01">
+		<atcion time="0" type="skill_release"/>
+		<atcion time="0" type="sound" sound="sound/ts_rwpy/"/>
+		<atcion time="0" type="anim" name="attack2"/>
+		<atcion time="0" type="sound" sound="sound/FairyTale_SFX_01"/>
+		<atcion time="0" type="entity" name="unit/ts_kurumi/Kurumi_Area_Skill01" remove_time="4"/>
+		<atcion time="0" type="action_wait" v0="2.5"/>
+		<atcion time="0" type="entity" name="unit/ts_kurumi/kurumi_fenshen" remove_time="2.1"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.3"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.3"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.3"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.1"/>
+		<atcion time="0" type="skill_end"/>
+		<atcion time="0" type="action" name="ready"/>
+	</actions>
+	<actions name="jn02">
+		<atcion time="0" type="skill_release"/>
+		<atcion time="0" type="sound" sound="sound/ts_rwpy/"/>
+		<atcion time="0" type="anim" name="attack2"/>
+		<atcion time="0" type="sound" sound="sound/FairyTale_SFX_01"/>
+		<atcion time="0" type="entity" name="unit/ts_kurumi/Kurumi_Area_Skill02" remove_time="6"/>
+		<atcion time="0" type="action_wait" v0="2.5"/>
+		<atcion time="0" type="entity" name="unit/ts_kurumi/kurumi_fenshen2" remove_time="2.1"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.3"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.3"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.3"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.1"/>
+		<atcion time="0" type="skill_end"/>
+		<atcion time="0" type="action" name="ready"/>
+	</actions>
+	<actions name="jn03">
+		<atcion time="0" type="skill_release"/>
+		<atcion time="0" type="sound" sound="sound/ts_rwpy/"/>
+		<atcion time="0" type="anim" name="attack2"/>
+		<atcion time="0" type="sound" sound="sound/FairyTale_SFX_01"/>
+		<atcion time="0" type="entity" name="unit/ts_kurumi/Kurumi_Area_Skill03" remove_time="6"/>
+		<atcion time="0" type="action_wait" v0="2.5"/>
+		<atcion time="0" type="entity" name="unit/ts_kurumi/kurumi_fenshen2" remove_time="2.1"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.3"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.3"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.3"/>
+		<atcion time="0" type="sound" sound="effect/sound/start_bullet_oneshot"/>
+		<atcion time="0" type="target_action" name="injured"/>
+		<atcion time="0" type="target_entity_bone" bone="accept" name="effect/common/hit_shell" follow="0" remove_time="1"/>
+		<atcion time="0." type="shake_cam" shake="0.2"/>
+		<atcion time="0" type="skill_export" export="0.25"/>
+		<atcion time="0" type="action_wait" v0="0.1"/>
+		<atcion time="0" type="skill_end"/>
+		<atcion time="0" type="action" name="ready"/>
+	</actions>
+</unit>

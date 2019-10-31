@@ -1,0 +1,106 @@
+<directors>	
+
+    <director type="hide_object" v0="ts_nzj001_wq"/>
+    <director type="hide_object" v0="ts_bot200_wp"/>
+
+    <director type="wait" v0="0.1"/>
+	<director type="show_unit" v0="ts_bot903"/>
+	
+	<director type="wait" v0="0.1"/>
+	
+	<director type="show_unit" v0="ts_bot200"/>
+	
+	<director type="wait" v0="0.1"/>
+    <director type="unit_action" v0="ts_bot200" v1="stand"/>
+	
+	
+	<director type="show_unit" v0="ts_t01"/>
+	<director type="wait" v0="0.1"/>
+	<director type="unit_action" v0="ts_t01" v1="ws_stand01"/>
+	<director type="hide_unit" v0="ts_bot201"/>
+	
+	<director type="show_unit" v0="ts_bot906"/>
+	<director type="wait" v0="0.1"/>
+	<director type="unit_action" v0="ts_bot906" v1="baoxiong"/>
+	
+	<director type="play_anim" v0="hyjt_d" v1="hyjt_cam01"/>
+	<director type="wait" v0="0.1"/>
+
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_hs05"/>
+	<director type="set_film_label" v0="director_hyjt_set_film_label_23"/>
+	<director type="wait" v0="3"/>
+
+    <director type="play_anim" v0="hyjt_d" v1="hyjt_cam02"/>
+    
+    <director type="set_film_label" v0="director_hyjt_set_film_label_24"/>
+    <director type="wait" v0="1"/>
+    <director type="set_film_label" v0="director_hyjt_set_film_label_25"/>
+    
+    <director type="wait" v0="2"/>
+    
+    <director type="show_unit" v0="ts_bot202"/>
+    <director type="wait" v0="1"/>
+    
+    <director type="unit_action" v0="ts_bot202" v1="stand"/>
+    
+    <director type="set_film_label" v0="director_hyjt_set_film_label_26"/>
+    
+    <director type="wait" v0="1"/>
+    
+    <director type="play_anim" v0="hyjt_d" v1="hyjt_cam03"/>
+    
+    <director type="set_film_label" v0="director_hyjt_set_film_label_27"/>
+    
+    <director type="unit_action" v0="ts_bot202" v1="jq01"/>
+    
+	<director type="wait" v0="1.5"/>
+	
+	<director type="show_object" v0="pt_ws_cx02"/>
+	
+	<director type="wait" v0="0.5"/>
+	
+	<director type="set_film_label" v0="director_hyjt_set_film_label_28"/>
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="hide_unit" v0="ts_bot903"/>
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="play_anim" v0="hyjt_d" v1="hyjt_cam04"/>
+	
+	<director type="unit_action" v0="ts_bot202" v1="jq02"/>
+	<director type="set_film_label" v0="director_hyjt_set_film_label_29"/>
+	<director type="wait" v0="2"/>
+	
+	<director type="play_anim" v0="hyjt_d" v1="hyjt_cam05"/>
+	
+	
+	
+	<director type="set_film_label" v0="director_hyjt_set_film_label_30"/>
+	<director type="wait" v0="1.5"/>
+	<director type="unit_action" v0="ts_bot202" v1="jq02"/>
+	
+	<director type="set_film_label" v0="director_hyjt_set_film_label_31"/>
+	<director type="wait" v0="3"/>
+	<director type="play_anim" v0="hyjt_d" v1="hyjt_cam04"/>
+	
+	
+	<director type="set_film_label" v0="director_hyjt_set_film_label_32"/>
+	<director type="wait" v0="0.5"/>
+	<director type="unit_action" v0="ts_bot202" v1="jq03"/>
+	<director type="wait" v0="1.5"/>
+	<director type="show_object" v0="pt_ws_cx02a"/>
+	<director type="wait" v0="1.5"/>
+	<director type="hide_unit" v0="ts_bot202"/>
+	<director type="set_film_label" v0="director_hyjt_set_film_label_33"/>
+	
+	<director type="hide_director"/>
+	
+	
+	
+	
+	
+																								
+</directors>

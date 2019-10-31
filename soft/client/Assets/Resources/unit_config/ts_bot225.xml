@@ -1,0 +1,149 @@
+<unit name_height="2.4"  accept="Bip01 Spine1" speed="8">
+	
+	<part name="body_01">
+		<mesh bone="" part="body" pack="unit/ts_bot225/ts_bot225" type="body"/>
+	</part>
+	
+	<part name="body_02">
+		<mesh bone="" part="body" pack="unit/ts_bot225/ts_bot225c" type="body"/>
+	</part>
+	<part name="body_03">
+		<mesh bone="" part="body" pack="unit/ts_bot225/ts_bot225d" type="body"/>
+	</part>
+	<part name="body_04">
+		<mesh bone="" part="body" pack="unit/ts_bot225/ts_bot225e" type="body"/>
+	</part>
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"></atcion>
+	</actions>	
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"></atcion>
+		<atcion time="0.5" type="action" name="ready"></atcion>
+	</actions>	 
+	<actions name="win">
+		<atcion time="0" type="anim" name="win"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>s
+	</actions>	 
+	<actions name="jq01">
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="entity"  name="effect/npc/s_juq_a01" remove_time="10"></atcion>
+	</actions>		
+	
+	<actions name="attack">
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="anim" name="attack1"></atcion>
+		<atcion time="0" type="action_wait" v0="0.3"></atcion>
+		<atcion time="0" type="goto_target"></atcion>
+		
+		
+		
+		<atcion time="0" type="entity"  name="unit/ts_bot225/atk1_a01" remove_time="2.2"></atcion>
+		<atcion time="0" type="sound"  sound="sound/RendTarget"></atcion>
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="Bip01 Prop1" name="unit/ts_bot225/hit_ice01" remove_time="1" /> 
+		<atcion time="0" type="shake_cam" shake="0.3" /> 	
+		<atcion time="0" type="skill_export" export="1"></atcion>
+		
+		
+		
+		<atcion time="0" type="action_wait" v0="0.3"></atcion>
+		
+		<atcion time="0" type="goto_home"></atcion>	
+		
+		<atcion time="0" type="skill_end"></atcion>
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 	
+	
+	<actions name="jn01">
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jn506"></atcion>
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="action_wait" v0="0.3"></atcion>
+		<atcion time="0" type="sound"  sound="sound/FairyTale_SFX_01"></atcion>
+		<atcion time="0" type="entity" name="unit/ts_mikasa/mikasa_jn01_s01" remove_time="2.5"></atcion>
+		<atcion time="0" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_mikasa/jn01_wp01" remove_time="3"></atcion>
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>
+		<atcion time="0" type="anim" name="attack2"></atcion>
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>
+		<atcion time="0" type="target_entity"  name="unit/ts_bot225/atk2_a01" remove_time="3"></atcion>
+		
+		
+		<atcion time="0" type="action_wait" v0="1"></atcion>
+		
+		<atcion time="0" type="target_entity"  name="unit/ts_bot225/atk2_a02" remove_time="3"></atcion>
+		<atcion time="0" type="sound"  sound="sound/RendTarget"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="Bip01 Prop1" name="unit/ts_bot225/hit_ice01" remove_time="1" /> 
+		<atcion time="0" type="shake_cam" shake="0.3" /> 	
+		<atcion time="0" type="skill_export" export="1"></atcion>
+		
+		
+		
+		
+		<atcion time="0" type="skill_end"></atcion>
+		<atcion time="0" type="action" name="ready"></atcion>
+		
+	</actions> 
+		<actions name="jn02">
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jn506"></atcion>
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="action_wait" v0="0.3"></atcion>
+		<atcion time="0" type="sound"  sound="sound/FairyTale_SFX_01"></atcion>
+		<atcion time="0" type="entity" name="unit/ts_mikasa/mikasa_jn01_s02" remove_time="2.5"></atcion>
+		<atcion time="0" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_mikasa/jn02_wp01" remove_time="3"></atcion>
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>
+		<atcion time="0" type="anim" name="attack2"></atcion>
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>
+		<atcion time="0" type="target_entity"  name="unit/ts_bot225/atk2_b01" remove_time="3"></atcion>
+		
+		
+		<atcion time="0" type="action_wait" v0="1"></atcion>
+		
+		<atcion time="0" type="target_entity"  name="unit/ts_bot225/atk2_b02" remove_time="3"></atcion>
+		<atcion time="0" type="sound"  sound="sound/RendTarget"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="Bip01 Prop1" name="unit/ts_bot225/hit_ice01" remove_time="1" /> 
+		<atcion time="0" type="shake_cam" shake="0.3" /> 	
+		<atcion time="0" type="skill_export" export="1"></atcion>
+		
+		
+		
+		
+		<atcion time="0" type="skill_end"></atcion>
+		<atcion time="0" type="action" name="ready"></atcion>
+		
+	</actions> 
+	    <actions name="jn03">
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jn506"></atcion>
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="action_wait" v0="0.3"></atcion>
+		<atcion time="0" type="sound"  sound="sound/FairyTale_SFX_01"></atcion>
+		<atcion time="0" type="entity" name="unit/ts_mikasa/mikasa_jn01_s03" remove_time="2.5"></atcion>
+		<atcion time="0" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_mikasa/jn03_wp01" remove_time="3"></atcion>
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>
+		<atcion time="0" type="anim" name="attack2"></atcion>
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>
+		<atcion time="0" type="target_entity"  name="unit/ts_bot225/atk3_b01" remove_time="3"></atcion>
+		
+		
+		<atcion time="0" type="action_wait" v0="1"></atcion>
+		
+		<atcion time="0" type="target_entity"  name="unit/ts_bot225/atk2_b02" remove_time="3"></atcion>
+		<atcion time="0" type="sound"  sound="sound/RendTarget"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone" bone="Bip01 Prop1" name="effect/AllUnit_Hit_CutYellow" remove_time="1" /> 
+		<atcion time="0" type="shake_cam" shake="0.3" /> 	
+		<atcion time="0" type="skill_export" export="1"></atcion>
+		
+		
+		
+		
+		<atcion time="0" type="skill_end"></atcion>
+		<atcion time="0" type="action" name="ready"></atcion>
+		
+	</actions> 	
+</unit>

@@ -1,0 +1,1086 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: map_gui
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: b9b91a106dc48b042a08fde753ee1ed1, type: 2}
+  mSprites:
+  - name: blue_box_b03
+    x: 326
+    y: 596
+    width: 100
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 4
+    paddingBottom: 0
+  - name: blue_box_b04
+    x: 2
+    y: 698
+    width: 100
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 4
+    paddingBottom: 0
+  - name: blue_box_b1
+    x: 800
+    y: 880
+    width: 94
+    height: 87
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 42
+    paddingBottom: 0
+  - name: blue_box_b5
+    x: 428
+    y: 670
+    width: 90
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 2
+    paddingTop: 4
+    paddingBottom: 0
+  - name: gold_box_b03
+    x: 104
+    y: 684
+    width: 100
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 4
+    paddingBottom: 0
+  - name: gold_box_b04
+    x: 224
+    y: 573
+    width: 100
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 4
+    paddingBottom: 0
+  - name: gold_box_b1
+    x: 384
+    y: 893
+    width: 94
+    height: 87
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 42
+    paddingBottom: 0
+  - name: gold_box_b5
+    x: 567
+    y: 584
+    width: 90
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 2
+    paddingTop: 4
+    paddingBottom: 0
+  - name: green_box_b03
+    x: 122
+    y: 426
+    width: 100
+    height: 129
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: green_box_b04
+    x: 906
+    y: 264
+    width: 100
+    height: 129
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: green_box_b1
+    x: 503
+    y: 809
+    width: 94
+    height: 87
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 42
+    paddingBottom: 0
+  - name: green_box_b5
+    x: 104
+    y: 811
+    width: 90
+    height: 129
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 2
+    paddingTop: 0
+    paddingBottom: 0
+  - name: kb_tp
+    x: 1016
+    y: 2
+    width: 1
+    height: 1
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 15
+    paddingTop: 0
+    paddingBottom: 15
+  - name: lock_bg
+    x: 690
+    y: 380
+    width: 172
+    height: 165
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 4
+    paddingTop: 3
+    paddingBottom: 3
+  - name: lock_bigicon
+    x: 470
+    y: 218
+    width: 172
+    height: 165
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 4
+    paddingTop: 3
+    paddingBottom: 3
+  - name: lock_mo01
+    x: 413
+    y: 797
+    width: 88
+    height: 94
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 89
+    paddingRight: 63
+    paddingTop: 77
+    paddingBottom: 69
+  - name: lock_mo02
+    x: 520
+    y: 711
+    width: 90
+    height: 96
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 87
+    paddingRight: 63
+    paddingTop: 76
+    paddingBottom: 68
+  - name: lock_mo03
+    x: 751
+    y: 719
+    width: 90
+    height: 96
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 87
+    paddingRight: 63
+    paddingTop: 76
+    paddingBottom: 68
+  - name: lock_mo04
+    x: 659
+    y: 695
+    width: 90
+    height: 100
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 87
+    paddingRight: 63
+    paddingTop: 71
+    paddingBottom: 69
+  - name: lock_mo05
+    x: 196
+    y: 812
+    width: 90
+    height: 100
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 87
+    paddingRight: 63
+    paddingTop: 74
+    paddingBottom: 66
+  - name: lock_mo06
+    x: 891
+    y: 540
+    width: 130
+    height: 134
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 67
+    paddingRight: 43
+    paddingTop: 57
+    paddingBottom: 49
+  - name: lock_mo07
+    x: 685
+    y: 547
+    width: 138
+    height: 146
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 63
+    paddingRight: 39
+    paddingTop: 51
+    paddingBottom: 43
+  - name: lock_mo08
+    x: 871
+    y: 676
+    width: 132
+    height: 144
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 64
+    paddingRight: 44
+    paddingTop: 45
+    paddingBottom: 51
+  - name: lock_mo09
+    x: 445
+    y: 385
+    width: 152
+    height: 152
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 59
+    paddingRight: 29
+    paddingTop: 37
+    paddingBottom: 51
+  - name: lock_mo10
+    x: 710
+    y: 2
+    width: 202
+    height: 202
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 20
+    paddingRight: 18
+    paddingTop: 20
+    paddingBottom: 18
+  - name: lock_mo11
+    x: 240
+    y: 2
+    width: 228
+    height: 226
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 6
+    paddingRight: 6
+    paddingTop: 7
+    paddingBottom: 7
+  - name: lock_mo12
+    x: 2
+    y: 2
+    width: 236
+    height: 232
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 1
+    paddingTop: 4
+    paddingBottom: 4
+  - name: ntp_ybbk003
+    x: 471
+    y: 1009
+    width: 188
+    height: 9
+    borderLeft: 77
+    borderRight: 73
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 1
+    paddingBottom: 1
+  - name: orange_box_b03
+    x: 914
+    y: 133
+    width: 100
+    height: 129
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: orange_box_b04
+    x: 914
+    y: 2
+    width: 100
+    height: 129
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: orange_box_b1
+    x: 612
+    y: 797
+    width: 94
+    height: 87
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 42
+    paddingBottom: 0
+  - name: 'orange_box_b5 '
+    x: 344
+    y: 465
+    width: 90
+    height: 129
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 2
+    paddingTop: 0
+    paddingBottom: 0
+  - name: purple_box_b03
+    x: 2
+    y: 571
+    width: 100
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 4
+    paddingBottom: 0
+  - name: purple_box_b04
+    x: 122
+    y: 557
+    width: 100
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 4
+    paddingBottom: 0
+  - name: purple_box_b1
+    x: 288
+    y: 834
+    width: 94
+    height: 87
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 42
+    paddingBottom: 0
+  - name: purple_box_b5
+    x: 2
+    y: 825
+    width: 90
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 2
+    paddingTop: 4
+    paddingBottom: 0
+  - name: qiyu_jiantou
+    x: 708
+    y: 817
+    width: 144
+    height: 61
+    borderLeft: 30
+    borderRight: 30
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: s_star001
+    x: 825
+    y: 591
+    width: 32
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: star
+    x: 386
+    y: 357
+    width: 57
+    height: 57
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 3
+    paddingTop: 2
+    paddingBottom: 4
+  - name: star_fb
+    x: 599
+    y: 457
+    width: 40
+    height: 47
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 2
+    paddingTop: 0
+    paddingBottom: 2
+  - name: tg_l01
+    x: 2
+    y: 236
+    width: 228
+    height: 99
+    borderLeft: 53
+    borderRight: 53
+    borderTop: 35
+    borderBottom: 35
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: tg_l02
+    x: 309
+    y: 982
+    width: 320
+    height: 12
+    borderLeft: 124
+    borderRight: 124
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: tg_l03
+    x: 309
+    y: 996
+    width: 300
+    height: 11
+    borderLeft: 133
+    borderRight: 133
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: tg_l04
+    x: 309
+    y: 1009
+    width: 160
+    height: 11
+    borderLeft: 56
+    borderRight: 56
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: tg_l05
+    x: 611
+    y: 996
+    width: 150
+    height: 11
+    borderLeft: 56
+    borderRight: 56
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: tg_l06
+    x: 436
+    y: 539
+    width: 129
+    height: 129
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xg_ddhtx001
+    x: 896
+    y: 877
+    width: 108
+    height: 24
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 2
+    paddingTop: 3
+    paddingBottom: 3
+  - name: xg_lr_button
+    x: 644
+    y: 354
+    width: 44
+    height: 95
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_001
+    x: 644
+    y: 218
+    width: 46
+    height: 134
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_002
+    x: 320
+    y: 723
+    width: 91
+    height: 109
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_003
+    x: 470
+    y: 2
+    width: 238
+    height: 214
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_004
+    x: 206
+    y: 700
+    width: 112
+    height: 110
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_005
+    x: 240
+    y: 230
+    width: 144
+    height: 196
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_006
+    x: 386
+    y: 230
+    width: 65
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_007
+    x: 710
+    y: 206
+    width: 172
+    height: 172
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_008
+    x: 825
+    y: 547
+    width: 27
+    height: 42
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_009
+    x: 661
+    y: 1009
+    width: 137
+    height: 11
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_010
+    x: 1008
+    y: 264
+    width: 11
+    height: 55
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xmzq_011
+    x: 599
+    y: 385
+    width: 42
+    height: 70
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xrjt_01
+    x: 864
+    y: 393
+    width: 37
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 2
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxg_anlt001
+    x: 800
+    y: 969
+    width: 120
+    height: 53
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxg_anlt002
+    x: 854
+    y: 822
+    width: 120
+    height: 53
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_rbgx001
+    x: 884
+    y: 206
+    width: 20
+    height: 185
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdz001
+    x: 196
+    y: 923
+    width: 174
+    height: 26
+    borderLeft: 46
+    borderRight: 103
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdz002
+    x: 1008
+    y: 321
+    width: 9
+    height: 15
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdz003
+    x: 2
+    y: 952
+    width: 305
+    height: 66
+    borderLeft: 115
+    borderRight: 161
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdz004
+    x: 2
+    y: 337
+    width: 221
+    height: 87
+    borderLeft: 111
+    borderRight: 45
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdzhg001
+    x: 643
+    y: 451
+    width: 25
+    height: 82
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdzhg002
+    x: 224
+    y: 428
+    width: 118
+    height: 143
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdzhg003
+    x: 825
+    y: 630
+    width: 44
+    height: 47
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdzlg001
+    x: 864
+    y: 546
+    width: 25
+    height: 82
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdzlg002
+    x: 2
+    y: 426
+    width: 118
+    height: 143
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdzlg003
+    x: 386
+    y: 416
+    width: 44
+    height: 47
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdzzg001
+    x: 864
+    y: 462
+    width: 25
+    height: 82
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdzzg002
+    x: 903
+    y: 395
+    width: 118
+    height: 143
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgjm_txdzzg003
+    x: 639
+    y: 535
+    width: 44
+    height: 47
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgzd_cjjm001
+    x: 825
+    y: 679
+    width: 38
+    height: 38
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xxgzd_cjjm002
+    x: 599
+    y: 506
+    width: 38
+    height: 38
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xzjm_zsjxxl03
+    x: 567
+    y: 546
+    width: 70
+    height: 20
+    borderLeft: 25
+    borderRight: 25
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabAsset: 1

@@ -1,0 +1,241 @@
+syntax = "proto3";
+
+import "role.eproto";
+import "equip.eproto";
+import "treasure.eproto";
+package protocol.team;
+
+
+message team_player {
+	uint64 guid = 1;
+	string name = 2;
+	int32  id   = 3;
+	int32  bf   = 4;
+	int32  chenhao = 5;
+	int32  level	= 6;
+	bool   leader = 7;
+	bool   prepare = 8;
+	int32  reward_num = 9;
+	bool   is_npc	= 10;
+	int32  serverid = 11;
+	int32  kill     = 12;
+	int32  vip		 = 13;
+	int32  achieve  = 14;
+	int32  guanghuan = 15;
+	int32  dress	  = 16;
+	repeated uint64 invites   = 17;
+	uint64 bind_guid = 18;
+	int32 nalflag    = 19;
+}
+
+message team {
+    uint64      team_id = 1;
+	repeated team_player players = 2;
+	bool        open    = 3;
+	int32       level   = 4;
+	int32       jiacheng = 5;
+	bool        result   = 6;
+	int32       stat	  = 7;
+	bool        fight    = 8;
+}
+
+message team_invite {
+	uint64 invite_id = 1;
+	uint64 guid = 2;
+	string name = 3;
+	int32  id	 = 4;
+	int32  chenghao = 5;
+	int32  bf = 6;
+	string guild = 7;
+	int32 level = 8;
+	int32 vip = 9;
+	int32 achieve = 10;
+	uint64 team_id = 11;
+	int32  time = 12;
+	int32 nalflag = 13;
+}
+
+
+message bingyuan_huihe {
+	repeated uint64  team_ids   = 1;
+	repeated uint64 team_guids  = 2;
+	repeated double max_hps	    = 3;
+	repeated double hps         = 4;
+	uint64 win		    = 5;
+}
+
+message bingyuan_fight_text {
+	repeated bingyuan_huihe huihes = 1;
+}
+
+message cmsg_enter_world {
+	uint64 guid				= 1;
+	string sig					= 2;
+	int32  type				= 3;
+}
+
+message smsg_enter_world {
+	int32  chenghao            = 1;
+	int32  point				= 2;
+	int32  rank				= 3;
+	uint64 next_invite_time    = 4;
+	repeated team_invite invites        = 5;
+	repeated string talks				= 6;
+	int32  srank				= 7;
+	int32  sgrank				= 8;
+	int32  spoint				= 9;
+	int32  sduanwei			= 10;
+	bool	sreset				= 11;
+	int32  soduanwei			= 12;
+	uint64 ds_cdtime           = 13;
+}
+
+message smsg_team_create {
+	team team_info = 1;
+}
+
+message cmsg_team_enter {
+	uint64 team_id = 1;
+}
+
+message smsg_team_enter {
+	team_player member = 1;
+	int32       level   = 2;
+	int32       jiacheng = 3;
+}
+
+message smsg_team_leave {
+	uint64 guid                = 1;
+	uint64 leader				= 2;
+	int32  level   			= 3;
+	int32  jiacheng 			= 4;
+}
+
+message cmsg_team_kick {
+	uint64 guid = 1;
+}
+
+message smsg_team_prepare {
+	uint64 guid                = 1;
+	bool prepare				= 2;
+}
+
+message cmsg_team_move {
+	uint64 guid	= 1;
+	int32 index    = 2;
+}
+
+message smsg_team_move {
+	uint64 guid	= 1;
+	int32 index    = 2;
+}
+
+message smsg_fight_team {
+	uint64 id = 1;
+	uint64  win = 2;
+	bingyuan_fight_text text = 3;
+	team   oteam	= 4;
+}
+
+message cmsg_chat_team {
+	string text			= 3;
+	string color			= 4;
+}
+
+message smsg_chat_team {
+	uint64 player_guid		= 1;
+	string player_name		= 2;
+	uint32 player_template	= 3;
+	int32 vip				= 4;
+	int32 level			= 5;
+	string text			= 6;
+	string color			= 7;
+	int32 player_nalflag 	= 8;
+}
+
+message cmsg_player_look {
+	uint64 guid = 1;
+}
+
+message smsg_player_look {
+	uint32 template_id		= 1;
+	int32 level			= 2;
+	string name			= 3;
+	int32 bf				= 4;
+	int32 vip				= 5;
+	repeated dhc.role_t roles		= 6;
+	repeated dhc.equip_t equips		= 7;
+	repeated dhc.treasure_t treasures = 8;
+	repeated int32 duixings			= 9;
+    string guild       = 10;
+    int32 achieves     = 11;
+	int32 nalflag      = 12;
+}
+
+message smsg_invite_add {
+	team_invite invite = 1;
+}
+
+message cmsg_invite_agree {
+	bool agree = 1;
+	uint64 invite_id = 2;
+}
+
+message smsg_invite_remove {
+	uint64 invite_id = 1;
+}
+
+message smsg_invite_remove_social {
+	uint64 guid = 1;
+}
+
+message smsg_invite_all {
+	uint64 next_time = 1;
+}
+
+message smsg_team_player_reward_change {
+	uint64 guid = 1;
+	int32 num = 2;
+	int32 point = 3;
+	int32 rank = 4;
+	int32 chenghao = 5;
+}
+
+message smsg_change_team_stat {
+	int32 stat = 1;
+}
+
+message cmsg_hanhua {
+	int32 index = 1;
+}
+
+message smsg_hanhua {
+	string content = 1;
+	uint64 guid    = 2;
+}
+
+message cmsg_change_hanhua {
+	repeated int32  index   = 1;
+	repeated string content = 2;
+}
+
+message smsg_fight_ds {
+	uint64 id 			= 1;
+	int32 result		= 2;
+	bytes text		  	= 3;
+	string name		= 4;
+	int32 duanwei		= 5;
+	int32  bf			= 6;
+	int32  template_id = 7;
+	int32  vip		 	= 8;
+	int32  achieve  	= 9;
+	int32  guanghuan 	= 10;
+	int32  dress	  	= 11;
+	uint64 cd_time     = 12;
+}
+
+message smsg_reset_ds {
+	int32 oldduanwei = 1;
+	int32 newduanwei = 2;
+}
+

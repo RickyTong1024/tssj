@@ -1,0 +1,1954 @@
+syntax = "proto3";
+
+import "player.eproto";
+import "role.eproto";
+import "equip.eproto";
+import "post.eproto";
+import "sport.eproto";
+import "guild.eproto";
+import "guild_member.eproto";
+import "guild_event.eproto";
+import "rank.eproto";
+import "social.eproto";
+import "treasure.eproto";
+import "treasure_report.eproto";
+import "guild_mission.eproto";
+import "guild_message.eproto";
+import "guild_red.eproto";
+import "guild_box.eproto";
+import "pet.eproto";
+import "guild_arrange.eproto";
+import "guild_fight.eproto";
+
+package protocol.game;
+
+message msg_common {
+	uint64 guid			= 1;
+	string sig				= 2;
+	int32 pck_id			= 3;
+	int32 pck_gold			= 4;
+	int32 pck_jewel		= 5;
+}
+
+message msg_common_ex {
+	uint64 guid			= 1;
+	string sig				= 2;
+}
+
+message cmsg_common {
+	msg_common comm		= 1;
+}
+
+message cmsg_common_ex {
+	msg_common_ex comm	= 1;
+}
+
+message cmsg_client_login {
+	string username		= 1;
+	string password		= 2;
+	string serverid		= 3;
+	string extra			= 4;
+	string device			= 5;
+	int32  version		    = 6;
+	string platform		= 7;
+	int32	lang_ver		= 8;
+}
+
+message smsg_client_login {
+	uint64 guid				= 1;
+	string sig					= 2;
+	dhc.player_t player		= 3;
+	repeated dhc.role_t roles			= 4;
+	repeated dhc.equip_t equips			= 5;
+	repeated dhc.pet_t pets				= 6;
+	uint64 server_time			= 7;
+	uint64 start_time			= 8;
+	repeated smsg_chat chats			= 9;
+	repeated smsg_chat guild_chats		= 10;
+	repeated dhc.treasure_t treasures 	= 11;
+	uint64 guild_time			= 12;
+	int32 is_new				= 13;
+	string device				= 14;
+	uint64 device_time         = 15;
+}
+
+message cmsg_player_name {
+	msg_common comm		= 1;
+	string name			= 2;
+}
+
+message cmsg_player_nalflag {
+	msg_common comm		= 1;
+	int32 nalflag		= 2;
+}
+
+message smsg_player_name {
+	int32 code_stat = 1;
+}
+
+message smsg_success {
+	bool success			= 1;
+}
+
+message cmsg_player_zsname {
+	msg_common comm		= 1;
+	string zsname			= 2;
+}
+
+message cmsg_player_template {
+	msg_common comm		= 1;
+	int32 template_id		= 2;
+}
+
+message msg_fight_text {
+	int32 fight_type			= 1;
+	repeated msg_fight_bo bos			= 2;
+	msg_fight_state end_state	= 3;
+	bool can_jump				= 4;
+	int32 fail_type			= 5;
+	int32 fail_param			= 6;
+}
+
+message msg_fight_bo {
+	msg_fight_state bo_state	= 1;
+	repeated msg_fight_tick ticks		= 2;
+}
+
+message msg_fight_state {
+	repeated msg_fight_role roles		= 1;
+}
+
+message msg_fight_role {
+	int32 site				= 1;
+	int32 duiwei			= 2;
+	int32 id				= 3;
+	double max_hp			= 4;
+	double cur_hp			= 5;
+	int32 nengliang		= 6;
+	repeated int32 buff_ids			= 7;
+	int32 jlevel			= 8;
+	int32 glevel			= 9;
+	int32 pinzhi			= 10;
+	int32 dress_id			= 11;
+	int32 guanghuan_id		= 12;
+}
+
+message msg_fight_tick {
+	int32 type				= 1;
+	repeated int32 values			= 2;
+	repeated double dvalues			= 3;
+}
+
+message cmsg_mission_fight_end {
+	msg_common comm		= 1;
+	int32 mission_id		= 2;
+}
+
+message smsg_mission_fight_end {
+	int32 result			= 1;
+	bytes text				= 2;
+	int32 star				= 3;
+	repeated int32 types 			= 4;
+	repeated int32 value1s 		= 5;
+	repeated int32 value2s 		= 6;
+	repeated int32 value3s 		= 7;
+	repeated dhc.equip_t equips = 8;
+  repeated dhc.treasure_t treasures = 9;
+  repeated dhc.role_t roles = 10;
+}
+
+message cmsg_mission_saodang {
+	msg_common comm		= 1;
+	int32 mission_id		= 2;
+	int32 num				= 3;
+}
+
+message smsg_mission_saodang {
+	repeated smsg_mission_fight_end saodangs	= 1;
+}
+
+message cmsg_mission_reward {
+	msg_common comm		= 1;
+	int32 map_id			= 2;
+	int32 reward_id		= 3;
+}
+
+message cmsg_mission_first {
+	msg_common comm		= 1;
+	int32 mission_id       = 2;
+}
+
+message smsg_mission_first {
+	repeated int32 types 				= 1;
+	repeated int32 value1s 				= 2;
+	repeated int32 value2s 				= 3;
+	repeated int32 value3s 				= 4;
+	repeated dhc.equip_t equips 		= 5;
+	repeated dhc.treasure_t treasures 	= 6;
+	repeated dhc.role_t roles			= 7;
+}
+
+message cmsg_zhenxing {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+	int32  index			= 3;
+}
+
+message cmsg_duixing {
+	msg_common comm		= 1;
+	int32      src_site	= 2;
+	int32		dest_site	= 3;
+}
+
+message cmsg_duixing_on {
+	msg_common comm		= 1;
+	int32      id			= 2;
+}
+
+message cmsg_role_equip {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+	repeated int32 index			= 3;
+	repeated uint64 equip_guid		= 4;
+}
+
+message cmsg_guanghuan_on {
+	msg_common comm		= 1;
+	int32      id			= 2;
+}
+
+message cmsg_guanghuan_level {
+	msg_common comm		= 1;
+	int32      id			= 2;
+}
+
+message cmsg_guanghuan_init {
+	msg_common comm		= 1;
+	int32      id			= 2;
+}
+
+message cmsg_role_all_equip {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+	repeated int32 equip_index		= 3;
+	repeated uint64 equip_guid		= 4;
+	repeated int32 treasure_index	= 5;
+	repeated uint64 treasure_guid	= 6;
+}
+
+message cmsg_chouka {
+	msg_common comm		= 1;
+	int32 type				= 2;
+}
+
+message smsg_chouka {
+	int32 type				= 1;
+	uint64 ck2_free_time	= 3;
+	int32 jewel			= 5;
+	repeated int32 item_ids			= 6;
+	repeated int32 item_nums		= 7;
+    repeated dhc.role_t roles       = 8;
+}
+
+message cmsg_role_upgrade {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+	int32 level			= 3;
+}
+
+message cmsg_role_tupo {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+}
+
+message cmsg_role_jinjie {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+}
+
+message cmsg_role_suipian {
+	msg_common comm		= 1;
+	uint32 item_id			= 2;
+}
+
+message cmsg_role_duihuan {
+	msg_common comm		= 1;
+	uint32 item_id			= 2;
+}
+
+message smsg_role_duihuan {
+	dhc.role_t role		= 1;
+}
+
+message cmsg_role_skillup {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+	int32 index			= 4;
+}
+
+message smsg_role_skillup {
+	int32 exp				= 1;
+	int32 num				= 2;
+}
+
+message cmsg_role_shengpin {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+}
+
+message cmsg_role_bskillup {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2; 
+}
+
+message cmsg_role_dress_on {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+	int32 dress_id			= 3;
+}
+
+message cmsg_role_dress_off {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+	int32 dress_id			= 3;
+}
+
+message cmsg_role_init {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+}
+
+message cmsg_role_fj {
+	msg_common comm		= 1;
+	repeated uint64 role_guid		= 2;
+}
+
+message smsg_role_init {
+	repeated int32 types   = 1;
+	repeated int32 value1s = 2;
+	repeated int32 value2s = 3;
+	repeated int32 value3s = 4;
+	int32 yuanli  = 5;
+  repeated dhc.equip_t equips = 6;
+  repeated dhc.treasure_t treasures = 7;
+  repeated dhc.role_t roles = 8;
+}
+
+message cmsg_role_xq_look {
+	msg_common comm		= 1;
+	int32 value = 2;
+}
+
+message smsg_role_xq_look {
+	repeated uint64 guid = 1;
+	repeated int32 xq =	2;
+	int32 jb				= 3;
+	int32 zs				= 4;		
+}
+
+message cmsg_role_yh_look {
+	msg_common comm		= 1;
+	int32 value = 2;
+}
+
+message smsg_role_yh_look {
+	repeated uint64 guid = 1;
+	repeated int32 pos = 2;
+}
+
+message cmsg_role_yh_select {
+	msg_common comm		= 1;
+	uint64 guid = 2;
+	int32 index = 3;
+}
+
+message smsg_role_yh_select {
+	uint64 	guid 	= 1;
+	int32 		xq 		= 2;
+	int32 		jewel 	= 3;
+}
+
+message cmsg_role_huiyi_chou {
+	msg_common comm		= 1;
+	int32      type		= 2;
+}
+
+message smsg_role_huiyi_chou {
+	repeated int32		ids			= 1;
+}
+
+message cmsg_role_huiyi_jihuo {
+	msg_common comm		= 1;
+	int32      id			= 2;
+}
+
+message smsg_role_huiyi_zhanpu {
+	repeated int32       ids		= 1;
+}
+
+message cmsg_role_huiyi_fanpai {
+	msg_common comm		= 1;
+	int32        id        = 2;
+}
+
+message smsg_role_huiyi_rank {
+	dhc.rank_t rank_list	= 1;
+	int32      rank		= 2;
+}
+
+message cmsg_role_suipian_gaizao {
+	msg_common comm		= 1;
+	int32      src_suipian = 2;
+	int32		src_num		= 3;
+	int32		target_suipian = 4;
+}
+
+message cmsg_equip_enhance {
+	msg_common comm		= 1;
+	uint64 equip_guid		= 2;
+	int32 enhance_num		= 3;
+}
+
+message cmsg_equip_auto_enhance {
+	msg_common comm		= 1;
+	repeated uint64 equip_guid		= 2;
+	repeated int32 enhance_num		= 3;
+}
+
+message cmsg_equip_sell {
+	msg_common comm		= 1;
+	repeated uint64 equip_guids		= 2;
+}
+
+message cmsg_equip_init {
+	msg_common comm		= 1;
+	uint64 equip_guids     = 2;
+}
+
+message smsg_equip_init {
+	repeated int32 types 	= 1;
+	repeated int32 value1s 	= 2;
+	repeated int32 value2s 	= 3;
+	repeated int32 value3s 	= 4;
+  repeated dhc.equip_t equips = 5;
+  repeated dhc.treasure_t treasures = 6;
+  repeated dhc.role_t roles = 7;
+}
+
+message cmsg_equip_suipian {
+	msg_common comm		= 1;
+	uint32 item_id			= 2;
+}
+
+message smsg_equip_suipian {
+	dhc.equip_t equip		= 1;
+}
+
+message cmsg_equip_ronglian {
+	msg_common comm		= 1;
+	uint64 equip_guid      = 2;
+	int32 suipian_id		= 3;
+}
+
+message cmsg_gm_command {
+	msg_common comm		= 1;
+	string text			= 2;
+}
+
+message smsg_gm_command {
+	int32 type					= 1;
+	int32 value1				= 2;
+	int32 value2				= 3;
+	int32 value3				= 4;
+	repeated dhc.role_t roles			= 5;
+	repeated dhc.equip_t equips			= 6;
+	repeated dhc.treasure_t treasures  	= 7;
+    repeated int32         types = 8;
+    repeated int32         value1s = 9;
+    repeated int32         value2s = 10;
+    repeated int32         value3s = 11;
+	repeated dhc.pet_t     pets = 12;
+
+}
+
+message cmsg_equip_gaizao {
+	msg_common comm		= 1;
+	uint64 equip_guid		= 2;
+	repeated int32 suos				= 3;
+}
+
+message smsg_equip_gaizao {
+	dhc.equip_t equip		= 1;
+	int32 num				= 2;
+}
+
+message cmsg_equip_gaizao_buy {
+	msg_common comm		= 1;
+	int32 count			= 2;
+}
+
+message cmsg_equip_lock {
+	msg_common comm		= 1;
+	uint64 equip_guid		= 2;
+}
+
+message cmsg_equip_star {
+	msg_common comm		= 1;
+	uint64 star_guid   	= 2;
+	uint64 equip_guid  	= 3;
+}
+
+message cmsg_equip_jinlian {
+	msg_common comm		= 1;
+	uint64 equip_guid  	= 2;
+	int32  level           = 3;
+}
+
+message cmsg_item_sell {
+	msg_common comm		= 1;
+	uint32 item_id			= 2;
+	int32  item_num		= 3;
+}
+
+message cmsg_item_sell_all {
+	msg_common comm		= 1;
+	repeated uint32 item_ids		= 2;
+}
+
+message cmsg_item_apply {
+	msg_common comm		= 1;
+	uint32 item_id			= 2;
+	int32  item_count		= 3;
+    int32  item_index      = 4;
+}
+
+message smsg_item_apply {
+	repeated int32 types				= 1;
+	repeated int32 value1s			= 2;
+	repeated int32 value2s			= 3;
+	repeated int32 value3s			= 4;
+	repeated dhc.role_t roles		= 5;
+	repeated dhc.equip_t equips		= 6;
+	repeated dhc.treasure_t treasures = 7;
+  repeated int32 role_ids = 8;
+  repeated dhc.pet_t pets = 9;
+}
+
+message cmsg_item_fenjie {
+	msg_common comm		= 1;
+	repeated uint32 item_id			= 2;
+}
+
+message cmsg_item_direct_buy {
+	msg_common comm		= 1;
+	int32 item_id 			= 2;
+	int32 item_count       = 3;
+}
+
+message cmsg_player_task {
+	msg_common comm		= 1;
+	uint32 task_id			= 2;
+}
+
+message cmsg_shop_refresh {
+	msg_common comm		= 1;
+	int32 type				= 2;
+}
+
+message smsg_shop_refresh {
+	repeated uint32 shop1_ids			= 1;
+	repeated int32 shop1_sell			= 2;
+	repeated uint32 shop2_ids			= 3;
+	repeated int32 shop2_sell			= 4;
+	repeated uint32 shop3_ids			= 5;
+	repeated int32 shop3_sell			= 6;
+	repeated uint32 guild_shop_ids		= 7;
+	repeated int32  guild_shop_sell		= 8;
+	repeated uint32 shop4_ids			= 9;
+	repeated int32  shop4_sell			= 10;
+	repeated uint32  shoppet_ids		= 11;
+	repeated int32  shoppet_sell		= 12;
+}
+
+message cmsg_shop_buy {
+	msg_common comm		= 1;
+	int32 type				= 2;
+	int32 gezi				= 3;
+	int32 item_id			= 4;
+	int32 num				= 5;
+}
+
+message smsg_shop_buy {
+    repeated int32 types    = 1;
+    repeated int32 value1s  = 2;
+    repeated int32 value2s  = 3;
+    repeated int32 value3s  = 4;
+	repeated dhc.equip_t equips		= 5;
+	repeated dhc.treasure_t treasures = 6;
+    repeated dhc.role_t roles = 7;
+}
+
+message cmsg_shop_xg {
+	msg_common comm		= 1;
+	int32 shop_id			= 2;
+	int32 shop_num			= 3;
+}
+
+message cmsg_active_reward {
+	msg_common comm		= 1;
+	int32 id				= 2;
+}
+
+message smsg_active_reward {
+    repeated int32         types = 1;
+    repeated int32         value1s = 2;
+    repeated int32         value2s = 3;
+    repeated int32         value3s = 4;
+	repeated dhc.treasure_t treasures = 5;
+    repeated dhc.equip_t equips = 6;
+    repeated dhc.role_t roles = 7;
+}
+
+message cmsg_active_score_reward {
+	msg_common comm		= 1;
+	int32 reward_id		= 2;
+}
+
+message smsg_active_score_reward {
+    repeated int32         types = 1;
+    repeated int32         value1s = 2;
+    repeated int32         value2s = 3;
+    repeated int32         value3s = 4;
+	repeated dhc.treasure_t treasures = 5;
+    repeated dhc.equip_t equips = 6;
+    repeated dhc.role_t roles = 7;
+}
+
+message smsg_post_look {
+	repeated dhc.post_t posts		= 1;
+}
+
+message cmsg_post_get {
+	msg_common comm		= 1;
+	uint64 post_guid		= 2;
+}
+
+message smsg_post_get {
+	repeated dhc.equip_t equips		= 1;
+	repeated dhc.treasure_t treasures = 2;
+  repeated dhc.role_t roles = 3;
+  repeated int32      types = 4;
+  repeated int32      value1s = 5;
+  repeated int32      value2s = 6;
+  repeated int32      value3s = 7;
+  repeated dhc.pet_t	  pets = 8;
+
+}
+
+message cmsg_post_view {
+	msg_common comm		= 1;
+	uint64 post_guid		= 2;
+}
+
+message smsg_post_view {
+	uint64 post_guid		= 1;
+}
+
+message msg_sport_player {
+	uint64 player_guid			= 1;
+	int32 player_template		= 2;
+	bytes player_name			= 3;
+	int32 player_level			= 4;
+	int32 player_bat_eff		= 5;
+	int32 player_rank			= 6;
+	int32 player_isnpc			= 7;
+    int32 player_vip           = 8;
+    int32 player_achieve       = 9;
+	int32 player_chenghao      = 10;
+	int32 player_nalflag       = 11;
+}
+
+message smsg_sport_look {
+	repeated msg_sport_player players	= 1;
+	int32 rank					= 2;
+	repeated dhc.sport_t sports			= 4;
+	int32 last_rank			= 5;
+	int32 can_get				= 6;
+	int32 max_rank				= 7;
+}
+
+message smsg_sport_top {
+	repeated msg_sport_player players	= 1;
+}
+
+message cmsg_sport_fight_end {
+	msg_common comm		= 1;
+	int32 index			= 2;
+}
+
+message smsg_sport_fight_end {
+	int32 result	= 1;
+	bytes text		= 2;
+	int32 cid		= 3;
+	int32 pgold	= 4;
+	int32 max_rank	= 5;
+    repeated int32 types    = 6;
+    repeated int32 value1s  = 7;
+    repeated int32 value2s  = 8;
+    repeated int32 value3s  = 9;
+    repeated dhc.equip_t equips       = 10;
+    repeated dhc.treasure_t treasures = 11;
+    repeated dhc.role_t roles         = 12;
+}
+
+message cmsg_sport_saodang {
+	msg_common comm		= 1;
+	int32 index			= 2;
+	int32 num				= 3;
+	bool use_item			= 4;
+}
+
+message smsg_sport_saodang {
+	repeated smsg_sport_fight_end saodangs = 1;
+	int32 item_num				   = 2;
+}
+
+message smsg_sport_shop_list {
+	repeated uint32 shop_ids			= 1;
+	repeated int32 shop_sells			= 2;
+}
+
+message cmsg_sport_shop_buy {
+	msg_common comm		= 1;
+	int32 id				= 2;
+}
+
+message smsg_sport_shop_buy {
+	repeated dhc.equip_t equips			= 1;
+	repeated dhc.treasure_t treasures 	= 2;
+}
+
+message cmsg_recharge {
+	msg_common comm		= 1;
+	int32 id				= 2;
+	int32 huodong_id		= 3;
+	int32 entry_id			= 4;
+	string code			= 5;
+}
+
+message smsg_first_recharge {
+	repeated dhc.equip_t equips		= 1;
+	repeated dhc.treasure_t treasures = 2;
+	repeated dhc.role_t roles = 3;
+    repeated int32         types = 4;
+    repeated int32         value1s = 5;
+    repeated int32         value2s = 6;
+    repeated int32         value3s = 7;
+
+}
+
+message cmsg_vip_reward {
+	msg_common comm		= 1;
+	int32 vip				= 2;
+}
+
+message smsg_vip_reward {
+	repeated dhc.equip_t equips		= 1;
+	repeated dhc.treasure_t treasures = 2;
+  repeated dhc.role_t roles = 3;
+  repeated int32      types = 4;
+  repeated int32      value1s = 5;
+  repeated int32      value2s = 6;
+  repeated int32      value3s = 7;
+
+}
+
+message smsg_dj_reward {
+	int32 bs				= 1;
+	int32 gold				= 2;
+}
+
+message smsg_boss_look {
+	int64 cur_hp			= 1;
+	int64 max_hp			= 2;
+	int64 myhit			= 3;
+	int32 num				= 4;
+	int32 rank				= 5;
+	int32 level			= 8;
+	int64 tophit     = 9;
+  int32 toprank    = 10;
+	int32 reward			= 11;
+}
+
+message smsg_boss_rank {
+	repeated string total_names		= 1;
+    repeated int32  total_templates = 2;
+	repeated int64  total_hits      = 3;
+    repeated int32  total_levels    = 4;
+    repeated uint64 total_guids     = 5;
+    repeated int32  total_vips      = 6;
+    repeated int32  total_achieves  = 7;
+	repeated int32  total_chenghaos = 8;
+	repeated int32  total_nalflags   = 9;
+    repeated string top_names       = 10;
+    repeated int32  top_templates   = 11;
+    repeated int64  top_hits        = 12;
+    repeated int32  top_levels      = 13;
+    repeated uint64 top_guids       = 14;
+    repeated int32  top_vips        = 15;
+    repeated int32  top_achieves    = 16;
+	repeated int32  top_chenghaos	= 17;
+	repeated int32  top_nalflag		= 18;
+}
+
+
+message smsg_boss_fight_end {
+	int32 result		  = 1;
+	bytes text			  = 2;
+  int64 hit        = 3;
+  int32 btop_rank   = 4;
+  int32 bmax_rank   = 5;
+  int32 atop_rank   = 6;
+  int32 amax_rank   = 7;
+  int32 medal       = 8;
+  int32 hit_medal   = 9;
+  int32 baoji       = 10;
+}
+
+message smsg_boss_active_look {
+	repeated int32 ids  	= 1;
+	repeated int64 nums 	= 2;
+	repeated int32 rewards 	= 3;
+	int32 level    = 4;
+}
+
+message cmsg_boss_saodang {
+	msg_common comm		= 1;
+	int32 num				= 2;
+	bool  use_item			= 3;
+}
+
+message smsg_boss_saodang {
+	repeated int32 level 	= 1;
+	repeated int64  hit  	= 2;
+	repeated int32 medal 	= 3;
+	repeated bool  use_item = 4;
+	int32 btop_rank   = 5;
+    int32 bmax_rank   = 6;
+    int32 atop_rank   = 7;
+    int32 amax_rank   = 8;
+}
+
+message cmsg_chat_ex {
+	msg_common_ex comm		= 1;
+	int32 type				= 2;
+	string text			= 3;
+	string color			= 4;
+	string target_name		= 5;
+}
+
+message smsg_chat {
+	uint64 player_guid		= 1;
+	string player_name		= 2;
+	uint32 player_template	= 3;
+	int32 vip				= 4;
+	int32 level			= 5;
+	int32 type				= 6;
+	string text			= 7;
+	uint64 time			= 8;
+	string color			= 9;
+	int32 is_danmu			= 10;
+	uint64 target_guid		= 11;
+	string target_name		= 12;
+	int32  chenghao        = 13;
+	int32  nalflag         = 14;
+}
+
+message pmsg_chat {
+	smsg_chat msg_chat		= 1;
+	repeated uint64 player_guids	= 2;
+}
+
+message smsg_online_reward {
+	repeated dhc.equip_t equips		= 1;
+	repeated dhc.treasure_t treasures = 2;
+  repeated dhc.role_t roles = 3;
+  repeated int32      types = 4;
+  repeated int32      value1s = 5;
+  repeated int32      value2s = 6;
+  repeated int32      value3s = 7;
+}
+
+message smsg_daily_sign {
+	repeated dhc.equip_t equips		= 1;
+	repeated dhc.treasure_t treasures = 2;
+	repeated dhc.role_t roles = 3;
+    repeated int32      types = 4;
+  repeated int32      value1s = 5;
+  repeated int32      value2s = 6;
+  repeated int32      value3s = 7;
+
+}
+
+message smsg_hbb_look {
+	repeated uint32 class_ids		= 1;
+}
+
+message smsg_hbb_fight_end {
+	int32 result			= 1;
+	bytes text				= 2;
+	repeated int32 types				= 11;
+	repeated int32 value1s			= 12;
+	repeated int32 value2s			= 13;
+	repeated int32 value3s			= 14;
+	repeated int32 class_ids		= 15;
+	repeated dhc.equip_t equips		= 16;
+	repeated dhc.treasure_t treasures = 17;
+	repeated dhc.role_t roles = 18;
+}
+
+message cmsg_ttt_fight_end {
+	msg_common comm		= 1;
+	int32 nd				= 2;
+}
+
+message smsg_ttt_fight_end {
+	int32 result	  = 1;
+	bytes text		  = 2;
+	int32 index	  = 3;
+	int32 nd		  = 4;
+	int32 mibao      = 5;
+    int32 baoji1     = 6;
+    int32 baoji2     = 7;
+    repeated int32 types      = 8;
+    repeated int32 value1s    = 9;
+    repeated int32 value2s    = 10;
+    repeated int32 value3s    = 11;
+    repeated dhc.equip_t equips		= 12;
+	repeated dhc.treasure_t treasures = 13;
+	repeated dhc.role_t roles = 14;
+
+}
+
+message smsg_ttt_sanxing {
+  repeated smsg_ttt_fight_end subs = 1;
+}
+
+message smsg_ttt_value_look {
+	repeated int32 ids				= 1;
+}
+
+message cmsg_ttt_value {
+	msg_common comm		= 1;
+	int32 index			= 2;
+}
+
+message cmsg_qiyu_fight_end {
+	 msg_common comm		= 1;
+	int32 index			= 2;
+}
+
+message smsg_qiyu_fight_end {
+	int32 result	  = 1;
+	bytes text		  = 2;
+    repeated int32 types      = 3;
+    repeated int32 value1s    = 4;
+    repeated int32 value2s    = 5;
+    repeated int32 value3s    = 6;
+    repeated dhc.equip_t equips		= 7;
+	repeated dhc.treasure_t treasures = 8;
+	repeated dhc.role_t roles = 9;
+}
+
+message smsg_qiyu_check {
+	repeated int32 qiyu_mission = 1;
+	repeated int32 qiyu_hard    = 2;
+	repeated int32 qiyu_suc     = 3;
+}
+
+message cmsg_player_look {
+	msg_common comm		= 1;
+	uint64 target_guid		= 2;
+}
+
+message smsg_player_look {
+	uint32 template_id		= 1;
+	int32 level			= 2;
+	string name			= 3;
+	int32 bf				= 4;
+	int32 vip				= 5;
+	repeated dhc.role_t roles		= 6;
+	repeated int32 roles_sx			= 7;
+	repeated dhc.equip_t equips		= 8;
+	repeated dhc.treasure_t treasures = 9;
+	repeated dhc.pet_t  pets		= 10;
+	repeated int32 pets_sx		= 11;
+    string guild       = 12;
+    int32 achieves     = 13;
+	int32 chenghao     = 14;
+	uint64 guid        = 15;
+	string serverid     = 16;
+	int32 nalflag       = 17;
+}
+
+message smsg_random_event_look {
+	int32 id				= 1;
+}
+
+message cmsg_random_event_get {
+	msg_common comm		= 1;
+	int32 index			= 2;
+}
+
+message smsg_random_event_get {
+	uint64 random_event_time	= 1;
+}
+
+message smsg_gundong {
+	string text			= 1;
+}
+
+message smsg_gundong_server {
+	string text			= 1;
+	repeated string gundong_Pars	= 2;
+}
+
+message cmsg_mission_goumai {
+	msg_common comm		= 1;
+	int32 mission_id		= 2;
+}
+
+message cmsg_guild_create {
+	msg_common comm		= 1;
+	string guild_name		= 2;
+}
+
+message cmsg_guild_apply {
+	msg_common comm		= 1;
+	uint64 guild_guid		= 2;
+}
+
+message cmsg_guild_agree {
+	msg_common comm		= 1;
+	uint64 player_guid		= 2;
+    bool   argree          = 3;
+}
+
+message cmsg_guild_join {
+	msg_common comm		= 1;
+	uint64 guild_guid		= 2;
+}
+
+message smsg_guild_data {
+	dhc.guild_t guild		= 1;
+	int32 zhiwu			= 2;
+	repeated dhc.guild_event_t	guild_event	= 3;
+	int32 success			= 4;
+    bool can_mobai     = 5;
+    bool can_fight     = 6;
+    int32 msg_count    = 7;
+    bool has_apply     = 8;
+	bool has_hongbao   = 9;
+	bool guildpvp		= 10;
+}
+	
+message smsg_guild_list_recommend {
+	repeated uint64 guild_guids		= 1;
+	repeated string guild_names 	= 2;
+	repeated int32  guild_levels 	= 3;
+	repeated int32  guild_members 	= 4;
+	repeated int32  guild_icons		= 5;
+    repeated uint64 apply_list      = 6;
+}
+
+message cmsg_guild_query {
+	msg_common comm		= 1;
+	string guild_name		= 2;
+}
+
+message cmsg_guild_modify_bulletin {
+	msg_common comm		= 1;
+	string bulletin		= 2;
+}
+
+message cmsg_guild_modify_icon {
+	msg_common comm		= 1;
+	int32 icon				= 2;
+}
+
+message cmsg_guild_change_member_duty {
+	msg_common comm		= 1;
+	uint64 member_guid		= 2;
+	int32 new_duty			= 3;
+}
+
+message cmsg_guild_kick_member {
+	msg_common comm		= 1;
+	uint64 member_guid		= 2;
+}
+
+message cmsg_guild_set_join_condition {
+	msg_common comm		= 1;
+	int32	min_bf			= 2;
+}
+
+message cmsg_guild_sign_in {
+	msg_common comm		= 1;
+	int32 sign_in_type		= 2;
+}
+
+message cmsg_guild_sign_reward {
+	msg_common comm		= 1;
+	int32 id				= 2;
+}
+
+message smsg_guild_message_view {
+	repeated dhc.guild_message_t    msgs = 1;
+}
+
+message cmsg_guild_message_add {
+	msg_common comm		= 1;
+	string text            = 2;
+}
+
+message cmsg_guild_message_delete {
+	msg_common comm		= 1;
+	uint64 msg_guid        = 2;
+}
+
+message cmsg_guild_message_top {
+	msg_common comm		= 1;
+	uint64 msg_guid        = 2;
+}
+
+message smsg_guild_member_view {
+	repeated dhc.guild_member_t guild_members	= 1;
+}
+
+message smsg_guild_ranking {
+	repeated string guild_names 	= 1;
+	repeated int32  guild_levels 	= 2;
+	repeated int32  guild_members 	= 3;
+	repeated int32  guild_icons		= 4;
+}
+
+message smsg_guild_mission_ranking {
+	repeated string guild_name = 1;
+	repeated int32  icon	   = 2;
+	repeated int32  ceng       = 3;
+	repeated int32  bot		   = 4;
+	repeated int64  hp		   = 5;
+	repeated int64  max_hp     = 6;
+	repeated int32  guild_level = 7; 
+}
+
+message smsg_guild_activity {
+    int32 sign_flag        = 1;
+	repeated int32 mobai_ids		= 2;
+}
+
+message cmsg_guild_shop_buy {
+	msg_common comm		= 1;
+	int32	shop_id			= 2;
+}
+
+message smsg_guild_mission_look {
+	dhc.guild_mission_t mission 	= 1;
+	int32               num     	= 2;
+	int32               buy_num   	= 3;
+	uint64				 last_time  = 4;
+	repeated int32				 mission_rewards = 5;
+}
+
+message cmsg_guild_mission_fight_end {
+	msg_common comm		= 1;
+	int32	index			= 2;
+}
+
+message smsg_guild_mission_fight_end {
+	int32 result			= 1;
+	bytes text				= 2;
+	int32 contri			= 3;
+	int32 hit_contri		= 4;
+	double hit				= 5;
+}
+
+message cmsg_guild_mission_complete_reward_view {
+	msg_common comm		= 1;
+	int32 ceng				= 2;
+}
+
+message smsg_guild_mission_complete_reward_view {
+	repeated dhc.guild_box_t  boxes = 1;
+}
+
+message cmsg_guild_mission_complete_reward {
+	msg_common comm		= 1;
+	int32 ceng				= 2;
+	int32 index			= 3;
+	int32 box				= 4;
+}
+
+message smsg_guild_mission_complete_reward {
+	int32 reward_index     = 1;
+}
+
+message cmsg_guild_mission_ceng_reward {
+	msg_common comm		= 1;
+	int32	ceng			= 2;
+}
+
+message cmsg_guild_keji {
+	msg_common comm		= 1;
+	int32 id				= 2;
+}
+
+message cmsg_guild_red_deliver {
+	msg_common comm		= 1;
+	int32 id               = 2;
+	string text            = 3;
+}
+
+message smsg_guild_red_deliver {
+	dhc.guild_red_t  guild_red = 1;
+}
+
+message smsg_guild_red_view {
+	repeated dhc.guild_red_t guild_reds = 1;
+}
+
+message cmsg_guild_red_rob {
+	msg_common comm		= 1;
+	uint64 guid            = 2;
+}
+
+message smsg_guild_red_rob {
+	int32 jewel = 1;
+}
+
+message cmsg_guild_red_target {
+	msg_common comm		= 1;
+	int32 id               = 2;
+}
+
+message cmsg_guild_look_zhankuang {
+	msg_common comm		= 1;
+	uint64 guild			= 2;
+	int32  type			= 3;
+}
+
+message smsg_guild_look_zhankuang {
+	repeated string guild_name 			= 1;
+	repeated int32  guild_icon 			= 2;
+	int32  guild_zhanji		= 3;
+	repeated int32  guild_player_nums 	= 4;
+	repeated int32  guild_val_nums 		= 5;
+	repeated int32  guild_level         = 6;
+}
+
+message cmsg_guild_look_zhanji {
+	msg_common comm		= 1;
+	uint64 guild			= 2;
+}
+
+message smsg_guild_look_zhanji {
+	repeated uint64  player_guids			= 10;
+	repeated string  player_names			= 11;
+	repeated int32   player_template		= 12;
+	repeated int32   player_level			= 13;
+	repeated int32   player_bat_eff		    = 14;
+	repeated int32   player_vip			    = 15;
+	repeated int32   player_achieve			= 16;
+	repeated int32   player_zhanjis			= 17;
+	repeated int32   player_total_zhanjis	= 18;
+	repeated int32   player_nalflags		= 19;
+}
+
+message tmsg_guild_pvp_load {
+	repeated dhc.guild_arrange_t ars = 1;
+}
+
+message tmsg_guild_pvp_load_fight {
+	repeated dhc.guild_fight_t 	ars = 1;
+}
+
+message msg_guild_member_info {
+	repeated uint64  player_guids			= 1;
+	repeated string  player_names			= 2;
+	repeated int32   player_template		= 3;
+	repeated int32   player_level			= 4;
+	repeated int32   player_bat_eff		    = 5;
+	repeated int32   player_vip			    = 6;
+	repeated int32   player_achieve			= 7;
+	repeated uint64  player_join_time       = 8;
+}
+
+message msg_guild_arrange {
+	repeated uint64  player_guids			= 1;
+	repeated string  player_names			= 2;
+	repeated int32   player_template		= 3;
+	repeated int32   player_level			= 4;
+	repeated int32   player_bat_eff		    = 5;
+	repeated int32   player_vip			    = 6;
+	repeated int32   player_achieve			= 7;
+}
+
+message msg_guild_zhanji {
+	int32 guild_zhanji           = 1;
+	int32 guild_total_zhanji     = 2;
+	int32 guild_exp              = 3;
+	int32 zhanji                 = 4;
+	int32 total_zhanji           = 5;
+	int32 judian                 = 6;
+	int32 jidi                   = 7;
+	int32 perfect                = 8;
+	msg_guild_member_info  bushu = 9;
+}
+
+message msg_guild_fight {
+	repeated msg_guild_fight_info fights 	= 1;
+	int32 guild_zhanji 			= 2;
+	int32 zhanji 					= 3;
+	int32 total_zhanji 			= 4;
+	repeated int32 reward_ids				= 5;
+	int32 judian                   = 6;
+	int32 jidi                     = 7;
+	int32 perfect                  = 8;      
+}
+
+message msg_guild_fight_info {
+	uint64  guild					= 1;
+	int32   guild_server			= 2;
+	string  guild_name				= 3;
+	int32   guild_icon             = 4;
+	int32   guild_level            = 5;
+	repeated uint64  target_guids			= 6;
+	repeated string  target_names			= 7;
+	repeated int32   target_templates		= 8;
+	repeated int32   target_levels			= 9;
+	repeated int32   target_bat_effs		= 10;
+	repeated int32   target_vips			= 11;
+	repeated int32   target_achieves		= 12;
+	repeated int32	 target_defense_nums	= 13;
+	repeated int32   guard_points           = 14;
+	repeated int32   guard_gongpo           = 15;
+	
+}
+
+message smsg_guild_fight_pvp_look {
+	int32 stat = 1;
+	msg_guild_arrange arrange = 2;
+	msg_guild_zhanji zhanji = 3;
+	msg_guild_fight fight = 4;
+	msg_guild_member_info member = 5;
+}
+
+message cmsg_guild_pvp_bushu {
+	msg_common comm		= 1;
+	repeated uint64 player_guids	= 2;
+}
+
+message cmsg_guild_fight {
+	msg_common comm		= 1;
+	uint64 target_guild	= 2;
+	int32 target_index  	= 3;
+}
+
+message smsg_guild_fight {
+	bytes     text 	   = 1;
+	int32     result 	   = 2; 
+	int32     guard_point = 3;
+	int32     gongxian    = 4;
+	int32     zhanji	   = 5;
+	int32     judian      = 6;
+	int32     jidi        = 7;
+	int32     perfect     = 8;
+}
+
+message cmsg_guild_pvp_reward {
+	msg_common comm		= 1;
+	int32 id       	    = 2;
+}
+
+message cmsg_rank_view {
+	msg_common comm		= 1;
+	int32  type			= 2;
+}
+
+message smsg_rank_view {
+	dhc.rank_t rank_list	= 1;
+}
+
+message smsg_social_look {
+	repeated dhc.social_t social		= 1;
+}
+
+message msg_social_player {
+	uint64 player_guid		= 1;
+	string player_name		= 2;
+	uint64 player_template	= 3;
+	int32	player_level	= 4;
+	uint64 player_bf		= 5;
+    int32  player_vip      = 6;
+    int32  player_achieve  = 7;
+	uint64 offline_time    = 8;
+	int32 nalflag			= 9;
+}
+
+message smsg_social_rand {
+	repeated msg_social_player social_player	= 1;
+}
+
+message cmsg_social_add {
+	msg_common comm		= 1;
+	uint64 player_guid		= 2;
+}
+
+message smsg_social_add {
+	uint64 player_guid		= 1;
+}
+
+message smsg_social_look_new {
+	repeated msg_social_player social_player	= 1;
+}
+
+message cmsg_social_agree {
+	msg_common comm		= 1;
+	uint64 player_guid		= 2;
+	int32 agree			= 3;
+}
+
+message smsg_social_agree {
+	uint64 player_guid		= 1;
+	int32 agree			= 2;
+}
+
+message cmsg_social_delete {
+	msg_common comm		= 1;
+	uint64 social_guid		= 2;
+}
+
+message smsg_social_delete {
+	uint64 social_guid		= 1;
+}
+
+message cmsg_social_song {
+	msg_common comm		= 1;
+	uint64 social_guid		= 2;
+}
+
+message smsg_social_song {
+	uint64 social_guid		= 1;
+}
+
+message smsg_social_shou {
+	repeated uint64 social_guids	= 1;
+}
+
+message cmsg_social_invite_active {
+	msg_common comm		= 1;
+	int32 id				= 2;
+}
+
+message smsg_player_check {
+	int32 post				= 1;
+	int32 friend_apply		= 2;
+	int32 friend_tili		= 3;
+	int32 kaifu			= 4;
+	int32 pttq				= 5;
+	int32 yb				= 6;
+	int32 qd				= 7;
+	int32 jjc				= 8;
+	int32 shop_refresh		= 9;
+    int32 guild            = 10;
+    string huodong         = 11;
+	string huodong_item1   = 12;
+	string huodong_des1	= 13;
+	string huodong_item2   = 14;
+	string huodong_des2    = 15;
+	bool   jieri_chanchu   = 16;
+	int32  jieri_point		= 17;
+	int32  xingheqidian    = 18;
+	int32  bingyuan		= 19;
+	int32  duanwei			= 20;
+}
+
+message cmsg_dress_on {
+	msg_common comm		= 1;
+	int32 dress_id			= 2;
+}
+
+message cmsg_dress_off {
+	msg_common comm		= 1;
+	int32 dress_id			= 2;
+}
+
+message cmsg_dress_buy {
+	msg_common comm		= 1;
+	int32 dress_id			= 2;
+}
+
+message cmsg_dress_unlock {
+	msg_common comm		= 1;
+	int32 dress_id			= 2;
+}
+
+message cmsg_dress_unlock_achieve {
+    msg_common comm        = 1;
+    int32 achieve_id       = 2;
+}
+
+message cmsg_libao {
+	msg_common comm		= 1;
+	string code			= 2;
+}
+
+message smsg_libao {
+	repeated int32 types				= 1;
+	repeated int32 value1s			= 2;
+	repeated int32 value2s			= 3;
+	repeated int32 value3s			= 4;
+	repeated dhc.equip_t equips		= 5;
+	repeated dhc.treasure_t treasures = 6;
+    repeated dhc.role_t roles = 7;
+	int32 chongzhi			= 8;
+}
+
+message cmsg_xjbz_get {
+	msg_common comm		= 1;
+	int32 site				= 2;
+}
+
+message smsg_xjbz_get {
+	int32 gold				= 1;
+	int32 baoshi			= 2;
+	int32 zz				= 3;
+}
+
+message smsg_recharge_check_ex {
+	repeated int32 rdz_ids				= 1;
+	repeated int32 rdz_counts			= 2;
+	repeated int32 type_judge					= 3;
+	repeated int32 types				= 4;
+	repeated int32 value1s				= 5;
+	repeated int32 value2s				= 6;
+	repeated int32 value3s				= 7;
+	repeated dhc.equip_t equips			= 8;
+	repeated dhc.treasure_t treasures	= 9;
+	repeated dhc.role_t roles			= 10;
+	repeated dhc.pet_t pets				= 11;
+}
+
+message cmsg_treasure_hecheng {
+	msg_common comm		= 1;
+	int32 id				= 2;
+}
+
+message smsg_treasure_hecheng {
+	dhc.treasure_t treasure  = 1;
+}
+
+message cmsg_treasure_init {
+	msg_common comm		= 1;
+	uint64 treasure_guids	= 2;
+}
+
+message smsg_treasure_init {
+	repeated int32 types 	= 1;
+	repeated int32 value1s 	= 2;
+	repeated int32 value2s 	= 3;
+	repeated int32 value3s 	= 4;
+	repeated dhc.treasure_t treasures = 5;
+  repeated dhc.equip_t equips = 6;
+  repeated dhc.role_t roles = 7;
+}
+
+message cmsg_treasure_enhance {
+	msg_common comm		= 1;
+	uint64 enhance_guid   	= 2;
+	repeated uint64 treasure_guids	= 3;
+}
+
+message cmsg_treasure_jinlian {
+	msg_common comm		= 1;
+	uint64 jinlian_guid   	= 2;
+	repeated uint64 treasure_guid  	= 3;
+}
+
+message smsg_treasure_jinlian {
+	repeated uint64 treasures		= 1;
+}
+
+message cmsg_treasure_star {
+	msg_common comm		= 1;
+	uint64 star_guid   	= 2;
+	repeated int32 types            = 3;
+}
+
+message smsg_treasure_star {
+	repeated int32  rates		= 1;
+	repeated int32  bjs			= 2;
+}
+
+message cmsg_treasure_ronglian {
+    msg_common comm        = 1;
+    uint64  treasure_guid  = 2;
+    int32   suipian_id     = 3;
+}
+
+message cmsg_treasure_zhuzao {
+    msg_common comm        = 1;
+    uint64  treasure_guid  = 2;
+}
+
+message smsg_treasure_zhuzao {
+	int32   level			= 1;
+	int32   exp			= 2;
+}
+
+message cmsg_treasure_lock {
+	msg_common comm		= 1;
+	uint64 treasure_guid   = 2;
+	bool  locked			= 3;
+}
+
+message cmsg_treasure_equip {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+	repeated int32 index			= 3;
+	repeated uint64 treasure_guid	= 4;
+}
+
+message cmsg_treasure_protect {
+	msg_common comm		= 1;
+	int32 type				= 2;
+}
+
+message smsg_treasure_protect {
+	uint64 next_time		= 1;
+	uint64 cd_time			= 2;
+}
+
+message cmsg_treasure_buy {
+	msg_common comm		= 1;
+	int32 type				= 2;
+}
+
+message cmsg_treasure_rob_view {
+	msg_common comm		= 1;
+	int32 treasure_suipian = 2;
+}
+
+message smsg_treasure_rob_view {
+	repeated uint64 player_guids 		= 1;
+	repeated bytes  player_names 		= 2;
+	repeated int32  player_templates 	= 3;
+	repeated int32  player_levels		= 4;
+	repeated int32  player_bfs			= 5;
+	repeated int32  player_rates		= 6;
+    repeated bool   player_npcs         = 7;
+    repeated int32  player_vips         = 8;
+    repeated int32  player_achieves     = 9;
+	repeated int32  player_chenghaos	= 10;
+	repeated int32  player_nalflags     = 11;
+}
+
+message cmsg_treasure_fight {
+	msg_common comm		= 1;
+	uint64 player_guid		= 2;
+}
+
+message smsg_treasure_fight {
+	dhc.player_t player		= 1;
+	repeated dhc.role_t roles			= 2;
+	repeated dhc.equip_t equips			= 3;
+	repeated dhc.treasure_t treasures 	= 4;
+}
+
+message cmsg_treasure_fight_end {
+	msg_common comm		= 1;
+	uint64 player_guid		= 2;
+}
+
+message smsg_treasure_fight_end {
+	int32 result			  = 1;
+	bytes text				  = 2; 
+	int32 suipian_id		= 3;
+	int32 card				  = 4;
+	int32 pgold		    = 5;
+  repeated int32 types        = 6;
+  repeated int32 value1s      = 7;
+  repeated int32 value2s      = 8;
+  repeated int32 value3s      = 9;
+  repeated dhc.equip_t equips = 10;
+  repeated dhc.treasure_t treasures = 11;
+  repeated dhc.role_t roles = 12;
+}
+
+message cmsg_treasure_saodang {
+	msg_common comm		= 1;
+	uint64 player_guid		= 2;
+}
+
+message cmsg_treasure_yijian_saodang {
+	msg_common comm		= 1;
+	int32 treasure_id		= 2;
+	bool  use_yaosui		= 3;
+}
+
+message smsg_treasure_saodang {
+	repeated smsg_treasure_fight_end rewards = 1;
+}
+
+message smsg_treasure_yijian_saodang {
+	repeated smsg_treasure_fight_end rewards = 1;
+	int32 yaosui_num				 = 2;
+	bool success					 = 3;
+}
+
+message smsg_treasure_point {
+	int32 has_point		= 1;
+}
+
+message cmsg_treasure_report_ex {
+	msg_common_ex comm		= 1;
+}
+
+message smsg_treasure_report {
+	repeated dhc.treasure_report_t reports 	= 1;
+	repeated int32 suipian_ids 				= 2;
+}
+
+message smsg_yb_refresh {
+	int32 type				= 1;
+}
+
+message cmsg_yb_look_ex {
+	msg_common_ex comm		= 1;
+	int32 player_id		= 2;
+}
+
+message msg_yb_player {
+	uint64 player_guid		= 1;
+	string player_name		= 2;
+	int32 player_level		= 3;
+	int32 player_bf		= 4;
+	int32 player_type		= 5;
+	int32 player_per		= 6;
+	uint64 start_time		= 7;
+	uint64 jiasu_time		= 8;
+	int32 player_ybq_num	= 9;
+    int32 player_vip       = 10;
+    int32 player_achieve   = 11;
+    int32 player_template  = 12;
+	int32 player_nalflag   = 13;
+}
+
+message msg_yb_info {
+	int32 info_id			= 1;
+	int32 type				= 2;
+	string player_name		= 3;
+	string target_name		= 4;
+	int32 yb_type			= 5;
+	int32 yuanli			= 6;
+}
+
+message msg_ybq_info {
+	int32 info_id			= 1;
+	int32 type				= 2;
+	string player_name		= 3;
+	int32 yuanli			= 4;
+}
+
+message smsg_yb_look {
+	repeated msg_yb_player players	= 1;
+	repeated msg_yb_info yb_infos	= 2;
+	repeated uint64 ybq_guids		= 3;
+	repeated msg_ybq_info ybq_infos	= 4;
+	int32 player_id		= 5;
+}
+
+message cmsg_yb_ybq_fight_end {
+	msg_common comm		= 1;
+	uint64 target_guid		= 2;
+}
+
+message smsg_yb_ybq_fight_end {
+	int32 result			= 1;
+	bytes text				= 2;
+	repeated int32 types      = 3;
+    repeated int32 value1s    = 4;
+    repeated int32 value2s    = 5;
+    repeated int32 value3s    = 6;
+    repeated dhc.equip_t equips = 7;
+    repeated dhc.treasure_t treasures = 8;
+    repeated dhc.role_t roles = 9;
+}
+
+message smsg_yb_reward {
+	int32 yuanli			= 1;
+}
+
+message cmsg_ore_fight_end {
+	msg_common comm		= 1;
+	int32 index			= 2;
+}
+
+message smsg_ore_fight_end {
+	int32 result			= 1;
+	bytes text				= 2; 
+  repeated int32 types      = 3;
+  repeated int32 value1s    = 4;
+  repeated int32 value2s    = 5;
+  repeated int32 value3s    = 6;
+  repeated dhc.role_t roles = 7;
+  repeated dhc.treasure_t treasures = 8;
+  repeated dhc.equip_t equips = 9;
+	int32 hp         = 10;
+}
+
+message smsg_pvp_view {
+	repeated uint64   player_guids 		= 1;
+	repeated string   player_names      = 2;
+	repeated int32	  player_templates 	= 3;
+	repeated int32    player_servers 	= 4;
+	repeated int32    player_bfs 		= 5;
+	repeated int32    player_points 	= 6;
+	repeated int32    player_wins		= 7;
+	repeated int32    player_vips		= 8;
+	repeated int32 	  player_achieves	= 9;
+	repeated int32    player_guanghuans = 10;
+	repeated int32    player_dress		= 11;
+	repeated int32    player_chenghaos  = 12;
+	repeated int32    player_nalflags   = 13;
+}
+
+message cmsg_pvp_fight_end {
+	msg_common comm		= 1;
+	int32 index			= 2;
+}
+
+message smsg_pvp_fight_end {
+	int32 result			= 1;
+	bytes text				= 2;
+	int32 pvp_point		= 3;
+	repeated int32 types      		= 4;
+	repeated int32 value1s    		= 5;
+	repeated int32 value2s    		= 6;
+	repeated int32 value3s    		= 7;
+	repeated dhc.role_t roles 		= 8;
+    repeated dhc.treasure_t treasures = 9;
+    repeated dhc.equip_t equips 	= 10;
+}
+
+message cmsg_bingyuan_fight {
+	msg_common comm		= 1;
+	uint64 id				= 2;
+}
+
+message smsg_bingyuan_fight_end {
+	int32 bingjing = 1;
+	int32 point	= 2;
+}
+
+message smsg_team_friend_view {
+	repeated uint64 guid = 1;
+	repeated string name = 2;
+	repeated int32  id	 = 3;
+	repeated int32  chenghao = 4;
+	repeated int32  bf = 5;
+	repeated string guild = 6;
+	repeated int32 level = 7;
+	repeated int32 vip = 8;
+	repeated int32 achieve = 9;
+	repeated int32 nalflag = 10;
+}
+
+message cmsg_team_invite_friend {
+	msg_common comm		= 1;
+	uint64 friends			= 2;
+}
+
+message cmsg_chenghao_on {
+	msg_common comm		= 1;
+	int32	id				= 2;
+}
+
+message cmsg_qiecuo {
+	msg_common comm		= 1;
+	uint64	target			= 2;
+}
+
+message smsg_qiecuo {
+	int32 result			= 1;
+	bytes text				= 2;
+}
+
+message cmsg_ds_fight {
+	msg_common comm		= 1;
+	uint64 id				= 2;
+}
+
+message smsg_ds_fight_end {
+	int32 xinpian = 1;
+	int32 point   = 2;
+	int32 ciliao  = 3;
+	int32 duanwei = 4;
+	int32 srank   = 5;
+	int32 grank   = 6;
+	uint64 cd_time = 7;
+}
+
+message cmsg_pet_on {
+	msg_common comm		= 1;
+	uint64 guid			= 2;
+}
+
+message cmsg_pet_guard {
+	msg_common comm		= 1;
+	uint64 role_guid		= 2;
+	uint64 pet_guid		= 3;
+}
+
+message cmsg_pet_level {
+	msg_common comm		= 1;
+	uint64 guid			= 2;
+	repeated int32 ciliao			= 3;
+	repeated int32 count			= 4;
+}
+
+message cmsg_pet_jinjie {
+	msg_common comm		= 1;
+	uint64 guid			= 2;
+	int32  item_id			= 3;
+	int32  index			= 4;
+}
+
+message cmsg_pet_star {
+	msg_common comm		= 1;
+	uint64 guid			= 2;
+}
+
+message cmsg_pet_duihuan {
+	msg_common comm		= 1;
+	int32 item_id			= 2;
+}
+
+message smsg_pet_duihuan {
+	dhc.pet_t pet = 1;
+}
+
+message cmsg_pet_init {
+	msg_common comm		= 1;
+	repeated uint64 guid			= 2;
+}
+
+message smsg_pet_init {
+	repeated int32 types   = 1;
+	repeated int32 value1s = 2;
+	repeated int32 value2s = 3;
+	repeated int32 value3s = 4;
+	repeated dhc.equip_t equips = 5;
+	repeated dhc.treasure_t treasures = 6;
+	repeated dhc.role_t roles = 7;
+}

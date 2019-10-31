@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index player_guid 0
+
+message pet_t {
+	uint64 guid			= 1;
+	uint64 player_guid		= 2;
+	uint64 role_guid		= 3;
+	int32 template_id		= 4;
+	int32 level			= 5;
+	int32 jinjie			= 6;
+	int32 star				= 7;
+	int32 exp				= 8;
+	repeated int32 jinjie_slot		= 9;
+}

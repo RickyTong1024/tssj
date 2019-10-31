@@ -1,0 +1,31 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	{% include "form.html" %}
+	<div>
+        <div>
+            <div>你好,{{ username }}</div>
+			<div><a href="{% url 'logout' %}">退出</a></div>
+			<h1>装备查看</h1>
+		</div>
+		<div class="well">
+            {% csrf_token %}
+			{{ form|as_bootstrap }}
+            {% for zhuangbei in form.zhuangbei %}
+            <div>
+                <div>id：{{ zhuangbei.id }}</div>
+                <div>强化：{{ zhuangbei.enhance }}</div>
+                {% for gz in form.zhuangbei.gz %}
+                <div>改造：{{ gz.type }} {{ gz.value }}</div>
+                {% endfor %}
+                {% for bs in form.zhuangbei.bs %}
+                <div>宝石：{{ bs }}</div>
+                {% endfor %}
+                <div>升星：{{ zhuangbei.jilian }}</div>
+			</div>
+            <hr />
+            {% endfor %}
+		</div>
+	</div>
+</body>
+</html>

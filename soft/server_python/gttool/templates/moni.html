@@ -1,0 +1,27 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	{% include "form.html" %}
+	<div>
+		<div>
+            <div>你好,{{ username }}</div>
+			<div><a href="{% url 'logout' %}">退出</a></div>
+			<h1>模拟充值</h1>
+		</div>
+		<div class="well">
+			<form name="main" class="form-horizontal" action="{% url "moni" %}" method="post">
+				{% csrf_token %}
+				{{ form|as_bootstrap }}
+				<div>
+					<input type="button" value="执行" onclick="mask();"/>
+				</div>
+			    {% if form.suc %}
+                <script>
+                    alert("操作成功");
+                </script>
+                {% endif %}
+			</form>
+		</div>
+	</div>
+</body>
+</html>

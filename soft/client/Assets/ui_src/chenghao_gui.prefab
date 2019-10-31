@@ -1,0 +1,475 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &142098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442098}
+  - component: {fileID: 11442098}
+  m_Layer: 0
+  m_Name: chenghao_gui
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &442098
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11442098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 5df41d2c1a363c94d895ef4f6114ebc2, type: 2}
+  mSprites:
+  - name: ch_db_001
+    x: 148
+    y: 217
+    width: 144
+    height: 21
+    borderLeft: 47
+    borderRight: 47
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 7
+    paddingBottom: 9
+  - name: ch_db_001a
+    x: 294
+    y: 214
+    width: 144
+    height: 21
+    borderLeft: 47
+    borderRight: 47
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 7
+    paddingBottom: 9
+  - name: ch_db_002
+    x: 2
+    y: 204
+    width: 144
+    height: 21
+    borderLeft: 47
+    borderRight: 47
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 7
+    paddingBottom: 9
+  - name: ch_db_002a
+    x: 148
+    y: 194
+    width: 144
+    height: 21
+    borderLeft: 47
+    borderRight: 47
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 7
+    paddingBottom: 9
+  - name: ch_db_003
+    x: 2
+    y: 256
+    width: 142
+    height: 27
+    borderLeft: 48
+    borderRight: 48
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 3
+    paddingBottom: 7
+  - name: ch_db_003a
+    x: 146
+    y: 240
+    width: 142
+    height: 27
+    borderLeft: 48
+    borderRight: 48
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 3
+    paddingBottom: 7
+  - name: ch_db_004
+    x: 294
+    y: 237
+    width: 142
+    height: 27
+    borderLeft: 48
+    borderRight: 48
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 3
+    paddingBottom: 7
+  - name: ch_db_004a
+    x: 2
+    y: 227
+    width: 142
+    height: 27
+    borderLeft: 48
+    borderRight: 48
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 3
+    paddingBottom: 7
+  - name: ch_db_005
+    x: 146
+    y: 269
+    width: 138
+    height: 31
+    borderLeft: 67
+    borderRight: 67
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 7
+    paddingRight: 7
+    paddingTop: 0
+    paddingBottom: 6
+  - name: ch_db_005a
+    x: 290
+    y: 266
+    width: 138
+    height: 31
+    borderLeft: 67
+    borderRight: 67
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 7
+    paddingRight: 7
+    paddingTop: 0
+    paddingBottom: 6
+  - name: ch_db_006
+    x: 296
+    y: 179
+    width: 144
+    height: 33
+    borderLeft: 53
+    borderRight: 53
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 3
+    paddingBottom: 1
+  - name: ch_db_006a
+    x: 2
+    y: 169
+    width: 144
+    height: 33
+    borderLeft: 53
+    borderRight: 53
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 3
+    paddingBottom: 1
+  - name: ch_db_007
+    x: 154
+    y: 89
+    width: 148
+    height: 35
+    borderLeft: 63
+    borderRight: 63
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 2
+    paddingTop: 0
+    paddingBottom: 2
+  - name: ch_db_007a
+    x: 306
+    y: 68
+    width: 148
+    height: 35
+    borderLeft: 63
+    borderRight: 63
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 2
+    paddingTop: 0
+    paddingBottom: 2
+  - name: ch_db_008
+    x: 150
+    y: 159
+    width: 144
+    height: 33
+    borderLeft: 46
+    borderRight: 46
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 2
+    paddingBottom: 2
+  - name: ch_db_008a
+    x: 298
+    y: 144
+    width: 144
+    height: 33
+    borderLeft: 46
+    borderRight: 46
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 2
+    paddingBottom: 2
+  - name: ch_db_009
+    x: 304
+    y: 105
+    width: 146
+    height: 37
+    borderLeft: 46
+    borderRight: 46
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ch_db_009a
+    x: 2
+    y: 97
+    width: 146
+    height: 37
+    borderLeft: 46
+    borderRight: 46
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ch_db_010
+    x: 170
+    y: 23
+    width: 152
+    height: 31
+    borderLeft: 54
+    borderRight: 54
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 4
+    paddingBottom: 2
+  - name: ch_db_010a
+    x: 330
+    y: 2
+    width: 152
+    height: 31
+    borderLeft: 54
+    borderRight: 54
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 4
+    paddingBottom: 2
+  - name: ch_db_011
+    x: 2
+    y: 136
+    width: 146
+    height: 31
+    borderLeft: 54
+    borderRight: 54
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 2
+    paddingBottom: 4
+  - name: ch_db_011a
+    x: 150
+    y: 126
+    width: 146
+    height: 31
+    borderLeft: 54
+    borderRight: 54
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 2
+    paddingBottom: 4
+  - name: ch_db_012
+    x: 2
+    y: 64
+    width: 150
+    height: 31
+    borderLeft: 54
+    borderRight: 54
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 2
+    paddingBottom: 4
+  - name: ch_db_012a
+    x: 154
+    y: 56
+    width: 150
+    height: 31
+    borderLeft: 54
+    borderRight: 54
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 2
+    paddingBottom: 4
+  - name: ch_db_013
+    x: 324
+    y: 35
+    width: 150
+    height: 31
+    borderLeft: 54
+    borderRight: 54
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 2
+    paddingBottom: 4
+  - name: ch_db_013a
+    x: 2
+    y: 31
+    width: 150
+    height: 31
+    borderLeft: 54
+    borderRight: 54
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 2
+    paddingBottom: 4
+  - name: ch_db_014
+    x: 106
+    y: 302
+    width: 102
+    height: 19
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 25
+    paddingRight: 25
+    paddingTop: 8
+    paddingBottom: 10
+  - name: ch_db_014a
+    x: 390
+    y: 299
+    width: 102
+    height: 19
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 25
+    paddingRight: 25
+    paddingTop: 8
+    paddingBottom: 10
+  - name: ch_db_015
+    x: 286
+    y: 299
+    width: 102
+    height: 19
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 25
+    paddingRight: 25
+    paddingTop: 8
+    paddingBottom: 10
+  - name: ch_db_015a
+    x: 2
+    y: 285
+    width: 102
+    height: 19
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 25
+    paddingRight: 25
+    paddingTop: 8
+    paddingBottom: 10
+  - name: ch_icon_01
+    x: 2
+    y: 2
+    width: 166
+    height: 27
+    borderLeft: 60
+    borderRight: 60
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ch_icon_02
+    x: 170
+    y: 2
+    width: 158
+    height: 19
+    borderLeft: 54
+    borderRight: 54
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 4
+    paddingBottom: 4
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 142098}
+  m_IsPrefabAsset: 1

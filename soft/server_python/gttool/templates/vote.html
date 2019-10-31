@@ -1,0 +1,30 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	{% include "form.html" %}
+	<div>
+		<div>
+			<h1>投票管理</h1>
+		</div>
+         <div class="well-sm">
+            <p>说明：1.选择的文件名一定要按照给出的提示来命名，另外要注意文件格式。
+                     2.可以一次上传多个文件，也可以上传其中的一个。
+             </p>
+        </div>
+		<div class="well">
+			<form enctype="multipart/form-data" class="form-horizontal" action="" method="post">
+				{% csrf_token %}
+				{{ form|as_bootstrap:"horizontal" }}
+				 <p class="form-actions"> 
+					<input type="button" name ="file" value="上传"  class="btn btn-primary" onclick="mask();"/>
+				</p>
+                {% if form.suc %}
+                <script>
+                    alert("上传成功");
+                </script>
+                {% endif %}
+			</form>
+		</div>
+	</div>
+</body>
+</html>

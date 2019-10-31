@@ -1,0 +1,7 @@
+﻿<uwsgi>
+    <socket>:9090</socket>
+    <chdir>/home/app/gttool</chdir>
+    <module>django_wsgi</module>
+    <processes>2</processes>
+    <daemonize>uwsgi.log</daemonize>
+</uwsgi>

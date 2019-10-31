@@ -1,0 +1,19 @@
+syntax = "proto3";
+package dhc;
+
+//using datetime
+//using index username 8
+
+message acc_t {
+	uint64 guid			= 1;
+	string username		= 2;
+	string serverid		= 3;
+	string extra			= 4;
+	int32 gm_level			= 5;
+	uint64 fenghao_time	= 6;
+	string device			= 7;
+	int32  version			= 8;
+	string last_device		= 10;
+	uint64 last_time		= 11;
+	uint64 gag_time        = 12;
+}

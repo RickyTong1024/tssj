@@ -1,0 +1,17 @@
+{
+	"master": {"host":"127.0.0.1","port":3590},
+	"servers": {
+		"gs": [
+			{"id":"team1","host":"127.0.0.1","port":3690,"endport":9091,"mysql":1}
+		]
+	},
+	"other" : {
+		"gate": [
+			{"id":"gate1","host":"127.0.0.1","port":3990},
+			{"id":"gate2","host":"127.0.0.1","port":3991},
+            {"id":"gate3","host":"127.0.0.1","port":3992},
+            {"id":"gate4","host":"127.0.0.1","port":3993}
+		]
+	},
+	"db" : {"host":"127.0.0.1","username":"root","password":"root","db":"tsjhteam","port":3306}
+}

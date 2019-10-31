@@ -1,0 +1,68 @@
+<!-- 被2012 (yaohong) 使用XMLSpy vyh编辑的 (http://www.altova.com) by -->
+<unit name_height="2.3" accept="Bip01 Spine1" speed="8">
+	<!--名字公告板高度 受击骨骼 移动到目标的速度-->
+	<part name="body_01">
+		<mesh bone="" part="body" pack="unit/ts_name/ts_name" type="body">
+			<!--初始换装部件-->
+		</mesh>
+	</part>
+	<part name="body_02">
+		<mesh bone="" part="ts_bot912c" pack="unit/ts_name/ts_name_body02" type="body">
+			<!--第二套换装-->
+		</mesh>
+	</part>
+	<part name="body_03">
+		<mesh bone="" part="ts_bot912d" pack="unit/ts_name/ts_name_body03" type="body">
+			<!--第三套换装-->
+		</mesh>
+	</part>
+	<!--换装-->
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"/>
+	</actions>
+	<!--事件_待机-->
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"/>
+		<atcion time="0.5" type="action" name="ready"/>
+	</actions>
+	<!--事件_受击-->
+	<actions name="win">
+		<atcion time="0" type="anim" name="win"/>
+		<atcion time="2" type="action" name="ready"/>
+	</actions>
+	<!--事件_胜利-->
+	<actions name="attack">
+		<atcion time="0" type="skill_release"/>
+	</actions>
+	<!--事件_攻击_准备状态-->
+	<actions name="attack">
+		<atcion time="0" type="anim" name="attack1"/>
+		<atcion time="0.1" type="goto_target"/>
+		<atcion time="0.5" type="target_action" name="injured"/>
+		<atcion time="0.5" type="target_entity_bone" bone="accept" name="effect/目标受击特效" follow="0" remove_time="1"/>
+		<atcion time="0.5" type="sound" sound="sound/目标受击声效"/>
+		<atcion time="0.5" type="shake_cam" shake="0.2"/>
+		<atcion time="0.5" type="skill_export" export="0.3"/>
+	</actions>
+	<!--事件_攻击_播放动作-奔向目标-目标受击-->
+	<actions name="attack">
+		<atcion time="0" type="anim" name="attack1"/>
+		<atcion time="0" type="entity_cast" name="unit/ts_name/投掷特效名称" cast_remove_time="1(投掷特效延迟销毁时长）" bone="Bip001 L Hand" follow="0" effect="effect/受击特效名称" remove_time="2（受击特效销毁时长)" skill="0" speed="15(投掷飞行速度)" shake="0.2"/>
+		<atcion time="0" type="sound" sound="sound/投掷声效"/>
+		<atcion time="0.5" type="target_action" name="injured"/>
+		<atcion time="0.5" type="target_entity_bone" bone="accept" name="effect/目标受击特效" follow="0" remove_time="1"/>
+		<atcion time="0.5" type="sound" sound="sound/目标受击声效"/>
+		<atcion time="0.5" type="shake_cam" shake="0.2"/>
+	</actions>
+	<!--事件_攻击_播放动作-投掷技能-目标受击-->
+	<actions name="attack">
+		<atcion time="2" type="goto_home"/>
+		<atcion time="2" type="skill_end"/>
+		<atcion time="2" type="action" name="ready"/>
+	</actions>
+	<!--事件_攻击_播放动作-投掷技能-事件结束-->
+	<actions name="jn01"/>
+	<actions name="jn02"/>
+	<actions name="jn03"/>
+	<!--事件_技能-->
+</unit>

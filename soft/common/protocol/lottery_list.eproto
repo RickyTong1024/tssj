@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package dhc;
+
+
+message pvp_list_t {
+	uint64 guid		     = 1;
+	repeated uint64 player_guids 	 = 2;
+	repeated uint64 player_targets   = 3;
+	repeated string player_names 	 = 4;
+	repeated int32  player_templates = 5;
+	repeated int32  player_servers	 = 6;
+	repeated int32	player_bfs		 = 7;
+	repeated int32  player_pvps		 = 8;
+	repeated int32  player_wins		 = 9;
+	repeated int32  player_vips		 = 10;
+	repeated int32  player_achieves  = 11;
+	repeated int32  player_guanghuans = 12;
+	repeated int32  player_dress	  = 13;
+	repeated int32  player_chenghaos  = 14;
+	repeated int32  player_nalflags   = 15;
+	
+	uint64 refresh_time	 = 16;
+	int32  sync_flag		 = 17;
+}

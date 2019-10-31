@@ -1,0 +1,72 @@
+https://docs.segmentfault.com/cpp/
+https://code.ziqiangxuetang.com/
+http://cn.bing.com
+http://www.allitebooks.com/
+
+deploy 前检查本地文件
+编译工具   automake （https://jingyan.baidu.com/article/8275fc8691d01a46a03cf6a5.html） pip失败用yum下载
+Python paramiko模块版本号  查看版本号 xxx.__version
+deploy文件夹下添加 tsjh.sql文件
+软链接到 /usr/local/lib
+修改 /etc/ld.so.conf, 加入/usr/local/lib  运行/sbin/ldconfig -v更新配置
+
+
+
+
+
+crontab -l 查看定时器
+crontab -e 编辑定时器（增删）
+python manage.py crontab      show/help/add
+/usr/bin/python /root/app/gttool/manage.py crontab run xxx ：运行gttool定时器（xxx为脚本定时器对应码）
+*/10 * * * * cd /root/app/log_server/LogParse && ./parse.sh
+
+tail -n 50 /var/spool/mail/root
+django python manage.py    syncdb 同步到数据库   增加条目 + help
+
+                           
+gttoolbt  engine_server 
+MySQLdb.connection.ping
+
+后台数据没有同步先检查日志服地址
+后台活动同步失败，先数据库检查是否返回多条活动记录
+从其他服copy活动要注意主键id，同步活动累计id
+
+pvp和team服启动前先检查端口与vote的配置端口
+gate和server.json里配置的是服务器内网地址
+
+
+select * from pay_t where username in (select username from pay_t group by username having count(1) > 1);
+
+
+gs无法启动，先检查数据库是否有过更改
+
+玩家无法登陆单独区服：（或者配置服务器环境时，打包前修改deps目录下的nginx.conf,方法同下）
+	vi /etc/nginx/nginx.conf
+	首行修改为 user root
+	检查并重启nginx：nginx -t
+					 nginx -s reload
+					 ps -ef | grep nginx
+	
+insert into engine_entry select * from engine_entry_copy;
+Alter table engine_activitytime_copy drop primary key;
+update engine_entry_copy set id=id+1;
+delete from tablename where id>=1 and id<=500；
+
+
+亚马逊SDK：
+国外网络无法访问国内部署的tomcat沙盒服务器
+tomcat沙盒部署前先注意JAVA环境变量
+如果沙盒服务器端口和其他进程端口冲突，修改tomcat/conf/server.xml 里边的8080端口替换为：端口号80xx（或21端口），web测试是否成功访问
+注意https 和 http 访问区别，一般使用http（https注意未知的协议错误）
+
+解决SVN Cleanuping failed to process the following paths;xxxxxx
+1. 下载 Sqlite3.exe
+2. 将Sqlite3.exe放到.svn的同级目录(要执行cleanup的目录下)
+3. 在cmd控制台中将盘符转到svn版本控制的文件夹（cd到cleanuping 目录下）
+4. 执行sqlite3 .svn/wc.db "select * from work_queue"
+5. 看到work_queue中保存的工作队列
+6. 执行sqlite3 .svn/wc.db "delete from work_queue" 删除工作队列
+7. 重新执行Cleanup命令。
+
+
+

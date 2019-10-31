@@ -1,0 +1,74 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	{% include "form.html" %}
+
+    <script language="javascript" type="text/javascript">
+    function huoban(guid, servername) {
+        window.open("/manage/huoban?guid=" + guid.toString() + "&servername=" + servername, "_blank")
+    }
+    function zhuangbei(guid, servername) {
+        window.open("/manage/zhuangbei?guid=" + guid.toString() + "&servername=" + servername, "_blank")
+    }
+    function baowu(guid, servername) {
+        window.open("/manage/baowu?guid=" + guid.toString() + "&servername=" + servername, "_blank")
+    }
+    function baowuall(guid, servername) {
+        alert(guid.toString())
+        window.open("/manage/baowuall?guid=" + guid.toString() + "&servername=" + servername, "_blank")
+    }
+    function daoju(guid, servername) {
+        alert(guid.toString())
+        window.open("/manage/daoju_all?guid=" + guid.toString() + "&servername=" + servername, "_blank")
+    }
+    </script>
+
+	<div>
+		<div>
+            <div>你好,{{ username }}</div>
+			<div><a href="{% url 'logout' %}">退出</a></div>
+			<h1>玩家查询</h1>
+		</div>
+		<div class="well">
+			<form name="main" class="form-horizontal" action="{% url "userlook" %}" method="post">
+				{% csrf_token %}
+				{{ form|as_bootstrap }}
+				<div>
+					<input type="button" value="查询" onclick="mask();"/>
+				</div>
+			</form>
+            {% for player in form.player %}
+            <div>
+                <div>guid：{{ player.guid }}</div>
+                <div>id：{{ player.username }}</div>
+                <div>名字：{{ player.name }}</div>
+				<div>等级：{{ player.level }}</div>
+                <div>钻石：{{ player.jewel }}</div>
+				<div>金币：{{ player.gold }}</div>
+                <div>原力：{{ player.yuanli }}</div>
+                <div>关卡：{{ player.mission }}</div>
+                <div>精英关卡：{{ player.mission_jy }}</div>
+                <div>充值：{{ player.recharge }}</div>
+                <div>周卡：{{player.zhouka }}</div>
+                <div>月卡：{{player.yueka }}</div>
+                <div>
+					<input type="button" value="查看伙伴" onclick="huoban('{{ player.guid }}', '{{ player.servername }}');"/>
+				</div>
+                <div>
+					<input type="button" value="查看装备" onclick="zhuangbei('{{ player.guid }}', '{{ player.servername }}');"/>
+				</div>
+                <div>
+					<input type="button" value="查看穿戴宝物" onclick="baowu('{{ player.guid }}','{{ player.servername }}');"/>
+				</div>
+                <div>
+					<input type="button" value="查看没穿戴宝物" onclick="baowuall('{{ player.guid }}','{{ player.servername }}');"/>
+				</div>
+                <div>
+					<input type="button" value="查看道具" onclick="daoju('{{ player.guid }}','{{ player.servername }}');"/>
+				</div>
+			</div>
+            {% endfor %}
+		</div>
+	</div>
+</body>
+</html>

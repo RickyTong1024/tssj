@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index player_guid 0
+
+message treasure_report_t {
+	uint64 guid			= 1;
+	uint64 player_guid		= 2;
+	uint64 other_guid		= 3;
+	bytes other_name		= 4;
+	int32 other_template	= 5;
+	int32 other_level		= 6;
+	int32 other_bf			= 7;
+	int32 win				= 8;
+	uint64 time			= 9;
+	int32	suipian_id		= 10;
+	int32  new_report		= 11;
+}

@@ -1,0 +1,46 @@
+{% include "include.html" %}
+<body>
+    <div>
+        <div>
+            <div>你好,{{ username }}</div>
+            <div><a href="{% url 'logout' %}">退出</a></div>
+            <h1>首页</h1>
+        </div>
+        <div class="well">
+            <ul>
+                <li><a href="{% url 'serverlook' %}">服务器查询</a></li>
+                <li><a href="{% url 'userlook' %}">玩家查询</a></li>
+                <li><a href="{% url 'mail_one' %}">单人邮件</a></li>
+                <li><a href="{% url 'mail_all' %}">单服邮件</a></li>
+                <li><a href="{% url 'mail_show' %}">邮件日志</a></li>
+                <li><a href="{% url 'gonggao' %}">单服公告</a></li>
+                <li><a href="{% url 'dingdan' %}">订单查询</a></li>
+                <li><a href="{% url 'moni' %}">模拟充值</a></li>
+                <li><a href="{% url 'moni_show' %}">模拟充值日志</a></li>
+                <li><a href="{% url 'fenghao' %}">踢人封号</a></li>
+                <li><a href="{% url 'looklibao' %}">查看礼包</a></li>
+                <li><a href="{% url 'clibao' %}">创建礼包</a></li>
+                <li><a href="{% url 'dlibao' %}">删除礼包</a></li>
+                <li><a href="{% url 'activity_time' %}">活动时间</a></li>
+                <li><a href="{% url 'activity_group' %}">活动配置</a></li>
+                <li><a href="{% url 'tongji_normal' %}">游戏概况</a></li>
+                <li><a href="{% url 'tongji_liucun' %}">游戏留存</a></li>
+                <li><a href="{% url 'tongji_normal_huoyue' %}">昨日活跃</a></li>
+                <li><a href="{% url 'tongji_qudao_normal' %}">渠道游戏概况</a></li>
+                <li><a href="{% url 'tongji_qudao_liucun' %}">渠道游戏留存</a></li>
+                <li><a href="{% url 'view_resource' %}">资源日志</a></li>
+                <li><a href="{% url 'view_huodong' %}">活动日志</a></li>
+                <li><a href="{% url 'view_item' %}">道具/装备/饰品/伙伴日志</a></li>
+                <li><a href="{% url 'view_jewel' %}">查询钻石资源</a></li>
+                <li><a href="{% url 'player_level' %}">玩家等级分布</a></li>
+                <li><a href="{% url 'player_data' %}">玩家等级/充值前十名</a></li>
+                <li><a href="{% url 'query_passward' %}">查询密码</a></li>
+                <li><a href="{% url 'set_gonggao' %}">上传公告</a></li>
+                <li><a href="{% url 'get_gonggao' %}">下载公告</a></li>
+                <li><a href="{% url 'modify_player' %}">修改信息</a></li>
+                <li><a href="{% url 'server_open_time_add' %}">服务时间</a></li>
+            </ul>
+        <div>
+    </div>
+</body>
+</html>

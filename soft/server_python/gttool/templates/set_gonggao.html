@@ -1,0 +1,25 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+    <script src="/static/js/mail.js?10" type="text/javascript"></script>
+     <script src="/static/js/libao.js?10" type="text/javascript"></script>
+	{% include "form.html" %}
+	<div>
+		<div class="well">
+			<form enctype="multipart/form-data" class="form-horizontal" action="" method="post">
+				{% csrf_token %}
+				{{ form|as_bootstrap }}
+				<div>
+					<input type="submit" name ="file" value="确定" class="btn btn-primary" onclick="mask();"/>
+				</div>
+                {% if suc %}
+                <script>
+                    alert("上传成功");
+                </script>
+                {% endif %}
+
+			</form>
+		</div> 
+	</div>
+</body>
+</html>

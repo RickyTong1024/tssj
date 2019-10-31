@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\common\protocpp\acc.sproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\boss.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\equip.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\global.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\gtool.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\guild.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\guild_arrange.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\guild_box.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\guild_event.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\guild_fight.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\guild_list.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\guild_member.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\guild_message.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\guild_mission.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\guild_red.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\huodong.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\huodong_entry.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\huodong_player.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\lottery_list.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\msg_huodong.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\msg_player.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\msg_self.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\msg_team.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\other.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\pet.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\player.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\post.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\rank.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\recharge_heitao.sproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\rob_t.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\role.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\social.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\sport.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\sport_list.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\treasure.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\treasure_list.eproto.pb.cc" />
+    <ClCompile Include="..\..\..\common\protocpp\treasure_report.eproto.pb.cc" />
+    <ClCompile Include="..\..\src\libgame\channel.cpp" />
+    <ClCompile Include="..\..\src\libgame\game_service.cpp" />
+    <ClCompile Include="..\..\src\libgame\dbc.cpp" />
+    <ClCompile Include="..\..\src\libgame\dfa_algorith.cpp" />
+    <ClCompile Include="..\..\src\libgame\dhc.cpp" />
+    <ClCompile Include="..\..\src\libgame\game.cpp" />
+    <ClCompile Include="..\..\src\libgame\gtool.cpp" />
+    <ClCompile Include="..\..\src\libgame\log.cpp" />
+    <ClCompile Include="..\..\src\libgame\multiquery.cpp" />
+    <ClCompile Include="..\..\src\libgame\name.cpp" />
+    <ClCompile Include="..\..\src\libgame\packet.cpp" />
+    <ClCompile Include="..\..\src\libgame\pool.cpp" />
+    <ClCompile Include="..\..\src\libgame\rpc.pb.cc" />
+    <ClCompile Include="..\..\src\libgame\rpc_client.cpp" />
+    <ClCompile Include="..\..\src\libgame\rpc_server.cpp" />
+    <ClCompile Include="..\..\src\libgame\rpc_service.cpp" />
+    <ClCompile Include="..\..\src\libgame\scheme.cpp" />
+    <ClCompile Include="..\..\src\libgame\sig.cpp" />
+    <ClCompile Include="..\..\src\libgame\sqlquery.cpp" />
+    <ClCompile Include="..\..\src\libgame\env.cpp" />
+    <ClCompile Include="..\..\src\libgame\tcp_handler.cpp" />
+    <ClCompile Include="..\..\src\libgame\tcp_service.cpp" />
+    <ClCompile Include="..\..\src\libgame\timer.cpp" />
+    <ClCompile Include="..\..\src\libgame\utils.cpp" />
+    <ClCompile Include="..\..\src\libgame\windumper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\common\protocpp\acc.sproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\boss.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\equip.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\global.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\gtool.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\guild.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\guild_arrange.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\guild_box.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\guild_event.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\guild_fight.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\guild_list.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\guild_member.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\guild_message.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\guild_mission.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\guild_red.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\huodong.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\huodong_entry.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\huodong_player.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\lottery_list.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\msg_huodong.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\msg_player.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\msg_self.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\msg_team.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\other.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\pet.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\player.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\post.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\rank.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\recharge_heitao.sproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\rob_t.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\role.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\social.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\sport.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\sport_list.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\treasure.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\treasure_list.eproto.pb.h" />
+    <ClInclude Include="..\..\..\common\protocpp\treasure_report.eproto.pb.h" />
+    <ClInclude Include="..\..\src\libgame\channel.h" />
+    <ClInclude Include="..\..\src\libgame\game_service.h" />
+    <ClInclude Include="..\..\src\libgame\dbc.h" />
+    <ClInclude Include="..\..\src\libgame\dfa_algorith.h" />
+    <ClInclude Include="..\..\src\libgame\dhc.h" />
+    <ClInclude Include="..\..\src\libgame\game.h" />
+    <ClInclude Include="..\..\src\libgame\gameinc.h" />
+    <ClInclude Include="..\..\src\libgame\game_interface.h" />
+    <ClInclude Include="..\..\src\libgame\gtool.h" />
+    <ClInclude Include="..\..\src\libgame\log.h" />
+    <ClInclude Include="..\..\src\libgame\multiquery.h" />
+    <ClInclude Include="..\..\src\libgame\name.h" />
+    <ClInclude Include="..\..\src\libgame\opcodes.h" />
+    <ClInclude Include="..\..\src\libgame\packet.h" />
+    <ClInclude Include="..\..\src\libgame\pool.h" />
+    <ClInclude Include="..\..\src\libgame\protos.h" />
+    <ClInclude Include="..\..\src\libgame\rpc.pb.h" />
+    <ClInclude Include="..\..\src\libgame\rpc_client.h" />
+    <ClInclude Include="..\..\src\libgame\rpc_server.h" />
+    <ClInclude Include="..\..\src\libgame\rpc_service.h" />
+    <ClInclude Include="..\..\src\libgame\scheme.h" />
+    <ClInclude Include="..\..\src\libgame\sig.h" />
+    <ClInclude Include="..\..\src\libgame\singleton.h" />
+    <ClInclude Include="..\..\src\libgame\sqlquery.h" />
+    <ClInclude Include="..\..\src\libgame\env.h" />
+    <ClInclude Include="..\..\src\libgame\tcp_handler.h" />
+    <ClInclude Include="..\..\src\libgame\tcp_service.h" />
+    <ClInclude Include="..\..\src\libgame\timer.h" />
+    <ClInclude Include="..\..\src\libgame\typedefs.h" />
+    <ClInclude Include="..\..\src\libgame\utils.h" />
+    <ClInclude Include="..\..\src\libgame\windumper.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EEC4324E-75BB-4E1A-AE33-5E766F535E2A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IntDir>.\Debug\</IntDir>
+    <OutDir>..\..\libs\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\libs\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MYSQL_ROOT)\include;$(MYSQLPP_ROOT)\lib;$(ZMQ_ROOT)\include;$(PROTOBUF_ROOT)\src;$(BOOST_ROOT);$(ACE_ROOT);$(ZLIB_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)d.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>libprotobufd.lib;libzmqd.lib;aced.lib;mysqlppd.lib;zlibd.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\libs;$(BOOST_ROOT)\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MYSQL_ROOT)\include;..\..\deps\mysql++;..\..\deps\zlib;..\..\deps\protobuf;..\..\deps\zmq;$(BOOST_ROOT);$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>libprotobuf.lib;libzmq.lib;aced.lib;zlib.lib;mysqlpp.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\libs;$(BOOST_ROOT)\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MYSQL_ROOT)\include;..\..\deps\mysql++;..\..\deps\zlib;..\..\deps\zmq;..\..\deps\protobuf;$(BOOST_ROOT);$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>libprotobuf.lib;libzmq.lib;aced.lib;zlib.lib;mysqlpp.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\libs;$(BOOST_ROOT)\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

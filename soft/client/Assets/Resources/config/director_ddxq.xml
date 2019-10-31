@@ -1,0 +1,30 @@
+<directors>
+    <director type="wait" v0="0.1"/>
+    <director type="play_anim" v0="full" v1="cam_in"/>
+    <director type="play_music" v0="music/ts_zjgc"/>
+    <director type="hide_object" v0="ts_cjdhdq01"/>
+    <director type="hide_object" v0="ts_cjdhty01"/>
+    <director type="hide_object" v0="ts_cjdhxq01"/>
+    <director type="hide_object" v0="ts_cjdhxxd01"/>
+    <director type="hide_object" v0="ts_cjdhxxd01"/>
+    <director type="hide_object" v0="tkz_big"/>
+    <director type="hide_object" v0="ts_xfcha001"/>
+    
+    
+	<director type="play_anim" v0="ddxq_d" v1="ddxq_cam001"/>
+
+    <director type="wait" v0="2"/>
+    <director type="effect_label" v0="director_ddxq_effect_label_1"></director>
+    
+    <director type="wait" v0="6"/>
+    
+    <director type="play_anim" v0="full" v1="cam_out"/>
+    
+    <director type="wait" v0="2"/>
+       
+    <director type="hide_director"/>
+																																															
+	<director type="start_game"/>
+
+																								
+</directors>

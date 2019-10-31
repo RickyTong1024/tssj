@@ -1,0 +1,55 @@
+<directors>
+
+ 
+
+	<director type="wait" v0="0.1"/>
+	
+	<director type="show_unit" v0="nz01_t01"/>
+
+	<director type="play_anim" v0="mxzy_d" v1="cam_01"/>
+	
+	<director type="set_center_label" v0="director_mxzy_set_center_label_1"/>
+	
+	
+	<director type="play_anim" v0="mask" v1="mask"/>
+	
+	<director type="wait" v0="1.0"/>
+	<director type="play_anim" v0="cam" v1="blur"/>
+	
+	
+	<director type="set_film_label" v0="director_mxzy_set_film_label_1"/>
+	
+	
+	<director type="wait" v0="3"/>
+	
+	<director type="set_film_label" v0="director_mxzy_set_film_label_2"/>
+	
+	<director type="wait" v0="2"/>
+
+	
+	<director type="play_anim" v0="mxzy_d" v1="cam_02"/>
+	
+	<director type="unit_pos" v0="nz01_t01" v1="-1.8" v2="0.01" v3="-0.5"/>
+	<director type="wait" v0="0.2"/>
+	<director type="unit_action" v0="nz01_t01" v1="shenlanyao01"/>
+	<director type="set_film_label" v0="director_mxzy_set_film_label_3"/>
+	<director type="wait" v0="3"/>
+	<director type="unit_action" v0="nz01_t01" v1="roueyes01"/>
+	
+	<director type="wait" v0="3"/>
+	<director type="set_film_label" v0="director_mxzy_set_film_label_4"/>
+
+	<director type="unit_angle" v0="nz01_t01" v1="51"/>
+	<director type="play_anim" v0="mxzy_d" v1="cam_03"/>
+	
+	<director type="set_film_label" v0="director_mxzy_set_film_label_5"/>
+	
+	<director type="unit_action" v0="nz01_t01" v1="walk"/>
+	
+	<director type="unit_moveto" v0="nz01_t01" v1="1.02" v2="0.01" v3="2.14" v4="5"/>
+	
+	<director type="wait" v0="2"/>
+	<director type="set_film_label" v0="director_mxzy_set_film_label_6"/>
+    
+																								
+</directors>

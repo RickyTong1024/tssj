@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Boss_Armour
+  m_Shader: {fileID: 4800000, guid: c6a864a3997fbee459740fc127d74acd, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _LightTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c256bfd9e07e473478126a4fb5c9d8e2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _alphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    - _RimPower: 8
+    - _alpha: 1
+    - _back: 3
+    - _level: 4
+    - _light: 0.5
+    - _range: 0.5
+    - _uv_x: 1
+    - _uv_y: 1
+    - _uvc: 0
+    - _while: 0.1
+    m_Colors:
+    - _BackColor: {r: 1, g: 0.24604462, b: 0.07352942, a: 0}
+    - _Color: {r: 0.588, g: 0.588, b: 0.588, a: 1}
+    - _RimColor: {r: 1, g: 0.39310342, b: 0, a: 0}
+    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}

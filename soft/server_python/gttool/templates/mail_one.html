@@ -1,0 +1,73 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+    <script src="/static/js/mail.js?15" type="text/javascript"></script>
+	{% include "form.html" %}
+	<div>
+		<div>
+            <div>你好,{{ username }}</div>
+			<div><a href="{% url 'logout' %}">退出</a></div>
+			<h1>单人邮件</h1>
+		</div>
+		<div class="well">
+			<form name="main" class="form-horizontal" action="{% url "mail_one" %}" method="post">
+				{% csrf_token %}
+				{{ form|as_bootstrap }}
+                <div class="control-group required">
+					<label class="control-label">奖励1</label>
+                    <div class="controls">
+                        <select id="id_reward1_1" name="reward1_1">
+                            <option value="0">无</option>
+                            <option value="1">资源</option>
+                            <option value="2">物品</option>
+                            <option value="4">装备</option>
+                            <option value="6">饰品</option>
+                        </select>
+                        <select id="id_reward1_2" name="reward1_2">
+                        </select>
+                        <input id="id_reward1_3" name="reward1_3" type="text"/>
+                    </div>
+				</div>
+                <div class="control-group required">
+					<label class="control-label">奖励2</label>
+                    <div class="controls">
+                        <select id="id_reward2_1" name="reward2_1">
+                            <option value="0">无</option>
+                            <option value="1">资源</option>
+                            <option value="2">物品</option>
+                            <option value="4">装备</option>
+                            <option value="6">饰品</option>
+                        </select>
+                        <select id="id_reward2_2" name="reward2_2">
+                        </select>
+                        <input id="id_reward2_3" name="reward2_3" type="text"/>
+                    </div>
+				</div>
+                <div class="control-group required">
+					<label class="control-label">奖励3</label>
+                    <div class="controls">
+                        <select id="id_reward3_1" name="reward3_1">
+                            <option value="0">无</option>
+                            <option value="1">资源</option>
+                            <option value="2">物品</option>
+                            <option value="4">装备</option>
+                            <option value="6">饰品</option>
+                        </select>
+                        <select id="id_reward3_2" name="reward3_2">
+                        </select>
+                        <input id="id_reward3_3" name="reward3_3" type="text"/>
+                    </div>
+				</div>
+				<div>
+					<input type="button" value="发送" onclick="mask();"/>
+				</div>
+                {% if form.suc %}
+                <script>
+                    alert("发送成功");
+                </script>
+                {% endif %}
+			</form>
+		</div>
+	</div>
+</body>
+</html>

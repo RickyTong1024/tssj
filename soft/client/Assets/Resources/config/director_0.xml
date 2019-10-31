@@ -1,0 +1,26 @@
+<directors>
+
+	<director type="wait" v0="1"/>
+	
+	<director type="show_object" v0="xinxin_0"/>
+	<director type="wait" v0="1"/>
+	<director type="show_object" v0="xinxin_1"/>
+	<director type="wait" v0="2"/>
+	<director type="hide_object" v0="xinxin_0"/>
+	<director type="hide_object" v0="xinxin_1"/>
+	<director type="set_center_label" v0="director_0_set_center_label_1"/>
+	<director type="wait" v0="2"/>
+	<director type="set_center_label" v0="director_0_set_center_label_2"/>		
+	<director type="wait" v0="2"/>
+	<director type="set_center_label" v0="director_0_set_center_label_3"/>	
+	<director type="wait" v0="2"/>
+	<director type="set_center_label" v0="director_0_set_center_label_4"/>	
+	<director type="wait" v0="2.5"/>
+	<director type="set_shake" v0="10"/>		
+	<director type="wait" v0="1"/>
+	<director type="set_back" v0="woshi"/>			
+	<director type="hide_center_label"/>	
+	<director type="wait" v0="1"/>
+	<director type="play_anim" v0="mask" v1="hide_mask"/>	
+																								
+</directors>

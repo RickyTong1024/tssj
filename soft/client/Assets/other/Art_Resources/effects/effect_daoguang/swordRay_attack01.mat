@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: swordRay_attack01
+  m_Shader: {fileID: 4800000, guid: 81031ad86fe0e0c4eae1bc0e5722c191, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c28d87e1cd8a83443a25a96b1084a52d, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Tex01
+        second:
+          m_Texture: {fileID: 2800000, guid: 1f0b39cc448652f4f8d39a62b68b5a69, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Tex02
+        second:
+          m_Texture: {fileID: 2800000, guid: 61768f446f8ba9244a57115e4b0712bc, type: 3}
+          m_Scale: {x: .699999988, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Tex03
+        second:
+          m_Texture: {fileID: 2800000, guid: c28d87e1cd8a83443a25a96b1084a52d, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texalpha
+        second:
+          m_Texture: {fileID: 2800000, guid: 61768f446f8ba9244a57115e4b0712bc, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DisT01
+        second:
+          m_Texture: {fileID: 2800000, guid: 899c5fd66853a0a4a976e047fe41bfd7, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Mask
+        second:
+          m_Texture: {fileID: 2800000, guid: 062ed1e0cf3df8440b052f177d255c69, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Alpha01
+        second:
+          m_Texture: {fileID: 2800000, guid: 1d820387b58ad83409b8cafe09db364a, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskT02
+        second:
+          m_Texture: {fileID: 2800000, guid: c28d87e1cd8a83443a25a96b1084a52d, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_200
+        second:
+          m_Texture: {fileID: 2800000, guid: 4e51f181444356f458eac091f4ee2144, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+          name: _Gloss
+        second: 0
+      data:
+        first:
+          name: _shininess
+        second: 0
+      data:
+        first:
+          name: _fresnel
+        second: 2.5
+      data:
+        first:
+          name: _clip
+        second: .25
+      data:
+        first:
+          name: _AlphaRange
+        second: 3.78358221
+      data:
+        first:
+          name: _InvFade
+        second: 1
+      data:
+        first:
+          name: _PanY_DisT01
+        second: -.600000024
+      data:
+        first:
+          name: _DisT01Power
+        second: .400000006
+      data:
+        first:
+          name: _PanX_T02
+        second: 1
+      data:
+        first:
+          name: _Intensity_T02
+        second: 1
+      data:
+        first:
+          name: _PanY_Mask
+        second: 0
+      data:
+        first:
+          name: _Intensity
+        second: 3
+      data:
+        first:
+          name: _PanX_T01
+        second: -5
+      data:
+        first:
+          name: _PanX_A01
+        second: 40
+      data:
+        first:
+          name: _PanX_DisT01
+        second: -5
+      data:
+        first:
+          name: _PanY_MaskT02
+        second: 0
+      data:
+        first:
+          name: _Intensity_Mask
+        second: 2
+      data:
+        first:
+          name: _PanY_TexAlpha
+        second: -.300000012
+    m_Colors:
+      data:
+        first:
+          name: _Color_emission
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Color_T01
+        second: {r: .698529422, g: .900202811, b: 1, a: 1}
+      data:
+        first:
+          name: _Color_diffuse
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+package dhc;
+
+//using datetime
+//using index username 8
+
+message rob_t {
+    uint64 guid         = 1;
+    int32 type          = 2;
+    string username     = 3;
+    string serverid     = 4;
+    string extra            = 5;
+    int32 gm_level          = 6;
+    uint64 fenghao_time = 7;
+    string device           = 8;
+    int32  version          = 9;
+    string last_device      = 10;
+    uint64 last_time        = 11;
+    uint64 gag_time        = 12;
+}

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\gs\boss_config.cpp" />
+    <ClCompile Include="..\..\src\gs\equip_config.cpp" />
+    <ClCompile Include="..\..\src\gs\equip_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\equip_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\global_pool.cpp" />
+    <ClCompile Include="..\..\src\gs\gs.cpp" />
+    <ClCompile Include="..\..\src\gs\gs_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\guild_config.cpp" />
+    <ClCompile Include="..\..\src\gs\guild_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\guild_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\guild_pool.cpp" />
+    <ClCompile Include="..\..\src\gs\huodong_config.cpp" />
+    <ClCompile Include="..\..\src\gs\huodong_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\huodong_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\huodong_pool.cpp" />
+    <ClCompile Include="..\..\src\gs\item_config.cpp" />
+    <ClCompile Include="..\..\src\gs\item_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\boss_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\mission_fight.cpp" />
+    <ClCompile Include="..\..\src\gs\mission_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\mission_pool.cpp" />
+    <ClCompile Include="..\..\src\gs\pvp_config.cpp" />
+    <ClCompile Include="..\..\src\gs\pvp_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\pvp_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\rank_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\rank_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\rank_pool.cpp" />
+    <ClCompile Include="..\..\src\gs\robot_config.cpp" />
+    <ClCompile Include="..\..\src\gs\robot_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\robot_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\robot_pool.cpp" />
+    <ClCompile Include="..\..\src\gs\social_config.cpp" />
+    <ClCompile Include="..\..\src\gs\social_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\social_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\social_pool.cpp" />
+    <ClCompile Include="..\..\src\gs\sport_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\mission_config.cpp" />
+    <ClCompile Include="..\..\src\gs\mission_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\player_config.cpp" />
+    <ClCompile Include="..\..\src\gs\player_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\item_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\player_load.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gs\player_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\gs_message.cpp" />
+    <ClCompile Include="..\..\src\gs\player_pool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gs\post_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\post_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\post_pool.cpp" />
+    <ClCompile Include="..\..\src\gs\role_config.cpp" />
+    <ClCompile Include="..\..\src\gs\role_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\role_operation.cpp" />
+    <ClCompile Include="..\..\src\gs\sport_operation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gs\sport_config.cpp" />
+    <ClCompile Include="..\..\src\gs\sport_pool.cpp" />
+    <ClCompile Include="..\..\src\gs\treasure_config.cpp" />
+    <ClCompile Include="..\..\src\gs\treasure_list.cpp" />
+    <ClCompile Include="..\..\src\gs\treasure_manager.cpp" />
+    <ClCompile Include="..\..\src\gs\treasure_operation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\gs\boss_config.h" />
+    <ClInclude Include="..\..\src\gs\equip_config.h" />
+    <ClInclude Include="..\..\src\gs\equip_manager.h" />
+    <ClInclude Include="..\..\src\gs\equip_operation.h" />
+    <ClInclude Include="..\..\src\gs\global_pool.h" />
+    <ClInclude Include="..\..\src\gs\gs_manager.h" />
+    <ClInclude Include="..\..\src\gs\guild_config.h" />
+    <ClInclude Include="..\..\src\gs\guild_manager.h" />
+    <ClInclude Include="..\..\src\gs\guild_operation.h" />
+    <ClInclude Include="..\..\src\gs\guild_pool.h" />
+    <ClInclude Include="..\..\src\gs\huodong_config.h" />
+    <ClInclude Include="..\..\src\gs\huodong_manager.h" />
+    <ClInclude Include="..\..\src\gs\huodong_operation.h" />
+    <ClInclude Include="..\..\src\gs\huodong_pool.h" />
+    <ClInclude Include="..\..\src\gs\item_config.h" />
+    <ClInclude Include="..\..\src\gs\item_def.h" />
+    <ClInclude Include="..\..\src\gs\item_operation.h" />
+    <ClInclude Include="..\..\src\gs\boss_manager.h" />
+    <ClInclude Include="..\..\src\gs\mission_fight.h" />
+    <ClInclude Include="..\..\src\gs\mission_operation.h" />
+    <ClInclude Include="..\..\src\gs\mission_pool.h" />
+    <ClInclude Include="..\..\src\gs\pvp_config.h" />
+    <ClInclude Include="..\..\src\gs\pvp_manager.h" />
+    <ClInclude Include="..\..\src\gs\pvp_operation.h" />
+    <ClInclude Include="..\..\src\gs\rank_manager.h" />
+    <ClInclude Include="..\..\src\gs\rank_operation.h" />
+    <ClInclude Include="..\..\src\gs\rank_pool.h" />
+    <ClInclude Include="..\..\src\gs\robot_config.h" />
+    <ClInclude Include="..\..\src\gs\robot_manager.h" />
+    <ClInclude Include="..\..\src\gs\robot_operation.h" />
+    <ClInclude Include="..\..\src\gs\robot_pool.h" />
+    <ClInclude Include="..\..\src\gs\social_config.h" />
+    <ClInclude Include="..\..\src\gs\social_manager.h" />
+    <ClInclude Include="..\..\src\gs\social_operation.h" />
+    <ClInclude Include="..\..\src\gs\social_pool.h" />
+    <ClInclude Include="..\..\src\gs\sport_manager.h" />
+    <ClInclude Include="..\..\src\gs\mission_config.h" />
+    <ClInclude Include="..\..\src\gs\mission_manager.h" />
+    <ClInclude Include="..\..\src\gs\player_config.h" />
+    <ClInclude Include="..\..\src\gs\player_operation.h" />
+    <ClInclude Include="..\..\src\gs\item_manager.h" />
+    <ClInclude Include="..\..\src\gs\player_def.h" />
+    <ClInclude Include="..\..\src\gs\player_load.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gs\player_manager.h" />
+    <ClInclude Include="..\..\src\gs\gs_message.h" />
+    <ClInclude Include="..\..\src\gs\player_pool.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gs\post_manager.h" />
+    <ClInclude Include="..\..\src\gs\post_operation.h" />
+    <ClInclude Include="..\..\src\gs\post_pool.h" />
+    <ClInclude Include="..\..\src\gs\role_config.h" />
+    <ClInclude Include="..\..\src\gs\role_manager.h" />
+    <ClInclude Include="..\..\src\gs\role_operation.h" />
+    <ClInclude Include="..\..\src\gs\sport_operation.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gs\sport_config.h" />
+    <ClInclude Include="..\..\src\gs\sport_pool.h" />
+    <ClInclude Include="..\..\src\gs\treasure_config.h" />
+    <ClInclude Include="..\..\src\gs\treasure_list.h" />
+    <ClInclude Include="..\..\src\gs\treasure_manager.h" />
+    <ClInclude Include="..\..\src\gs\treasure_operation.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2E334CC5-D93C-4469-A81C-C302BB836391}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>test</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>..\..\out\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\out\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\libgame;$(ZLIB_ROOT);$(PROTOBUF_ROOT)\src;$(ZMQ_ROOT)\include;$(BOOST_ROOT);$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\libs;$(BOOST_ROOT)\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libgamed.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\libgame;..\..\deps\zlib;..\..\deps\protobuf;..\..\deps\zmq;$(BOOST_ROOT);$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\libs;$(BOOST_ROOT)\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libgame.lib;libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\libgame;..\..\deps\zlib;..\..\deps\protobuf;..\..\deps\zmq;$(BOOST_ROOT);$(ACE_ROOT);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\libs;$(BOOST_ROOT)\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libgame.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

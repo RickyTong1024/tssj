@@ -1,0 +1,44 @@
+INT	STRING	STRING	STRING	STRING	STRING	INT	INT	INT	FLOAT	FLOAT	INT	INT	INT	INT	INT	INT	INT	FLOAT	INT	FLOAT	INT	INT	INT	INT	FLOAT	INT	FLOAT	INT	INT
+id	名字	描述	代号	描述	行为	攻击类型 1物理 2魔法 3加血 4无伤害	目标类型 1自己 2己方血最少 3敌方通用	范围 1前排单体 2中排单体 3后排单体 4前排 5中排 6后排 7 随机3人 8纵列 9全体	伤害百分比	释放几率	能量目标 1自己 2目标	能量变化	mp概率	buff类型 1攻击 2修改属性	buff目标 1自己 2目标	buff持续回合	buff攻击类型 1物理 2魔法 3加血	buff伤害百分比	buff修改属性	buff修改值	buff类型 1攻击 2修改属性	buff目标 1自己 2目标	buff持续回合	buff攻击类型 1物理 2魔法 3加血	buff伤害百分比	buff修改属性	buff修改值	晕眩概率	晕眩回合
+100100101	精准射击	对前排敌人造成54%的物理伤害	t_chongwuskill_name_100100101	t_chongwuskill_desc_100100101	attack	1	3	4	0.54																				
+100100102	钢铁冲刺	对前排敌人造成114%的物理伤害，每次行动有27%的几率释放	t_chongwuskill_name_100100102	t_chongwuskill_desc_100100102	jn01	1	3	4	1.14	0.27																			
+100100103	钢铁冲刺	对前排敌人造成114%的物理伤害，每次行动有30%的几率释放	t_chongwuskill_name_100100102	t_chongwuskill_desc_100100103	jn02	1	3	4	1.14	0.3																			
+100100104	钢铁冲刺	对前排敌人造成114%的物理伤害，每次行动有33%的几率释放	t_chongwuskill_name_100100102	t_chongwuskill_desc_100100104	jn03	1	3	4	1.14	0.33																			
+100100105	钢铁冲刺	对前排敌人造成114%的物理伤害，每次行动有36%的几率释放	t_chongwuskill_name_100100102	t_chongwuskill_desc_100100105	jn04	1	3	4	1.14	0.36																			
+100100106	钢铁冲刺	对前排敌人造成114%的物理伤害，每次行动有39%的几率释放	t_chongwuskill_name_100100102	t_chongwuskill_desc_100100106	jn05	1	3	4	1.14	0.39																			
+100100107	钢铁冲刺	对前排敌人造成114%的物理伤害，每次行动有42%的几率释放	t_chongwuskill_name_100100102	t_chongwuskill_desc_100100107	jn06	1	3	4	1.14	0.42																			
+100100201	剧毒喷雾	对后排敌人造成54%的魔法伤害	t_chongwuskill_name_100100201	t_chongwuskill_desc_100100201	attack	2	3	6	0.54																				
+100100202	毒沼深渊	对后排敌人造成114%的魔法伤害，每次行动有27%的几率释放	t_chongwuskill_name_100100202	t_chongwuskill_desc_100100202	jn01	2	3	6	1.14	0.27																			
+100100203	毒沼深渊	对后排敌人造成114%的魔法伤害，每次行动有30%的几率释放	t_chongwuskill_name_100100202	t_chongwuskill_desc_100100203	jn02	2	3	6	1.14	0.3																			
+100100204	毒沼深渊	对后排敌人造成114%的魔法伤害，每次行动有33%的几率释放	t_chongwuskill_name_100100202	t_chongwuskill_desc_100100204	jn03	2	3	6	1.14	0.33																			
+100100205	毒沼深渊	对后排敌人造成114%的魔法伤害，每次行动有36%的几率释放	t_chongwuskill_name_100100202	t_chongwuskill_desc_100100205	jn04	2	3	6	1.14	0.36																			
+100100206	毒沼深渊	对后排敌人造成114%的魔法伤害，每次行动有39%的几率释放	t_chongwuskill_name_100100202	t_chongwuskill_desc_100100206	jn05	2	3	6	1.14	0.39																			
+100100207	毒沼深渊	对后排敌人造成114%的魔法伤害，每次行动有42%的几率释放	t_chongwuskill_name_100100202	t_chongwuskill_desc_100100207	jn06	2	3	6	1.14	0.42																			
+100200101	光速连斩	对前排敌人造成54%的物理伤害	t_chongwuskill_name_100200101	t_chongwuskill_desc_100200101	attack	1	3	4	0.54																				
+100200102	火焰刀山	对全体敌人造成81%的物理伤害，每次行动有30%的几率释放	t_chongwuskill_name_100200102	t_chongwuskill_desc_100200102	jn01	1	3	9	0.81	0.3																			
+100200103	火焰刀山	对全体敌人造成81%的物理伤害，每次行动有33%的几率释放	t_chongwuskill_name_100200102	t_chongwuskill_desc_100200103	jn02	1	3	9	0.81	0.33																			
+100200104	火焰刀山	对全体敌人造成81%的物理伤害，每次行动有36%的几率释放	t_chongwuskill_name_100200102	t_chongwuskill_desc_100200104	jn03	1	3	9	0.81	0.36																			
+100200105	火焰刀山	对全体敌人造成81%的物理伤害，并使目标受到的伤害增加10%，持续1回合。每次行动有39%的几率释放	t_chongwuskill_name_100200102	t_chongwuskill_desc_100200105	jn04	1	3	9	0.81	0.39				2	2	1			21	-10									
+100200106	火焰刀山	对全体敌人造成81%的物理伤害，并使目标受到的伤害增加15%，持续1回合。每次行动有42%的几率释放	t_chongwuskill_name_100200102	t_chongwuskill_desc_100200106	jn05	1	3	9	0.81	0.42				2	2	1			21	-15									
+100200107	火焰刀山	对全体敌人造成81%的物理伤害，并使目标受到的伤害增加20%，持续1回合。每次行动有45%的几率释放	t_chongwuskill_name_100200102	t_chongwuskill_desc_100200107	jn06	1	3	9	0.81	0.45				2	2	1			21	-20									
+100200201	剑光冲击	对后排敌人造成54%的魔法伤害	t_chongwuskill_name_100200201	t_chongwuskill_desc_100200201	attack	2	3	6	0.54																				
+100200202	自由爆破	对全体敌人造成81%的魔法伤害，每次行动有30%的几率释放	t_chongwuskill_name_100200202	t_chongwuskill_desc_100200202	jn01	2	3	9	0.81	0.3																			
+100200203	自由爆破	对全体敌人造成81%的魔法伤害，每次行动有33%的几率释放	t_chongwuskill_name_100200202	t_chongwuskill_desc_100200203	jn02	2	3	9	0.81	0.33																			
+100200204	自由爆破	对全体敌人造成81%的魔法伤害，每次行动有36%的几率释放	t_chongwuskill_name_100200202	t_chongwuskill_desc_100200204	jn03	2	3	9	0.81	0.36																			
+100200205	自由爆破	对全体敌人造成81%的魔法伤害，并使我方受到的伤害减少10%，持续1回合。每次行动有39%的几率释放	t_chongwuskill_name_100200202	t_chongwuskill_desc_100200205	jn04	2	3	9	0.81	0.39				2	1	1			21	-10									
+100200206	自由爆破	对全体敌人造成81%的魔法伤害，并使我方受到的伤害减少15%，持续1回合。每次行动有42%的几率释放	t_chongwuskill_name_100200202	t_chongwuskill_desc_100200206	jn05	2	3	9	0.81	0.42				2	1	1			21	-15									
+100200207	自由爆破	对全体敌人造成81%的魔法伤害，并使我方受到的伤害减少20%，持续1回合。每次行动有45%的几率释放	t_chongwuskill_name_100200202	t_chongwuskill_desc_100200207	jn06	2	3	9	0.81	0.45				2	1	1			21	-20									
+100300101	尖锐穿刺	对全体敌人造成31%的物理伤害	t_chongwuskill_name_100300101	t_chongwuskill_desc_100300101	attack	1	3	9	0.31																				
+100300102	无情制裁	对全体敌人造成85%的物理伤害，每次行动有35%的几率释放	t_chongwuskill_name_100300102	t_chongwuskill_desc_100300102	jn01	1	3	9	0.85	0.35																			
+100300103	无情制裁	对全体敌人造成85%的物理伤害，每次行动有38%的几率释放	t_chongwuskill_name_100300102	t_chongwuskill_desc_100300103	jn02	1	3	9	0.85	0.38																			
+100300104	无情制裁	对全体敌人造成85%的物理伤害，每次行动有41%的几率释放	t_chongwuskill_name_100300102	t_chongwuskill_desc_100300104	jn03	1	3	9	0.85	0.41																			
+100300105	无情制裁	对全体敌人造成85%的物理伤害，并造成自身攻击力40%的流血效果，持续2回合。每次行动有44%的几率释放	t_chongwuskill_name_100300102	t_chongwuskill_desc_100300105	jn04	1	3	9	0.85	0.44				1	2	2	1	0.4											
+100300106	无情制裁	对全体敌人造成85%的物理伤害，并造成自身攻击力50%的流血效果，持续2回合。每次行动有47%的几率释放	t_chongwuskill_name_100300102	t_chongwuskill_desc_100300106	jn05	1	3	9	0.85	0.47				1	2	2	1	0.5											
+100300107	无情制裁	对全体敌人造成85%的物理伤害，并造成自身攻击力60%的流血效果，持续2回合。每次行动有50%的几率释放	t_chongwuskill_name_100300102	t_chongwuskill_desc_100300107	jn06	1	3	9	0.85	0.5				1	2	2	1	0.6											
+100300201	神圣之光	对全体敌人造成31%的魔法伤害	t_chongwuskill_name_100300201	t_chongwuskill_desc_100300201	attack	2	3	9	0.31																				
+100300202	空之惩戒	对全体敌人造成85%的魔法伤害，每次行动有35%的几率释放	t_chongwuskill_name_100300202	t_chongwuskill_desc_100300202	jn01	2	3	9	0.85	0.35																			
+100300203	空之惩戒	对全体敌人造成85%的魔法伤害，每次行动有38%的几率释放	t_chongwuskill_name_100300202	t_chongwuskill_desc_100300203	jn02	2	3	9	0.85	0.38																			
+100300204	空之惩戒	对全体敌人造成85%的魔法伤害，每次行动有41%的几率释放	t_chongwuskill_name_100300202	t_chongwuskill_desc_100300204	jn03	2	3	9	0.85	0.41																			
+100300205	空之惩戒	对全体敌人造成85%的魔法伤害，并使其造成的伤害减少15%，持续1回合。每次行动有44%的几率释放	t_chongwuskill_name_100300202	t_chongwuskill_desc_100300205	jn04	2	3	9	0.85	0.44				2	2	1			20	-15									
+100300206	空之惩戒	对全体敌人造成85%的魔法伤害，并使其造成的伤害减少20%，持续1回合。每次行动有47%的几率释放	t_chongwuskill_name_100300202	t_chongwuskill_desc_100300206	jn05	2	3	9	0.85	0.47				2	2	1			20	-20									
+100300207	空之惩戒	对全体敌人造成85%的魔法伤害，并使其造成的伤害减少25%，持续1回合。每次行动有50%的几率释放	t_chongwuskill_name_100300202	t_chongwuskill_desc_100300207	jn06	2	3	9	0.85	0.5				2	2	1			20	-25									

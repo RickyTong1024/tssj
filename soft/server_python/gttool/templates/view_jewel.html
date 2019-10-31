@@ -1,0 +1,50 @@
+﻿{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+    <script src="/static/js/mail.js?10" type="text/javascript"></script>
+     <script src="/static/js/libao.js?10" type="text/javascript"></script>
+	{% include "form.html" %}
+	<div>
+		<div class="well">
+			<form name="main" class="form-horizontal" action="" method="post">
+                {% csrf_token %}
+				{{ form|as_bootstrap }}
+				<div>
+					<input type="button" name ="tijiao" value="确定" class="btn btn-primary" onclick="mask();"/>
+				</div>
+                {% if form.suc %}
+                <script>
+                    alert("查询成功");
+                </script>
+                {% endif %}
+                {% if messages %}
+                {% for message in messages %}
+                <script>
+                    alert("{{ message }}");
+                </script>
+                {% endfor %}
+                {% endif %}
+			</form>
+            <table class="table table-striped table-hover">  
+            <tr>
+                <td><strong>途径</strong></td>
+                <td><strong>方式</strong></td> 
+                <td><strong>数量</strong></td>
+                <td><strong>占百分比</strong></td>
+                <td><strong>日期</strong></td>
+            </tr>  
+            {% for line in line %}  
+                <tr> 
+                    <td>{{ line.value4 }}</td>
+                    <td>{{ line.value5 }}</td>
+                    <td>{{ line.sum }}</td>  
+                    <td>{{ line.cate }}</td>
+                    <td>{{ line.dt|date:"Y-m-d H:i"  }}</td>
+                </tr>  
+            {% endfor %}  
+        </table>
+        {{ line|pagination }} 
+		</div> 
+	</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wjhe.tsjh24.SelectActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/BackImage"
+            android:layout_width="260dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:contentDescription="TODO"
+            android:scaleType="fitXY"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+        <ImageButton
+            android:id="@+id/Alipay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/BackImage"
+            android:layout_alignTop="@+id/BackImage"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/ali"
+            android:cropToPadding="true"
+            android:scaleType="matrix" />
+
+        <ImageButton
+            android:id="@+id/Weixin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/BackImage"
+            android:layout_alignTop="@+id/BackImage"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/wx"
+            android:cropToPadding="true"
+            android:scaleType="matrix" />
+
+        <ImageButton
+            android:id="@+id/Close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/BackImage"
+            android:layout_alignTop="@+id/BackImage"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/close"
+            tools:layout_editor_absoluteX="421dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Alipay"
+            android:layout_alignStart="@+id/Alipay"
+            android:layout_below="@+id/Alipay"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
+            android:text="支付宝"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="?android:attr/textColorTertiaryInverse"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Weixin"
+            android:layout_alignStart="@+id/Weixin"
+            android:layout_below="@+id/Weixin"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
+            android:text="微信支付"
+            android:textAlignment="center"
+            android:textColor="?android:attr/textColorTertiaryInverse"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

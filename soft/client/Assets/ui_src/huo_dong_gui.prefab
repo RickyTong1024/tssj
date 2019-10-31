@@ -1,0 +1,410 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: huo_dong_gui
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 25b91366345e71046a7ac31db27b0124, type: 2}
+  mSprites:
+  - name: bk_xytb
+    x: 2
+    y: 222
+    width: 122
+    height: 114
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_jbfcxzk
+    x: 2
+    y: 453
+    width: 52
+    height: 52
+    borderLeft: 20
+    borderRight: 20
+    borderTop: 20
+    borderBottom: 20
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: kfkh_rldb001
+    x: 126
+    y: 222
+    width: 101
+    height: 104
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: kfkh_rldb002
+    x: 81
+    y: 338
+    width: 101
+    height: 104
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: kfkh_rldbxzk
+    x: 205
+    y: 414
+    width: 74
+    height: 76
+    borderLeft: 18
+    borderRight: 18
+    borderTop: 19
+    borderBottom: 19
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: num_bg
+    x: 56
+    y: 453
+    width: 147
+    height: 47
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: pttq_zcan01a
+    x: 206
+    y: 2
+    width: 202
+    height: 96
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: pttq_zcan01b
+    x: 2
+    y: 2
+    width: 202
+    height: 96
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: syxhd_dltou001
+    x: 133
+    y: 100
+    width: 30
+    height: 98
+    borderLeft: 5
+    borderRight: 5
+    borderTop: 5
+    borderBottom: 5
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: syxhd_dltou002
+    x: 184
+    y: 328
+    width: 35
+    height: 84
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: sz001d
+    x: 359
+    y: 169
+    width: 63
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 23
+    paddingRight: 25
+    paddingTop: 23
+    paddingBottom: 21
+  - name: sz002d
+    x: 346
+    y: 100
+    width: 63
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 23
+    paddingRight: 25
+    paddingTop: 23
+    paddingBottom: 21
+  - name: sz003d
+    x: 286
+    y: 328
+    width: 63
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 23
+    paddingRight: 25
+    paddingTop: 23
+    paddingBottom: 21
+  - name: sz004d
+    x: 294
+    y: 196
+    width: 63
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 23
+    paddingRight: 25
+    paddingTop: 23
+    paddingBottom: 21
+  - name: sz005d
+    x: 229
+    y: 196
+    width: 63
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 23
+    paddingRight: 25
+    paddingTop: 23
+    paddingBottom: 21
+  - name: sz006d
+    x: 281
+    y: 397
+    width: 63
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 23
+    paddingRight: 25
+    paddingTop: 23
+    paddingBottom: 21
+  - name: xzhsz001
+    x: 411
+    y: 100
+    width: 61
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 25
+    paddingRight: 25
+    paddingTop: 21
+    paddingBottom: 23
+  - name: xzhsz002
+    x: 229
+    y: 265
+    width: 67
+    height: 61
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 20
+    paddingRight: 24
+    paddingTop: 24
+    paddingBottom: 26
+  - name: xzhsz003
+    x: 298
+    y: 265
+    width: 63
+    height: 61
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 26
+    paddingRight: 22
+    paddingTop: 26
+    paddingBottom: 24
+  - name: xzhsz004
+    x: 424
+    y: 236
+    width: 61
+    height: 65
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 25
+    paddingRight: 25
+    paddingTop: 25
+    paddingBottom: 21
+  - name: xzhsz005
+    x: 221
+    y: 328
+    width: 63
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 27
+    paddingTop: 22
+    paddingBottom: 22
+  - name: xzhsz006
+    x: 424
+    y: 169
+    width: 65
+    height: 65
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 24
+    paddingRight: 22
+    paddingTop: 21
+    paddingBottom: 25
+  - name: xzhsz007
+    x: 363
+    y: 238
+    width: 51
+    height: 61
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 31
+    paddingRight: 29
+    paddingTop: 25
+    paddingBottom: 25
+  - name: yhdzp_jichidb001
+    x: 2
+    y: 100
+    width: 129
+    height: 120
+    borderLeft: 55
+    borderRight: 55
+    borderTop: 55
+    borderBottom: 55
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: yhdzp_jichidb003
+    x: 410
+    y: 2
+    width: 96
+    height: 96
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: yhdzp_zshsan001
+    x: 165
+    y: 100
+    width: 179
+    height: 94
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: zz_xytb
+    x: 2
+    y: 338
+    width: 77
+    height: 113
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabAsset: 1

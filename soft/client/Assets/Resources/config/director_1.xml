@@ -1,0 +1,35 @@
+<directors>
+	<director type="play_anim" v0="Main Camera" v1="cam_1"/>	
+
+	<director type="wait" v0="3"/>
+	<director type="unit_action" v0="ts_t01" v1="run"/>
+	<director type="unit_moveto" v0="ts_t01" v1="1.43" v2="0" v3="-36.34" v4="2"/>	
+	<director type="unit_action" v0="ts_bot125" v1="run"/>
+	<director type="unit_moveto" v0="ts_bot125" v1="0" v2="0" v3="-36.34" v4="2"/>		
+	
+	<director type="wait" v0="2"/>
+	<director type="unit_action" v0="ts_t01" v1="ready"/>
+	<director type="unit_action" v0="ts_bot125" v1="ready"/>	
+		
+	<director type="wait" v0="2"/>
+		
+	<director type="play_anim" v0="Main Camera" v1="cam_2"/>	
+	<director type="unit_action" v0="ts_bot143" v1="run"/>
+	<director type="unit_moveto" v0="ts_bot143" v1="0" v2="0" v3="-27" v4="4"/>		
+	
+	<director type="wait" v0="4"/>
+	
+	<director type="unit_target" v0="ts_bot125" v1="0" v2="0" v3="-29" v4="4"/>
+	<director type="unit_action" v0="ts_bot125" v1="jn01"/>
+	
+	<director type="unit_action" v0="ts_t01" v1="attack"/>
+	
+			
+
+	<director type="play_anim" v0="Main Camera" v1="cam_0"/>	
+	<director type="unit_action" v0="ts_bot136" v1="walk"/>
+	<director type="unit_moveto" v0="ts_bot136" v1="-60" v2="0" v3="50" v4="5"/>	
+	<director type="wait" v0="5"/>
+	<director type="unit_action" v0="ts_bot136" v1="ready"/>	
+						
+</directors>

@@ -1,0 +1,127 @@
+<directors>
+
+	<director type="show_unit" v0="ts_bot125"/>
+	<director type="show_object" v0="bot125_wp"/>
+	<director type="show_object" v0="ts_nzj001_wq"/>
+	<director type="show_unit" v0="ts_t01"/>
+	<director type="show_unit" v0="ts_bot200"/>
+	
+	
+    <director type="unit_moveto" v0="ts_bot125" v1="494.715" v2="1.178665" v3="13" v4="4"/>
+	<director type="play_anim" v0="drks_d" v1="drks_cam01"/>
+	<director type="unit_action" v0="ts_bot125" v1="walk"/>
+	
+	<director type="wait" v0="0.5"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_1"/>
+	
+	<director type="wait" v0="3"/>
+	
+	<director type="unit_action" v0="ts_bot125" v1="ws_stand01"/>
+
+	<director type="wait" v0="1"/>
+	
+	<director type="unit_action" v0="ts_bot125" v1="ws_jianzhi01"/>
+	
+
+	<director type="play_anim" v0="drks_d" v1="drks_cam02"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_2"/>
+	
+	<director type="wait" v0="3"/>
+	
+	
+	
+	<director type="unit_action" v0="ts_bot125" v1="speak"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_3"/>
+	
+	<director type="wait" v0="4"/>
+	
+	
+	
+	<director type="play_anim" v0="drks_d" v1="drks_cam03"/>
+	
+
+	
+	<director type="unit_action" v0="ts_bot200" v1="zhuan_tou"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_4"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_5"/>
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="unit_action" v0="ts_t01" v1="zhuan_tou"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_6"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_7"/>
+	
+	<director type="wait" v0="2"/>
+	
+	
+	
+	<director type="play_anim" v0="drks_d" v1="drks_cam04"/>
+    
+    <director type="show_unit" v0="ts_bot912"/>
+    
+    <director type="wait" v0="0.1"/>
+    
+    <director type="set_film_label" v0="director_drks_set_film_label_8"/>
+    
+    <director type="unit_action" v0="ts_bot912" v1="ready"/>
+    
+    <director type="wait" v0="2"/>
+    
+    <director type="play_anim" v0="drks_d" v1="drks_cam02"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_9"/>
+	
+	<director type="wait" v0="1.5"/>
+	
+	<director type="play_anim" v0="drks_d" v1="drks_cam03"/>
+	
+	<director type="unit_action" v0="ts_bot200" v1="zhuan_tou"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_10"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_11"/>
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="unit_action" v0="ts_t01" v1="zhuan_tou"/>
+	
+	<director type="set_film_label" v0="director_drks_set_film_label_12"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="play_anim" v0="drks_d" v1="drks_cam05"/>
+    
+    <director type="show_unit" v0="ts_bot912"/>
+    
+    <director type="wait" v0="0.1"/>
+    
+    <director type="set_film_label" v0="director_drks_set_film_label_13"/>
+    
+    <director type="unit_action" v0="ts_bot912" v1="ready"/>
+    
+    <director type="wait" v0="2"/>
+    
+    <director type="hide_director"/>
+	
+																																															
+	
+
+
+
+	
+	
+																								
+</directors>

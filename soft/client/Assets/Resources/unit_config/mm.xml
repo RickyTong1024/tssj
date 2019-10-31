@@ -1,0 +1,1877 @@
+<unit name_height="2">
+	
+	
+	<part name="face_01">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_face01" type="face"/>
+	</part>
+	
+	<part name="face_02">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_face02" type="face"/>
+	</part>
+	
+	<part name="face_03">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_face03" type="face"/>
+	</part>		
+	
+	<part name="face_04">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_face04" type="face"/>
+	</part>						
+	
+	<part name="hair_01">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_hair01" type="hair"/>
+	</part>
+	
+	<part name="hair_02">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_hair02" type="hair"/>
+	</part>
+	
+	<part name="hair_03">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_hair03" type="hair"/>
+	</part>		
+	
+	<part name="hair_04">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_hair06" type="hair"/>
+	</part>		
+		
+	<part name="hair_05">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_hair07" type="hair"/>
+	</part>		
+	
+	<part name="hair_06">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_hair08" type="hair"/>
+	</part>		
+	<part name="hair_07">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_hair016" type="hair"/>
+	</part>		
+			
+	<part name="body_01">
+		<mesh bone="" part="ts_nchr001_body" pack="unit/mm/mm" type="body"/>
+	</part>
+		
+	<part name="body_02">
+		<mesh bone="" part="ts_nchr002_body" pack="unit/mm/ts_body02" type="body"/>
+	</part>
+	
+	<part name="body_03">
+		<mesh bone="" part="ts_nchr003_body" pack="unit/mm/ts_body03" type="body"/>
+	</part>
+	
+	<part name="body_04">
+		<mesh bone="" part="ts_nchrluomo" pack="unit/mm/ts_body04" type="body"/>
+	</part>	
+	
+	<part name="body_05">
+		<mesh bone="" part="ts_nchr004_body" pack="unit/mm/ts_body05" type="body"/>
+	</part>	
+	
+	<part name="body_06">
+		<mesh bone="" part="ts_nchr008_body" pack="unit/mm/ts_body06" type="body"/>
+	</part>		
+	
+	<part name="body_07">
+		<mesh bone="" part="ts_nchr011_body" pack="unit/mm/ts_body07" type="body"/>		
+	</part>		
+	
+	<part name="body_08">
+		<mesh bone="" part="ts_nchr012_body" pack="unit/mm/ts_body08" type="body"/>		
+	</part>			
+	
+	<part name="body_09">
+		<mesh bone="" part="ts_nchr013_body" pack="unit/mm/ts_body09" type="body"/>		
+	</part>		
+	
+	<part name="body_10">
+		<mesh bone="" part="ts_nchr014_body" pack="unit/mm/ts_body10" type="body"/>		
+	</part>		
+	<part name="body_11">
+		<mesh bone="" part="ts_nchr011_body" pack="unit/mm/ts_body11" type="body"/>		
+	</part>		
+	<part name="body_12">
+		<mesh bone="" part="ts_nchr012_body" pack="unit/mm/ts_body12" type="body"/>		
+	</part>			
+	<part name="body_18">
+		<mesh bone="" part="ts_nchr018_body" pack="unit/mm/ts_body18" type="body"/>		
+	</part>	
+	
+	<part name="hair_add_01">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_deaddress_01" type="deaddress"/>		
+	</part>			
+						
+	<part name="hair_add_02">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_deaddress_02" type="deaddress"/>		
+	</part>		
+	
+	<part name="hair_add_03">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_deaddress_03" type="deaddress"/>		
+	</part>		
+	
+	<part name="hair_add_04">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_deaddress_04" type="deaddress"/>		
+	</part>		
+	<part name="hair_add_05">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_deaddress_05" type="deaddress"/>		
+	</part>		
+	<part name="hair_add_06">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_deaddress_06" type="deaddress"/>		
+	</part>		
+	<part name="hair_add_18">
+		<mesh bone="Bip02 Head" part="" pack="unit/mm/ts_deaddress_18" type="deaddress"/>		
+	</part>		
+				
+	<default_part name = "body_05"></default_part>
+	<default_part name = "face_04"></default_part>
+		
+	<actions name="stand">
+		<atcion time="0" type="anim" name="pt_stand1"></atcion>
+	</actions>	
+	
+	<actions name="stand2">
+		<atcion time="0" type="anim" name="pt_stand2"></atcion>
+	</actions>	
+	
+	<actions name="stand3">
+		<atcion time="0" type="anim" name="pt_stand3"></atcion>
+	</actions>	
+	
+	<actions name="stand4">
+		<atcion time="0" type="anim" name="pt_stand4"></atcion>
+	</actions>	
+	
+	<actions name="stand">
+		<atcion time="0" type="anim" name="pt_stand5"></atcion>
+	</actions>		
+
+	<actions name="zhuan_shen">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_le01"></atcion>
+		<atcion time="0" type="anim" name="pt_show"></atcion>
+		<atcion time="4" type="sound"  sound="sound/mm/tspy_xi03"></atcion>		
+		<atcion time="6.3" type="action" name="stand"></atcion>
+	</actions>	
+	
+																															
+	<actions name="kao_lu">
+		<atcion time="0" type="anim" name="bq_tuosai01"></atcion>
+		<atcion time="2" type="action" name="stand"></atcion>
+	</actions>		
+	
+	<actions name="mpp">
+		<atcion time="0" type="anim" name="mpp"></atcion>
+		<atcion time="2.5" type="action" name="stand"></atcion>
+	</actions>			
+	
+	<actions name="huan_yi">
+		<atcion time="0" type="anim" name="bq_huanyf01"></atcion>
+		<atcion time="2" type="action" name="stand"></atcion>
+	</actions>	
+	
+	
+	<actions name="dl_cj01">
+		<atcion time="0" type="anim" name="dl_cj01"></atcion>
+	</actions>	
+	<actions name="dl_cj02">
+		<atcion time="0" type="anim" name="dl_cj02"></atcion>
+	</actions>	
+	
+	<actions name="cz_pc01">
+		<atcion time="0" type="anim" name="dl_czt01"></atcion>
+		
+		<atcion time="0.5" type="show_effect_object" name="book"></atcion>
+		
+		<atcion time="3" type="hide_effect_object" name="book"></atcion>
+		
+		<atcion time="3" type="action" name="stand"></atcion>
+	</actions>	
+	
+	<actions name="cz_pc02">
+		<atcion time="0" type="anim" name="dl_czt02"></atcion>
+	</actions>	
+	<actions name="duan_pan_zi">
+		<atcion time="0" type="anim" name="dl_czt_stand"></atcion>
+	</actions>	
+	
+	<actions name="walk">
+		<atcion time="0" type="anim" name="dl_zct_walk"></atcion>
+	</actions>	
+	
+	<actions name="run">
+		<atcion time="0" type="anim" name="pt_run01"></atcion>
+	</actions>	
+		
+	<actions name="hu_xiong01">
+		<atcion time="0" type="anim" name="bq_xiongno01"></atcion>
+		<atcion time="2" type="action" name="stand"></atcion>
+	</actions> 		
+		
+	<actions name="hu_ying">
+		<atcion time="0" type="anim" name="bq_tuino01"></atcion>
+		<atcion time="2" type="action" name="stand"></atcion>
+	</actions> 		
+		
+	<actions name="hu_xiong02">
+		<atcion time="0" type="anim" name="bq_shouno01"></atcion>
+		<atcion time="2" type="action" name="stand"></atcion>
+	</actions> 		
+	
+	
+	<actions name="sheng_qi">
+		<atcion time="0" type="anim" name="bq_shengqi01"></atcion>
+		<atcion time="2" type="action" name="stand"></atcion>
+	</actions> 
+			
+	<actions name="ke_ai">
+		<atcion time="0" type="anim" name="bq_maimeng01"></atcion>
+		<atcion time="2.2" type="action" name="stand"></atcion>
+	</actions> 		
+	
+	<actions name="kai_xing">
+		<atcion time="0" type="anim" name="bq_kaixin01"></atcion>
+		<atcion time="3" type="action" name="stand"></atcion>
+	</actions> 	
+	
+	<actions name="hai_xiu">
+		<atcion time="0" type="anim" name="bq_haixiu01"></atcion>
+		<atcion time="1.6" type="action" name="stand"></atcion>
+	</actions> 	
+	
+	<actions name="hai_xiu2">
+		<atcion time="0" type="anim" name="bq_haixiu02"></atcion>
+		<atcion time="2.2" type="action" name="stand"></atcion>
+	</actions> 		
+	
+	<actions name="hi">
+		<atcion time="0" type="anim" name="bq_sayhi01"></atcion>
+		<atcion time="2" type="action" name="stand"></atcion>
+	</actions> 		
+	
+	<actions name="no">
+		<atcion time="0" type="anim" name="bq_sayno01"></atcion>
+		<atcion time="2" type="action" name="stand"></atcion>
+	</actions> 	
+	
+	<actions name="seeew">
+		<atcion time="0" type="anim" name="bq_seeew01"></atcion>
+		<atcion time="3" type="action" name="stand"></atcion>
+	</actions> 		
+	
+	<actions name="sanerg">
+		<atcion time="0" type="anim" name="bq_sanerg01"></atcion>
+		
+		<atcion time="2.7" type="sound"  sound="effect/sound/hit_bullet_flesh"></atcion>
+		<atcion time="2.7" type="shake_ui" shake="0.3"></atcion>
+		
+		<atcion time="3.1" type="sound"  sound="effect/sound/hit_bullet_flesh"></atcion>		
+		<atcion time="3.1" type="shake_ui" shake="0.3"></atcion>
+		
+		<atcion time="3.5" type="action" name="stand"></atcion>
+	</actions> 			
+	
+	<actions name="seehand">
+		<atcion time="0" type="anim" name="bq_seehand01"></atcion>
+		<atcion time="4" type="action" name="stand"></atcion>
+	</actions> 	
+	
+	<actions name="qqhua">
+		<atcion time="0" type="anim" name="bq_qqhua01"></atcion>
+		<atcion time="2.4" type="action" name="stand"></atcion>
+	</actions> 																																																																															
+	
+	<actions name="think">
+		<atcion time="0" type="anim" name="bq_think01"></atcion>
+		<atcion time="3" type="action" name="stand"></atcion>
+	</actions> 	
+		
+	<actions name="wu_nai">
+		<atcion time="0" type="anim" name="bq_ganga01"></atcion>
+		<atcion time="1.5" type="action" name="stand"></atcion>
+	</actions> 	
+	<actions name="fei_wen">
+		<atcion time="0" type="anim" name="bq_feiwen01"></atcion>
+		<atcion time="1.5" type="action" name="stand"></atcion>
+	</actions> 	
+	<actions name="xi_xi">
+		<atcion time="0" type="anim" name="bq_daxiao01"></atcion>
+		<atcion time="1.5" type="action" name="stand"></atcion>
+	</actions> 	
+	<actions name="da_xiao">
+		<atcion time="0" type="anim" name="bq_cry01"></atcion>
+		<atcion time="1.8" type="action" name="stand"></atcion>
+	</actions> 	
+	<actions name="chi_jing">
+		<atcion time="0" type="anim" name="bq_chijing01"></atcion>
+		<atcion time="1.8" type="action" name="stand"></atcion>
+	</actions> 	
+	
+	<actions name="ao_man">
+		<atcion time="0" type="anim" name="bq_aoman01"></atcion>
+		<atcion time="1.5" type="action" name="stand"></atcion>
+	</actions> 	
+	
+	<actions name="wu">
+		<atcion time="0" type="anim" name="wd1"></atcion>
+		<atcion time="38" type="action" name="stand"></atcion>
+	</actions> 		
+	<!-- -->
+	
+	<actions name="shaorao_0">
+		<atcion time="0" type="sound"  sound="sound/ts_py_gsm"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>		
+		<atcion time="0" type="mm_talk"  v0="unit_config_shaorao_0_1" v1="unit_config_shaorao_0_reply_1"></atcion>
+		<atcion time="0" type="action" name="hu_xiong01"></atcion>
+	</actions> 		
+	
+	<actions name="shaorao_0">
+		<atcion time="0" type="sound"  sound="sound/ts_py_gsm"></atcion>
+		<atcion time="0" type="mm_face"  v0="sheng_qi" ></atcion>		
+		<atcion time="0" type="mm_talk"  v0="unit_config_shaorao_0_2" v1="unit_config_shaorao_0_reply_2"></atcion>
+		<atcion time="0" type="action" name="hu_xiong02"></atcion>
+	</actions> 		
+	
+	<actions name="shaorao_0">
+		<atcion time="0" type="sound"  sound="sound/ts_py_ty"></atcion>
+		<atcion time="0" type="mm_face"  v0="sheng_qi" ></atcion>		
+		<atcion time="0" type="mm_talk"  v0="unit_config_shaorao_0_3" v1="unit_config_shaorao_0_reply_3"></atcion>
+		<atcion time="0" type="action" name="sanerg"></atcion>
+	</actions> 			
+	
+	<actions name="shaorao_1">
+		<atcion time="0" type="sound"  sound="sound/ts_py_gsm"></atcion>
+		<atcion time="0" type="mm_face"  v0="sheng_qi" ></atcion>		
+		<atcion time="0" type="mm_talk"  v0="unit_config_shaorao_1_1" v1="unit_config_shaorao_1_reply_1"></atcion>
+		<atcion time="0" type="action" name="hu_ying"></atcion>
+	</actions> 		
+	
+	<actions name="shaorao_1">
+		<atcion time="0" type="sound"  sound="sound/ts_py_ty"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_shaorao_1_2" v1="unit_config_shaorao_1_reply_2"></atcion>
+		<atcion time="0" type="action" name="sanerg"></atcion>
+	</actions> 		
+	
+	<actions name="shaorao_3">
+		<atcion time="0" type="sound"  sound="effect/sound/hit_bullet_flesh"></atcion>
+		<atcion time="0" type="sound"  sound="sound/ts_py_ty"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_shaorao_1_3" v1="unit_config_shaorao_3_reply_1"></atcion>
+		<atcion time="0" type="shake_ui" shake="0.3"></atcion>
+		<atcion time="0" type="action" name="mpp"></atcion>
+	</actions> 			
+	
+	<actions name="mu_biao">
+		<atcion time="0" type="sound"  sound="sound/ts_py_mb"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_mu_biao_1" v1="unit_config_mu_biao_reply_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="huo_dong_boss">
+		<atcion time="0" type="sound"  sound="sound/ts_py_boss"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_huo_dong_1" v1="unit_config_huo_dong_reply_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions> 
+	
+	<actions name="daily_sign">
+		<atcion time="0" type="sound"  sound="sound/ts_py_qd"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_daily_sign_1" v1="unit_config_daily_sign_reply_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="online_reward">
+		<atcion time="0" type="sound"  sound="sound/ts_py_lqjl"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_online_reward_1" v1="unit_config_online_reward_reply_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="zhao_mu">
+		<atcion time="0" type="sound"  sound="sound/ts_py_zm"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_zhao_mu_1" v1="unit_config_zhao_mu_reply_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="huo_ban">
+		<atcion time="0" type="sound"  sound="sound/ts_py_qd"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_huo_ban_1" v1="unit_config_huo_ban_reply_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="kai_xing1">
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_kai_xing1_1"></atcion>
+		<atcion time="0" type="action" name="kai_xing"></atcion>
+	</actions>
+
+	<actions name="zaoshang">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc01"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_zaoshang_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="xiawu">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc02"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xiawu_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="wanshang">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc03"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_wanshang_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="lingchen">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc04"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_lingchen_1"></atcion>
+		<atcion time="0" type="action" name="chi_jing"></atcion>
+	</actions>
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc05"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc06"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_2"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>		
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc08"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_3"></atcion>
+		<atcion time="0" type="action" name="think"></atcion>
+	</actions>
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc09"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_4"></atcion>
+		<atcion time="0" type="action" name="hai_xiu2"></atcion>
+	</actions>
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc11"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_6"></atcion>
+		<atcion time="0" type="action" name="qqhua"></atcion>
+	</actions>	
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc13"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_7"></atcion>
+		<atcion time="0" type="action" name="ao_man"></atcion>
+	</actions>
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc15"></atcion>
+		<atcion time="0" type="mm_face"  v0="sheng_qi" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_9"></atcion>
+		<atcion time="0" type="action" name="sheng_qi"></atcion>
+	</actions>	
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc17"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_11"></atcion>
+		<atcion time="0" type="action" name="think"></atcion>
+	</actions>
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc18"></atcion>
+		<atcion time="0" type="mm_face"  v0="sheng_qi" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_12"></atcion>
+		<atcion time="0" type="action" name="sheng_qi"></atcion>
+	</actions>
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc19"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_13"></atcion>
+		<atcion time="0" type="action" name="seehand"></atcion>
+	</actions>	
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc20"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_14"></atcion>
+		<atcion time="0" type="action" name="hai_xiu2"></atcion>
+	</actions>	
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc24"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_18"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>	
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc25"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_19"></atcion>
+		<atcion time="0" type="action" name="chi_jing"></atcion>
+	</actions>
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc26"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_20"></atcion>
+		<atcion time="0" type="action" name="xi_xi"></atcion>
+	</actions>
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc27"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_21"></atcion>
+		<atcion time="0" type="action" name="think"></atcion>
+	</actions>
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc29"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_23"></atcion>
+		<atcion time="0" type="action" name="huan_yi"></atcion>
+	</actions>
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc31"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_25"></atcion>
+		<atcion time="0" type="action" name="wu_nai"></atcion>
+	</actions>	
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc32"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_26"></atcion>
+		<atcion time="0" type="action" name="xi_xi"></atcion>
+	</actions>
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc33"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_27"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc34"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_28"></atcion>
+		<atcion time="0" type="action" name="hai_xiu2"></atcion>
+	</actions>	
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc35"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_29"></atcion>
+		<atcion time="0" type="action" name="seeew"></atcion>
+	</actions>	
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc36"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_30"></atcion>
+		<atcion time="0" type="action" name="hai_xiu2"></atcion>
+	</actions>	
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc38"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_32"></atcion>
+		<atcion time="0" type="action" name="qqhua"></atcion>
+	</actions>	
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc39"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_33"></atcion>
+		<atcion time="0" type="action" name="ke_ai"></atcion>
+	</actions>	
+	
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc40"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_34"></atcion>
+		<atcion time="0" type="action" name="qqhua"></atcion>
+	</actions>
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc43"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_53"></atcion>
+		<atcion time="0" type="action" name="think"></atcion>
+	</actions>
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc44"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_54"></atcion>
+		<atcion time="0" type="action" name="seehand"></atcion>
+	</actions>
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc45"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_55"></atcion>
+		<atcion time="0" type="action" name="ao_man"></atcion>
+	</actions>
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc46"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_56"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="xx">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc47"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_57"></atcion>
+		<atcion time="0" type="action" name="hai_xiu2"></atcion>
+	</actions>
+	
+	<actions name="xx_10002">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc22"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_16"></atcion>
+		<atcion time="0" type="action" name="think"></atcion>
+	</actions>
+	
+	<actions name="xx_10003">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc41"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_35"></atcion>
+		<atcion time="0" type="action" name="no"></atcion>
+	</actions>	
+		
+	<actions name="xx_10004">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc10"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_5"></atcion>
+		<atcion time="0" type="action" name="qqhua"></atcion>
+	</actions>
+		
+	<actions name="xx_10005">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc28"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_22"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+
+	<actions name="xx_10006">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc42"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_36"></atcion>
+		<atcion time="0" type="action" name="ke_ai"></atcion>
+	</actions>
+	
+	<actions name="xx_10007">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc30"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_24"></atcion>
+		<atcion time="0" type="action" name="fei_wen"></atcion>
+	</actions>	
+	
+	<actions name="xx_10008">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_rc37"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_31"></atcion>
+		<atcion time="0" type="action" name="hai_xiu2"></atcion>
+	</actions>	
+			
+	<actions name="hy_10001">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy01"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_37"></atcion>
+		<atcion time="0" type="action" name="seehand"></atcion>
+	</actions>
+	
+	<actions name="hy_10002">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy02"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_38"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>	
+	
+	<actions name="hy_10003">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy03"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_39"></atcion>
+		<atcion time="0" type="action" name="kai_xing"></atcion>
+	</actions>		
+	
+	<actions name="hy_10004">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy04"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_40"></atcion>
+		<atcion time="0" type="action" name="hu_ying"></atcion>
+	</actions>	
+
+	<actions name="hy_10005">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy05"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_41"></atcion>
+		<atcion time="0" type="action" name="huan_yi"></atcion>
+	</actions>	
+
+	<actions name="hy_10006">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy06"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_42"></atcion>
+		<atcion time="0" type="action" name="hu_xiong02"></atcion>
+	</actions>	
+	
+	<actions name="hy_10007">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy07"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_43"></atcion>
+		<atcion time="0" type="action" name="chi_jing"></atcion>
+	</actions>	
+	
+	<actions name="hy_10008">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy08"></atcion>
+		<atcion time="0" type="mm_face"  v0="sheng_qi" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_44"></atcion>
+		<atcion time="0" type="action" name="hai_xiu"></atcion>
+	</actions>		
+	
+	<actions name="hy_20001">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy09"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_45"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="hy_20002">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy10"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_46"></atcion>
+		<atcion time="0" type="action" name="fei_wen"></atcion>
+	</actions>	
+	
+	<actions name="hy_20003">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy11"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_47"></atcion>
+		<atcion time="0" type="action" name="kai_xing"></atcion>
+	</actions>		
+	
+	<actions name="hy_20004">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy12"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_48"></atcion>
+		<atcion time="0" type="action" name="hai_xiu2"></atcion>
+	</actions>	
+
+	<actions name="hy_20005">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy13"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_49"></atcion>
+		<atcion time="0" type="action" name="xi_xi"></atcion>
+	</actions>		
+	
+	<actions name="hy_30006">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy14"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_50"></atcion>
+		<atcion time="0" type="action" name="ke_ai"></atcion>
+	</actions>	
+
+	<actions name="hy_30007">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy15"></atcion>
+		<atcion time="0" type="mm_face"  v0="sheng_qi" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_51"></atcion>
+		<atcion time="0" type="action" name="ao_man"></atcion>
+	</actions>	
+	
+	<actions name="hy_30008">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_hy16"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xx_52"></atcion>
+		<atcion time="0" type="action" name="chi_jing"></atcion>
+	</actions>		
+	
+	<actions name="win">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_win01"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_win_1"></atcion>
+		<atcion time="0" type="action" name="kai_xing"></atcion>
+	</actions>
+	
+	<actions name="win">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_win02"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_win_2"></atcion>
+		<atcion time="0" type="action" name="kai_xing"></atcion>
+	</actions>
+	
+	<actions name="win">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_win03"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_win_3"></atcion>
+		<atcion time="0" type="action" name="kai_xing"></atcion>
+	</actions>
+	
+	<actions name="lose">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_lose01"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_lose_1"></atcion>
+		<atcion time="0" type="action" name="chi_jing"></atcion>
+	</actions>
+	
+	<actions name="lose">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_lose02"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_lose_2"></atcion>
+		<atcion time="0" type="action" name="chi_jing"></atcion>
+	</actions>
+	
+	<actions name="lose">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_lose03"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_lose_3"></atcion>
+		<atcion time="0" type="action" name="chi_jing"></atcion>
+	</actions>
+	
+	<actions name="xqws">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_txtx01"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xqws_1"></atcion>
+		<atcion time="0" type="action" name="chi_jing"></atcion>
+	</actions>	
+	
+	<actions name="qgqf">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_txtx02"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_qgqf_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="wfqh">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_txtx03"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_wfqh_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="mfqh">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_txtx04"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_mfqh_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="jxsd">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_txtx05"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_jxsd_1"></atcion>
+		<atcion time="0" type="action" name="chi_jing"></atcion>
+	</actions>
+	
+	<actions name="wlmy">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_txtx06"></atcion>
+		<atcion time="0" type="mm_face"  v0="sheng_qi" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_wlmy_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="mfmy">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_txtx07"></atcion>
+		<atcion time="0" type="mm_face"  v0="sheng_qi" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_mfmy_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="smgj">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_txtx08"></atcion>
+		<atcion time="0" type="mm_face"  v0="chi_jing" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_smgj_1"></atcion>
+		<atcion time="0" type="action" name="chi_jing"></atcion>
+	</actions>
+	
+	<actions name="jrps">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_txtx09"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_jrps_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="sfqh">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_txtx10"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_sfqh_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>	
+	
+	<actions name="chongneng">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm01"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_chongneng_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>		
+	
+	<actions name="tupo">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm02"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_tupo_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="jineng">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm03"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_jineng_1"></atcion>
+		<atcion time="0" type="action" name="think"></atcion>
+	</actions>
+	
+	<actions name="qianghua">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm04"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_qianghua_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="gaizao">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm05"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_gaizao_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="xiangqian">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm06"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xiangqian_1"></atcion>
+		<atcion time="0" type="action" name="seeew"></atcion>
+	</actions>
+	
+	<actions name="hbsuipian">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm07"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_hbsuipian_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="songli">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm08"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_songli_1"></atcion>
+		<atcion time="0" type="action" name="kai_xing"></atcion>
+	</actions>
+	
+	<actions name="xunlian">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm09"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_xunlian_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="zbsuipian">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm10"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_zbsuipian_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>		
+	
+	<actions name="fenjie">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm11"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_fenjie_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>	
+	
+	<actions name="hecheng">
+		<atcion time="0" type="sound"  sound="sound/mm/tspy_xjm12"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_hecheng_1"></atcion>
+		<atcion time="0" type="action" name="kai_xing"></atcion>
+	</actions>
+	
+	<actions name="huoban">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm01"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_huoban_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>
+	
+	<actions name="zhaomu">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm02"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_zhaomu_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="zhenrong">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm03"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_zhenrong_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>	
+	
+	<actions name="zhuangbei">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm04"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_zhuangbei_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="jjc">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm05"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_jjc_1"></atcion>
+		<atcion time="0" type="action" name="seeew"></atcion>
+	</actions>	
+	
+	<actions name="fuben">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm06"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_fuben_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>	
+	
+	<actions name="chongzhi">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm07"></atcion>
+		<atcion time="0" type="mm_face"  v0="hai_xiu" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_chongzhi_1"></atcion>
+		<atcion time="0" type="action" name="hai_xiu2"></atcion>
+	</actions>	
+	
+	<actions name="lianjin">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm09"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_lianjin_1"></atcion>
+		<atcion time="0" type="action" name="kao_lu"></atcion>
+	</actions>	
+	
+	<actions name="huodong">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm10"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_huodong_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="shangdian">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm11"></atcion>
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_shangdian_1"></atcion>
+		<atcion time="0" type="action" name="kai_xing"></atcion>
+	</actions>	
+	
+	<actions name="beibao">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm12"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_beibao_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="mubiao">
+		<atcion time="0" type="sound"  sound="sound/ts_rwpy/tspy_jm13"></atcion>
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_mubiao_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="fenfu">
+		<atcion time="0" type="mm_face"  v0="wei_xiao" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="unit_config_fenfu_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="kiss">
+		<atcion time="0" type="mm_face"  v0="kiss" ></atcion>
+		<atcion time="0" type="anim" name="kiss"></atcion>
+		<atcion time="5" type="action" name="stand"></atcion>
+	</actions>
+
+	<actions name="yh_201">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_1"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_201">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_2"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_201">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_3"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_201">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_4"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_201">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_5"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_202">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_6"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_202">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_7"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_202">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_8"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_202">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_9"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_202">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_10"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_203">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_11"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_203">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_12"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_203">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_13"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_203">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_14"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_203">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_15"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_204">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_16"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_204">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_17"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_204">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_18"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_204">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_19"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_204">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_20"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_205">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_21"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_205">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_22"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_205">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_23"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_205">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_24"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>		
+
+	<actions name="yh_205">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_25"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>		
+
+	<actions name="yh_206">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_26"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_206">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_27"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_206">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_28"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>		
+
+	<actions name="yh_206">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_29"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_206">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_30"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_207">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_31"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_207">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_32"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_207">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_33"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_207">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_34"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_207">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_35"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_208">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_36"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_208">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_37"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_208">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_38"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_208">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_39"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_208">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_40"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_209">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_41"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_209">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_42"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_209">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_43"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_209">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_44"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_209">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_45"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_211">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_46"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_211">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_47"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_211">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_48"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_211">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_49"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_211">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_50"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_212">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_51"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_212">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_52"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_212">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_53"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_212">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_54"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_212">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_55"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_400">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_56"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_400">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_57"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_400">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_58"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_400">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_59"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_400">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_60"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_401">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_61"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_401">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_62"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_401">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_63"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_401">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_64"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_401">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_65"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+
+	<actions name="yh_402">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_66"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_402">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_67"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_402">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_68"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_402">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_69"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_402">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_70"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_403">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_71"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_403">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_72"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_403">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_73"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_403">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_74"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_403">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_75"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_500">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_76"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_500">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_77"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_500">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_78"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_500">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_79"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_500">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_80"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_501">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_81"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_501">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_82"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_501">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_83"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_501">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_84"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_501">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_85"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_404">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_86"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_404">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_87"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_404">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_88"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_404">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_89"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_404">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_90"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_214">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_91"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_214">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_92"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_214">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_93"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_214">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_94"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_214">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_95"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_213">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_96"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_213">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_97"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_213">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_98"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_213">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_99"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_213">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_100"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_215">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_101"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_215">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_102"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_215">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_103"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_215">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_104"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_215">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_105"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_503">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_106"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_503">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_107"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_503">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_108"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_503">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_109"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_503">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_110"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_406">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_111"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_406">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_112"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_406">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_113"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_406">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_114"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_406">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_115"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_502">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_116"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_502">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_117"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_502">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_118"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_502">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_119"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_502">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_120"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_405">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_121"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_405">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_122"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_405">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_123"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_405">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_124"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_405">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_125"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_504">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_126"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	
+	<actions name="yh_504">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_127"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_504">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_128"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+
+	<actions name="yh_504">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_129"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>
+	
+	<actions name="yh_504">
+		<atcion time="0" type="mm_face"  v0="shuo_hua" ></atcion>
+		<atcion time="0" type="mm_talk"  v0="xzz_word_130"></atcion>
+		<atcion time="0" type="action" name="hi"></atcion>
+	</actions>	
+	</unit>

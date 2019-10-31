@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+{% load bootstrap_toolkit %}
+{% load url from future %}
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>{% block title %}gttool-{{ title }}{% endblock %}</title>
+	{% bootstrap_stylesheet_tag %}
+    {% bootstrap_stylesheet_tag "responsive" %}
+    <style type="text/css">
+        body {
+            padding-top: 8px;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="/static/js/html5.js"></script>
+    <![endif]-->
+    <script src="/static/js/jquery-1.9.0.min.js"></script>
+    {% bootstrap_javascript_tag %}
+</head>

@@ -1,0 +1,26 @@
+{
+	"master": {"host":"127.0.0.1","port":3500},
+	"servers": {
+		"gs": [
+			{"id":"gs1","host":"127.0.0.1","port":3600,"mysql":1}
+		],
+		"chat": [
+			{"id":"chat1","host":"127.0.0.1","port":3700,"endport":9001}
+		]
+	},
+	"other" : {
+		"gate": [
+			{"id":"gate1","host":"127.0.0.1","port":3900}
+		],
+		"libao" : [
+			{"id":"libao1","host":"127.0.0.1","port":4000}
+		],
+		"login" : [
+			{"id":"login1","host":"127.0.0.1","port":4100}
+		],
+		"remote" : [
+			{"id":"remote1","host":"127.0.0.1","port":4200}
+		]
+	},
+	"db" : {"host":"127.0.0.1","username":"root","password":"root","db":"tsjh0","port":3306}
+}

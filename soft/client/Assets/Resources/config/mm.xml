@@ -1,0 +1,85 @@
+<mms>
+<!---
+	<actions name = "">
+		<action type="moveto" x="" z=""></action>
+		<action type="wait" time=""></action>
+		<action type="lookat" x="" z =""></action>
+		<action type="anim" name=""></action>
+	</actions>
+-->
+	<actions name = "zhao_huan">	
+		<action type="moveto" x="3.78334" y="0" z="22.52521"></action>
+		<action type="action" name="stand"></action>
+		<action type="rot" rot="197"></action>
+	</actions>
+	
+	<actions name = "hui">
+		<action type="moveto" x="0.87" y="-0.0640887" z="2.223698"></action>
+		<action type="action" name="stand"></action>
+		<action type="rot" rot="191.66"></action>
+		<action type="wait" time = "2" ></action>
+		<action type="mm_hint" ></action>
+		<action type="unlock" ></action>	
+	</actions>
+	
+	<actions name = "run">
+		<action type="moveto" x="0.87" y="-0.0640887" z="2.223698"  speed="3"></action>
+		<action type="action" name="stand"></action>
+		<action type="rot" rot="191.66"></action>
+		<action type="wait" time = "0.5" ></action>
+		<action type="action" name="fenfu"></action>
+		<action type="wait" time = "2" ></action>		
+		<action type="mm_hint" ></action>
+		<action type="unlock" ></action>	
+	</actions>	
+	
+	<actions name = "kiss">
+		<action type="moveto" x="0.87" y="-0.0640887" z="1.223698"  speed="3"></action>
+		<action type="action" name="stand"></action>
+		<action type="rot" rot="191.66"></action>
+		<action type="wait" time = "0.5" ></action>
+		<action type="action" name="kiss"></action>
+		<action type="wait" time = "7.5" ></action>
+		<action type="mm_action" name="hui"></action>
+	</actions>		
+		
+	<actions name = "fu_ben">
+		<action type="moveto" x="16.73575" y="0" z="11.40554"></action>
+		<action type="action" name="stand"></action>
+		<action type="rot" rot="204.1"></action>
+	</actions>	
+	
+	<actions name = "wu">
+		<action type="wait" time = "0.5" ></action>
+		<action type="mus" mus="music/Nobody"></action>
+		<action type="action" name="wu"></action>
+		<action type="wait" time = "40" ></action>
+		<action type="mus" mus="music/ts_zjm"></action>
+	</actions>		
+	
+	<actions name = "stand">
+		<action type="action" name="cz_pc01"></action>
+		<action type="wait" time = "4" ></action>
+		<action type="mm_action" name="stand"></action>
+	</actions>		
+	
+	<actions name = "stand">
+		<action type="action" name="stand"></action>
+		<action type="wait" time = "3" ></action>
+		<action type="mm_action" name="stand"></action>
+	</actions>		
+	
+	<actions name = "stand">
+		<action type="action" name="stand"></action>
+		<action type="wait" time = "8" ></action>
+		<action type="mm_action" name="stand"></action>
+	</actions>			
+		
+	<actions name = "stand">
+		<action type="action" name="ke_ai"></action>
+		<action type="wait" time = "3" ></action>
+		<action type="mm_action" name="stand"></action>
+	</actions>		
+			
+						
+</mms>

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "post.eproto";
+import "social.eproto";
+import "huodong.eproto";
+
+package protocol.game;
+
+message post_list_t{
+	repeated dhc.post_t post_record	= 1;
+}
+
+message social_list_t{
+	repeated dhc.social_t socials	= 1;
+}
+
+message huodong_list_t {
+	repeated dhc.huodong_t huodongs = 1;
+}
+
+message player_guids_list_t {
+	repeated uint64	player_guids = 1;
+}

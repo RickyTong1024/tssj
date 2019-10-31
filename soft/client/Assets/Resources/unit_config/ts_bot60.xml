@@ -1,0 +1,69 @@
+<unit name_height="2.3"  accept="Bip01 Spine1" speed="4">
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"></atcion>
+	</actions>		
+	<actions name="run">
+		<atcion time="0" type="anim" name="run"></atcion>
+	</actions>	
+	<actions name="die">
+		<atcion time="0" type="anim" name="die"></atcion>
+	</actions>	
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"></atcion>
+		<atcion time="0.5" type="action" name="ready"></atcion>
+	</actions>	 	 
+	<actions name="win">
+		<atcion time="0" type="anim" name="win"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions>	 
+	<actions name="jq01">
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="entity"  name="effect/npc/s_juq_a01" remove_time="10"></atcion>
+	</actions>	
+	
+	<actions name="attack">
+		<atcion time="0" type="skill_release"></atcion>
+		
+		<atcion time="0" type="anim" name="attack1"></atcion>		
+	    <atcion time="0.1" type="entity_bone" bone="Bip01 R Hand" name="unit/ts_bot59/bot59_atk2_s01" remove_time="2" /> 
+	    <atcion time="0.1" type="entity_bone" bone="Bip01 L Hand" name="unit/ts_bot59/bot59_atk2_s01" remove_time="2" /> 
+		<atcion time="0.5" type="sound"  sound="sound/ln0001"></atcion>
+	    <atcion time="0.5" type="target_entity_bone" bone="accept" name="effect/npc/p_sj_light01" remove_time="2" /> 
+		<atcion time="0.5" type="target_action" name="injured"></atcion>
+		<atcion time="0.5" type="shake_cam" shake="0.2" /> 
+		<atcion time="0.5" type="skill_export" export="1"></atcion>
+		
+		
+		<atcion time="1" type="skill_end"></atcion>	
+		<atcion time="1" type="action" name="ready"></atcion>
+	</actions> 	
+		
+	<actions name="jn01">
+		<atcion time="0" type="skill_release"></atcion>
+		
+		<atcion time="0" type="anim" name="attack2"></atcion>
+	    <atcion time="0.6" type="entity_bone" bone="Bip01 R Hand" name="unit/ts_bot59/bot59_atk2_s01" remove_time="2" /> 
+	    <atcion time="0.6" type="entity_bone" bone="Bip01 L Hand" name="unit/ts_bot59/bot59_atk2_s01" remove_time="2" /> 
+		<atcion time="1.1" type="sound"  sound="sound/woman_s_02"></atcion>
+		<atcion time="1.2" type="sound"  sound="sound/Lightningex_01"></atcion>
+	    
+	    
+	    <atcion time="1.2" type="target_entity"  name="unit/ts_bot60/bot60_atk2_a01" remove_time="3" /> 		
+	    <atcion time="1.2" type="target_entity_bone" bone="accept" name="effect/npc/p_sj_light01" remove_time="2" /> 
+		<atcion time="1.2" type="target_action" name="injured"></atcion>
+		<atcion time="1.2" type="shake_cam" shake="0.2" /> 
+		<atcion time="1.2" type="skill_export" export="0.5"></atcion>
+		<atcion time="1.3" type="sound"  sound="sound/Lightning_Hand01"></atcion>
+		<atcion time="1.7" type="game_speed" speed="0.1"/>	
+	    <atcion time="1.7" type="target_entity_bone" bone="accept" name="effect/npc/p_sj_light01" remove_time="2" /> 
+		<atcion time="1.7" type="target_action" name="injured"></atcion>
+		<atcion time="1.7" type="shake_cam" shake="0.2" /> 
+		<atcion time="1.7" type="skill_export" export="0.5"></atcion>
+		
+		
+		
+		<atcion time="2" type="skill_end"></atcion>	
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions> 	
+</unit>

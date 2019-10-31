@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index player_guid 0
+//using index target_guid 0
+
+message social_t {
+	uint64	guid			= 1;
+	uint64	player_guid		= 2;
+	uint64	target_guid		= 3;
+	int32 template_id		= 4;
+	string	name			= 5;
+	int32 level			= 6;
+	int32 bf				= 7;
+	int32 can_shou			= 8;
+	uint64 last_song_time	= 9;
+    int32 vip              = 10;
+    int32 achieve          = 11;
+	uint64 offline_time    = 12;
+	int32 chengchao		= 13;
+	repeated uint64 invite_players  = 14;
+	repeated uint64 invite_levels	= 15;
+	repeated int32  invite_ids		= 16;
+	int32 nalflag			= 17;
+}

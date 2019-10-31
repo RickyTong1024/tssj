@@ -1,0 +1,7 @@
+<uwsgi>
+<socket>127.0.0.1:7020</socket>
+<chdir>/home/app/libao_web</chdir>
+<module>libao_web.wsgi</module>
+<processes>2</processes>
+<daemonize>uwsgi.log</daemonize>
+</uwsgi>

@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package dhc;
+
+
+message guild_arrange_t {
+	uint64  guid					= 1;
+	int32   guild_server			= 2;
+	string  guild_name				= 3;
+	int32   guild_zhanji			= 4;
+	int32   guild_total_zhanji		= 5;
+	int32   guild_icon				= 6;
+	int32   guild_ai				= 7;
+	int32   guild_exp				= 8;
+	int32   guild_level            = 9;
+	
+	repeated uint64  player_guids			= 10;
+	repeated string  player_names			= 11;
+	repeated int32   player_template		= 12;
+	repeated int32   player_level			= 13;
+	repeated int32   player_bat_eff		    = 14;
+	repeated int32   player_vip			    = 15;
+	repeated int32   player_achieve			= 16;
+	repeated int32   player_map_star		= 17;
+	repeated int32   mplayer_nalflags		= 18;
+	
+	repeated uint64  player_zguids			= 20;
+	repeated int32   player_zhanjis			= 21;
+	repeated int32   player_total_zhanjis	= 22;
+	repeated string  player_znames			= 23;
+	repeated int32   player_ztemplate		= 24;
+	repeated int32   player_zlevel			= 25;
+	repeated int32   player_zbat_eff		= 26;
+	repeated int32   player_zvip			= 27;
+	repeated int32   player_zachieve		= 28;
+	repeated int32   player_znalflags		= 29;
+	repeated uint64  guild_fights			= 30;
+}

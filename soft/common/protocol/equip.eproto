@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index player_guid 0
+
+message equip_t {
+	uint64 guid			= 1;
+	uint64 player_guid		= 2;
+	int32 template_id		= 3;
+	uint64 role_guid		= 4;
+	int32 enhance			= 5;
+	int32 locked			= 6;
+	repeated int32 rand_ids			= 7;
+	repeated int32 rand_values		= 8;
+	repeated int32 stone			= 9;
+	int32 jilian			= 10;
+	int32 star				= 11;
+	int32 gaizao_counts    = 12;
+}

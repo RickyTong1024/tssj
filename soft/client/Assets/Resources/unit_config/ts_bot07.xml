@@ -1,0 +1,70 @@
+<unit name_height="2.7"  accept="Bip01 Spine1" speed="4">
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"></atcion>
+	</actions>	
+	<actions name="run">
+		<atcion time="0" type="anim" name="run"></atcion>
+	</actions>	
+	<actions name="die">
+		<atcion time="0" type="anim" name="die"></atcion>
+	</actions>	
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"></atcion>
+		<atcion time="0.5" type="action" name="ready"></atcion>
+	</actions>	 	 
+	<actions name="win">
+		<atcion time="0" type="anim" name="win"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions>	 
+	<actions name="jq01">
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="entity"  name="effect/npc/s_juq_a01" remove_time="10"></atcion>
+	</actions>	
+	<actions name="attack">
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="anim" name="attack1"></atcion>
+		<atcion time="0.15" type="goto_target"></atcion>
+			
+		<atcion time="0.32" type="sound"  sound="sound/m1hSwordHitFlesh1a"></atcion>
+		<atcion time="0.32" type="entity"  name="unit/ts_bot07/bot07_atk1_a01" remove_time="3"></atcion>
+		<atcion time="0.33" type="target_action" name="injured"></atcion>  
+	    <atcion time="0.32" type="target_entity_bone" bone="accept" name="unit/ts_bot07/bot07_atk1a_1a" remove_time="1" /> 
+		<atcion time="0.35" type="skill_export" export="0.5"></atcion>
+		<atcion time="0.5" type="sound"  sound="sound/m1hSwordHitFlesh1b"></atcion>
+		<atcion time="0.55" type="entity"  name="unit/ts_bot07/bot07_atk1_a02" remove_time="3"></atcion>
+		<atcion time="0.55" type="skill_export" export="0.5"></atcion>
+	    <atcion time="0.55" type="target_entity_bone" bone="accept" name="unit/ts_bot07/bot07_atk1a_1a" remove_time="1" /> 
+		<atcion time="0.55" type="target_action" name="injured"></atcion>  
+		
+		<atcion time="0.8" type="anim" name="run"></atcion>
+		<atcion time="0.8" type="goto_home"></atcion>	
+		
+		<atcion time="1" type="skill_end"></atcion>
+		<atcion time="1" type="action" name="ready"></atcion>
+	</actions> 		
+	<actions name="jn01">
+		<atcion time="0" type="anim" name="attack2"></atcion>
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0.3" type="sound"  sound="sound/th070510"></atcion>
+		<atcion time="0.3" type="entity_bone" bone="Bip01 R Hand" name="unit/ts_bot07/bot07_atk2_sf01" remove_time="2"></atcion>
+		<atcion time="0.3" type="entity_bone" bone="Bip01 L Hand" name="unit/ts_bot07/bot07_atk2_sf01" remove_time="2"></atcion>
+		<atcion time="1" type="sound"  sound="sound/woman_s_03"></atcion>
+		<atcion time="1.1" type="sound"  sound="sound/ab_cast_fire_01"></atcion>
+		<atcion time="1.2" type="entity"  name="unit/ts_bot07/bot07_atk2_a01" remove_time="1.8"></atcion>
+		<atcion time="1.7" type="target_action" name="injured"></atcion>  
+		<atcion time="1.7" type="shake_cam" shake="0.2" /> 
+		<atcion time="1.7" type="sound"  sound="sound/boom001"></atcion>
+	    <atcion time="1.7" type="target_entity_bone" bone="accept" name="effect/npc/p_sj_hyboom02" remove_time="1" /> 
+		<atcion time="1.7" type="skill_export" export="0.3"></atcion>
+		<atcion time="1.7" type="game_speed" speed="0.1"/>
+		<atcion time="2.4" type="sound"  sound="sound/HolyCast"></atcion>
+		<atcion time="2.6" type="sound"  sound="sound/boom001"></atcion>
+		<atcion time="2.6" type="target_action" name="injured"></atcion> 
+		<atcion time="2.6" type="shake_cam" shake="0.2" />  
+	    <atcion time="2.6" type="target_entity" name="effect/npc/p_sj_hyboom01" remove_time="1" /> 
+		<atcion time="2.6" type="skill_export" export="0.7"></atcion>
+		<atcion time="3" type="skill_end"></atcion>
+		<atcion time="3" type="action" name="ready"></atcion>
+	</actions> 	
+</unit>

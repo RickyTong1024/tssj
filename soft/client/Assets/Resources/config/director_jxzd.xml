@@ -1,0 +1,50 @@
+<directors>	
+
+    <director type="hide_object" v0="ts_nzj001_wq"/>
+    <director type="hide_object" v0="ts_bot200_wp"/>
+    <director type="wait" v0="0.1"/>
+    <director type="show_unit" v0="ts_t01"/>
+	<director type="unit_action" v0="ts_t01" v1="ws_stand01"/>
+    
+
+	<director type="show_unit" v0="ts_bot200"/>
+	
+	<director type="wait" v0="0.1"/>
+	<director type="unit_action" v0="ts_bot200" v1="stand"/>
+	
+	<director type="show_unit" v0="ts_bot906"/>
+
+	<director type="play_anim" v0="jxzd_d" v1="jxzd_cam01"/>
+	
+	<director type="wait" v0="0.1"/>
+
+	<director type="set_film_label" v0="director_jxzd_set_film_label_34"/>
+	<director type="unit_action" v0="ts_t01" v1="jq_1"/>
+	<director type="wait" v0="3"/>
+	<director type="set_film_label" v0="director_jxzd_set_film_label_35"/>	
+	
+	<director type="unit_action" v0="ts_bot906" v1="baoxiong"/>		
+							
+	<director type="wait" v0="2"/>
+	
+	<director type="play_anim" v0="jxzd_d" v1="jxzd_cam02"/>
+	
+	<director type="set_film_label" v0="director_jxzd_set_film_label_36"/>
+	
+	<director type="wait" v0="2"/>
+		
+	<director type="play_anim" v0="jxzd_d" v1="jxzd_cam03"/>
+	
+	
+	<director type="set_film_label" v0="director_jxzd_set_film_label_37"/>
+	
+	<director type="wait" v0="3"/>
+	
+	<director type="set_film_label" v0="director_jxzd_set_film_label_38"/>
+	
+	<director type="hide_director"/>
+
+	
+	
+																								
+</directors>

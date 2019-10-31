@@ -1,0 +1,29 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	{% include "form.html" %}
+	<div>
+		<div>
+            <div>你好,{{ username }}</div>
+			<div><a href="{% url 'logout' %}">退出</a></div>
+			<h1>订单查询</h1>
+		</div>
+		<div class="well">
+			<form name="main" class="form-horizontal" action="{% url "dingdan" %}" method="post">
+				{% csrf_token %}
+				{{ form|as_bootstrap }}
+				<div>
+					<input type="button" value="查询" onclick="mask();"/>
+				</div>
+			</form>
+            {% if form.dingdan %}
+            <div>
+                <div>订单号：{{ form.dingdan.orderno }}</div>
+				<div>购买id：{{ form.dingdan.rid }}</div>
+                <div>购买时间：{{ form.dingdan.dt }}</div>
+			</div>
+            {% endif %}
+		</div>
+	</div>
+</body>
+</html>

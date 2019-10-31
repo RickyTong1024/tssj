@@ -1,0 +1,549 @@
+syntax = "proto3";
+package rpcproto;
+
+enum erpc {
+	REQUESST = 0;
+	PUSH = 1;
+	RESPONSE = 2;
+}
+
+message rpc {
+	erpc type = 1;
+    request req = 2;
+    response rep = 3;
+}
+
+message request {
+	string name = 1;
+    int32 id = 2;
+	int32 opcode = 3;
+    bytes msg = 4;
+}
+
+message error {
+    int32 code = 1;
+    string text = 2;
+}
+
+message response {
+    string name = 1;
+    int32 id = 2;
+    bytes msg = 3;
+    error error = 4;
+}
+
+message tmsg_req_libao {
+	string code = 1;
+	string pt = 2;
+	string use = 3;
+	uint64 username = 4;
+	string serverid = 5;
+}
+
+message tmsg_rep_libao {
+	int32 res = 1;
+	int32 pc = 2;
+	repeated int32 types = 3;
+	repeated int32 value1 = 4;
+	repeated int32 value2 = 5;
+	repeated int32 value3 = 6;
+	int32 chongzi = 7;
+}
+
+message tmsg_gonggao {
+	string gonggao = 1;
+	string serverid = 2;
+}
+
+message tmsg_req_login_heitao {
+	string uid = 1;
+	string token = 2;
+	string pt = 3;
+}
+
+message tmsg_rep_login_heitao {
+	int32 errres = 1;
+	string errmsg = 2;
+}
+
+message tmsg_req_recharge_heitao {
+	string uid = 1;
+	string sid = 2;
+	string order = 3;
+	int32 pid = 4;
+	int32 count = 5;
+	int32 huodong_id = 6;
+	int32 entry_id = 7;
+}
+
+message tmsg_player_vote {
+	uint64  guid 		= 1;
+	string  name 		= 2;
+	int32   server 	= 3;
+	int32   id			= 4;
+	int32   renqi		= 5;
+	string  acc		= 6;
+}
+
+message tmsg_req_new_huodong {
+	string server 	= 1;
+	string pt 		= 2;
+}
+
+message tmsg_huodong {
+	int32	id				= 1;
+	uint64  start_time 		= 2;
+	uint64  end_time   		= 3;
+}
+
+message tmsg_rep_new_huodong {
+	repeated	tmsg_huodong	huodong = 1;
+}
+
+message tmsg_kick {
+	uint64 guid	= 1;
+}
+
+message tmsg_activity_reward {
+	int32 id  			= 1;
+	int32 condition 	= 2;
+	int32 arg1 		= 3;
+	int32 arg2		 	= 4;
+	int32 arg3 		= 5;
+	int32 arg4			= 6;
+	int32 arg5			= 7;
+	repeated int32 arg6			= 8;
+	repeated int32 arg7			= 9;
+	repeated int32 arg8			= 10;
+	repeated int32 types 		= 11;
+	repeated int32 value1s 		= 12;
+	repeated int32 value2s 		= 13;
+	repeated int32 value3s 		= 14;
+	uint64 show_time   = 15;
+}
+
+message tmsg_activity {
+	int32 id 			= 1;
+	uint64 start 		= 2;
+	uint64 end 		= 3;
+	int32 kaifu_start  = 4;
+	int32 kaifu_end	= 5;
+    string name        = 6;
+	int32  type		= 7;
+	int32  subtype		= 8;
+	uint64  show		= 9;
+	uint64 noshow		= 10;
+	int32 kaikai_start = 11;
+	repeated tmsg_activity_reward rewards = 12;
+}
+
+message tmsg_activity_group {
+	repeated tmsg_activity activitys	= 1;
+	string        name			= 2;
+	int32		   isjieri		= 3;
+	string		   item_name1	= 4;
+	string		   item_name2	= 5;
+	string		   item_des1	= 6;
+	string        item_des2	= 7;
+}
+
+message tmsg_req_recharge_apple {
+	string code = 1;
+	uint64 guid = 2;
+	string username = 3;
+	string serverid = 4;
+	int32  rid      = 5;
+}
+
+message tmsg_rep_recharge_apple {
+	int32  res 		= 1;
+	string orderid 	= 2;
+	string product_id 	= 3;
+}
+
+message tmsg_fight_equip {
+	uint64 guid			= 1;
+	uint64 player_guid		= 2;
+	int32 template_id		= 3;
+	uint64 role_guid		= 4;
+	int32 enhance			= 5;
+	repeated int32 rand_ids			= 7;
+	repeated int32 rand_values		= 8;
+	repeated int32 stone			= 9;
+	int32 jilian			= 10;
+	int32 star				= 11;
+}
+
+message tmsg_fight_treasure {
+	uint64 guid			= 1;
+	uint64 player_guid		= 2;
+	int32 template_id		= 3;
+	uint64 role_guid		= 4;
+	int32 enhance			= 5;
+	int32 jilian			= 7;
+	int32 star             = 8;
+	int32 star_exp			= 9;
+}
+
+message tmsg_fight_role {
+	uint64 guid			= 1;
+	uint64 player_guid		= 2;
+	int32 template_id		= 3;
+	int32 level			= 4;
+	int32 jlevel			= 7;
+	int32 glevel			= 8;
+	int32 pinzhi			= 9;
+	repeated int32 jskill_level		= 10;
+	repeated int32 dress_ids		= 11;
+	repeated uint64 zhuangbeis		= 13;
+	repeated uint64 treasures		= 14;
+	int32 dress_on_id      = 15;
+	int32 bskill_level     = 16;
+	uint64 pet				= 17;
+}
+
+message tmsg_fight_pet {
+	uint64 guid			= 1;
+	uint64 player_guid		= 2;
+	int32 template_id		= 3;
+	int32 level			= 4;
+	int32 jinjie			= 5;
+	int32 star				= 6;
+	repeated int32 jinjie_slot		= 7;
+	uint64 role_guid		= 8;
+}
+
+message tmsg_player_fight_player {
+	repeated tmsg_fight_role roles 			= 1;
+	repeated tmsg_fight_equip equips 		= 2;
+	repeated tmsg_fight_treasure treasures 	= 3;
+	repeated tmsg_fight_pet pets			= 4;
+	uint64 guid					= 5;
+	string serverid				= 6;
+	string name					= 7;
+	uint32 template_id				= 8;
+	int32 level					= 9;
+	int32 bf						= 10;
+	repeated uint64 zhenxing				= 11;
+	uint64  guild					= 12;
+	repeated int32  guild_skill_ids			= 13;
+	repeated int32  guild_skill_levels  	= 14;
+	repeated int32 dress_ids				= 15;
+    repeated int32 dress_achieves       	= 16;
+	int32 pvp_total				= 17;
+	repeated int32 duixing					= 18;
+	int32 duixing_id				= 19;
+	repeated int32 huiyi_jihuos				= 20;
+	int32 vip						= 21;
+	int32 duixing_level			= 22;
+	repeated uint64 houyuan					= 23;
+	string guild_name				= 24;
+	repeated int32 guanghuan			    = 25;
+	repeated int32 guanghuan_level		    = 26;
+	int32 guanghuan_id			    = 27;
+	int32 template_dress           = 28;
+	int32 chenghao_on				= 29;
+	int32 huiyi_shoujidu           = 30;
+	repeated int32 chenghao					= 31;
+	uint64  pet_on					= 32;
+	repeated int32 huiyi_jihuo_starts       = 33;
+	int32 nalflag					= 34;
+}
+
+message tmsg_player_fight_info {
+	tmsg_player_fight_player players = 1;
+}
+
+message tmsg_req_pvp_match {
+	uint64	guid			= 1;
+	string  serverid 		= 2;
+	   int32   bf				= 3;
+}
+
+message tmsg_rep_pvp_match {
+	repeated uint64   player_guids 		= 1;
+	repeated string   player_names      = 2;
+	repeated int32	  player_templates 	= 3;
+	repeated int32    player_servers 	= 4;
+	repeated int32    player_bfs 		= 5;
+	repeated int32    player_points 	= 6;
+	repeated int32    player_vips		= 7;
+	repeated int32    player_achieves	= 8;
+	repeated int32    player_guanghuans = 9;
+	repeated int32    player_dress		= 10;
+	repeated int32    player_nalflag	= 11;
+}
+
+message tmsg_req_pvp_fight {
+	uint64     guid					= 1;
+	tmsg_player_fight_player player 	= 2;
+}
+
+message tmsg_rep_pvp_fight {
+	bytes     text 	= 1;
+	int32      result 	= 2;
+}
+
+message tmsg_req_pvp_reward {
+	string    serverid = 1;
+}
+
+message tmsg_rep_pvp_reward {
+	repeated uint64    guids			= 1;
+	tmsg_rep_pvp_match ranks 	= 2;
+	int32     res				= 3;
+}
+
+message tmsg_req_team_login {
+	tmsg_player_fight_player players = 1;
+	string sig = 2;
+	repeated uint64 friends = 3;
+	int32 by_reward_num = 4;
+	int32 srank = 5;
+	int32 ds_reward_num = 6;
+}
+
+message tmsg_rep_team_login {
+	int32  res = 1;
+	int32  chenghao = 2;
+	int32  point = 3;
+	int32  duanwei = 4;
+	int32  dspoint = 5;
+	uint64 ds_cd_time = 6;
+}
+
+message tmsg_req_team_pull {
+	uint64 guid = 1;
+}
+
+message tmsg_rep_team_push {
+	int32  chenghao = 1;
+}
+
+message tmsg_team_invite {
+	uint64 friends = 1;
+	uint64 whois   = 2;
+}
+
+message tmsg_req_bingyuan_buy {
+	uint64 guid = 1;
+	int32  num  = 2;
+}
+
+message tmsg_req_bingyuan_fight {
+	uint64 id = 1;
+	uint64 guid = 2;
+	int32  num  = 3;
+	int32  point = 4;
+}
+
+message tmsg_rep_bingyuan_fight {
+	int32 bingjing = 1;
+	int32 point    = 2;
+	int32 chenghao = 3;
+	bool  res      = 4;
+}
+
+message tmsg_req_ds_fight {
+	uint64 id 			= 1;
+	uint64 guid 		= 2;
+	int32  reward_num 	= 3;
+}
+
+message tmsg_rep_ds_fight {
+	int32 xinpian	= 1;
+	int32 point    = 2;
+	int32 ciliao   = 3;
+	int32 duanwei  = 4;
+	int32 grank	= 5;
+	bool  res      = 6;
+	uint64 cd_time = 7;
+}
+
+
+message tmsg_req_mofang_point {
+	int32 point 		= 1;
+	uint64 huodong_time = 2;
+}
+
+message tmsg_rep_mofang_point {
+	int32 point = 1;
+}
+
+message tmsg_req_invite_code {
+	uint64 player_guid  = 1;
+	uint64 social_guid  = 2;
+	string code		 = 3;
+	repeated uint64 player_guids = 4;
+	repeated int32  levels       = 5;
+	repeated int32  ids			 = 6;
+}
+
+message tmsg_rep_invite_code {
+	int32 res = 1;
+}
+
+message tmsg_req_invite_code_input {
+	uint64 player_guid  = 1;
+	int32  player_level = 2;
+	string code		 = 3;
+}
+
+message tmsg_rep_invite_level {
+	repeated uint64 player_guids = 1;
+	repeated int32  levels		 = 2;
+	bool   res          = 3;
+}
+
+message tmsg_req_guild_pvp_baoming {
+	uint64  guild                  = 1;
+	int32   guild_server			= 2;
+	string  guild_name				= 3;
+	int32   guild_icon		        = 4;
+	int32   guild_level            = 5;
+	repeated uint64  player_guids			= 6;
+}
+
+message tmsg_rep_guild_pvp_baoming {
+	bool   res          = 1;
+	repeated uint64 player_guids = 2;
+} 
+
+message tmsg_req_guild_pvp_bushu {
+	uint64  guild                  = 1;
+	string  guild_name				= 2;
+	int32   guild_icon		        = 3;
+	int32   guild_level            = 4;
+	repeated uint64  player_guids			= 5;
+	repeated string  player_names			= 6;
+	repeated int32   player_template		= 7;
+	repeated int32   player_level			= 8;
+	repeated int32   player_bat_eff		    = 9;
+	repeated int32   player_vips			= 10;
+	repeated int32   player_achieves		= 11;
+	repeated int32   player_map_star		= 12;
+}
+
+message tmsg_rep_guild_pvp_bushu {
+	bool   res          = 1;
+	repeated uint64 player_guids = 2;
+}
+
+message tmsg_rep_guild_look_bushu {
+	repeated uint64  player_guids			= 1;
+	repeated string  player_names			= 2;
+	repeated int32   player_template		= 3;
+	repeated int32   player_level			= 4;
+	repeated int32   player_bat_eff		    = 5;
+	repeated int32   player_vips			= 6;
+	repeated int32   player_achieves		= 7;
+	bool    res		            = 8; 
+}
+
+message tmsg_rep_guild_jinrizhanji {
+	int32 guild_zhanji              = 1;
+	int32 guild_total_zhanji        = 2;
+	int32 guild_exp                 = 3;
+	int32 player_zhanji             = 4;
+	int32 player_total_zhanji       = 5;
+	tmsg_rep_guild_look_bushu bushu = 6;
+	int32 judian                    = 7;
+	int32 jidi                      = 8;
+	int32 perfect                   = 9;
+	bool  res                       = 10;
+}
+
+message tmsg_req_guild_fight {
+	uint64 player_guild = 1;
+	uint64 player_guid  = 2;
+	uint64 target_guild = 3;
+	int32 target_index  = 4;
+	tmsg_player_fight_player player 	= 5;
+}
+
+message tmsg_rep_guild_fight {
+	bytes     text 	= 1;
+	int32     result 	= 2; 
+	int32     guard_point = 3;
+	int32     gongxian  = 4;
+	int32     zhanji	 = 5;
+	int32     exp		 = 6;
+	int32     judian    = 7;
+	int32     jidi      = 8;
+	int32     perfect   = 9;
+	int32     res       = 10;
+}
+
+message tmsg_req_guild_look {
+	uint64 player_guid     = 1;
+	uint64 player_guild    = 2;
+}
+
+message tmsg_guild_fight_info {
+	uint64  guild					= 1;
+	int32   guild_server			= 2;
+	string  guild_name				= 3;
+	int32   guild_icon             = 4;
+	int32   guild_level            = 5;
+	repeated uint64  target_guids			= 6;
+	repeated string  target_names			= 7;
+	repeated int32   target_templates		= 8;
+	repeated int32   target_levels			= 9;
+	repeated int32   target_bat_effs		= 10;
+	repeated int32   target_vips			= 11;
+	repeated int32   target_achieves		= 12;
+	repeated int32	 target_defense_nums	= 13;
+	repeated int32   guard_points           = 14;
+	repeated int32   guard_gongpo           = 15;
+}
+
+message tmsg_rep_guild_fight_info {
+	repeated tmsg_guild_fight_info guild_fight   = 1;
+	int32 guild_zhanji 			     = 2;
+	int32 zhanji 					     = 3;
+	int32 total_zhanji 			     = 4;
+	int32 	 judian                 	 = 5;
+	int32   jidi                   	 = 6;
+	int32   perfect                	 = 7;
+	bool res                            = 8;
+}
+
+message tmsg_rep_guild_gongpo_reward {
+	uint64 guild                = 1;
+	int32 judian                = 2;
+	int32 jidi                  = 3;
+	int32 perfect               = 4;
+	bool res                    = 5;
+}
+
+message tmsg_push_guild_match {
+	int32  week = 1;
+	int32  hour = 2;
+}
+
+message tmsg_rep_guild_fight_reward {
+	repeated uint64  player_rewards = 1;
+	repeated uint64  guild_rewards  = 2;
+	int32   zhou			= 3;
+	int32   stype			= 4;
+}
+
+message tmsg_req_guild_target_reward {
+	uint64  pvp_guid		= 1;
+}
+
+message tmsg_rep_guild_target_reward {
+	int32 judian                = 1;
+	int32 jidi                  = 2;
+	int32 perfect               = 3;
+	bool res                    = 4;
+}
+
+
+message tmsg_req_libao_exchange {
+	string code = 1;
+	string username = 2;
+	string serverid = 3;
+}
+
+

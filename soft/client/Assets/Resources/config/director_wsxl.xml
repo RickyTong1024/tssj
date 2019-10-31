@@ -1,0 +1,22 @@
+<directors>
+	<director type="play_music" v0="music/ts_dtxz01"/>					
+	<director type="show_unit" v0="nz01_t01"/>
+	<director type="unit_action" v0="nz01_t01" v1="ready"/>
+	<director type="wait" v0="0.1"/>	
+	<director type="play_anim" v0="wsxl_d" v1="wsxl_cam01"/>
+	
+	<director type="wait" v0="0.1"/>
+	
+	<director type="unit_action" v0="nz01_t01" v1="shenlanyao01"/>
+	
+	<director type="wait" v0="4"/>
+	
+	<director type="unit_action" v0="nz01_t01" v1="walk"/>
+	
+	<director type="unit_moveto" v0="nz01_t01" v1="0.2219903" v2="0.2" v3="12.71879" v4="8"/>	
+	
+	<director type="wait" v0="7"/>
+	
+	<director type="start_game"/>		
+																								
+</directors>

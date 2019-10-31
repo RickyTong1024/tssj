@@ -1,0 +1,34 @@
+<unit name_height="2" accept="Bip01 Spine1"  speed="4">
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="sleepstand01"></atcion>
+	</actions>	
+	
+	<actions name="walk">
+		<atcion time="0" type="anim" name="walk"></atcion>
+	</actions>
+		
+	<actions name="stand">
+		<atcion time="0" type="anim" name="nz01_ready"></atcion>
+	</actions>	
+	<actions name="roueyes01">
+		<atcion time="0" type="anim" name="roueyes01"></atcion>
+		<atcion time="2.3" type="action" name="ready"></atcion>
+	</actions>	
+	<actions name="shenlanyao01">
+		<atcion time="0" type="anim" name="shenlanyao01"></atcion>
+		<atcion time="3.4" type="action" name="ready"></atcion>
+	</actions>	
+	<actions name="jieyifu01">
+		<atcion time="0" type="anim" name="jieyifu01"></atcion>
+		<atcion time="2.5" type="action" name="jieyifu02"></atcion>
+	</actions>	 
+	<actions name="jieyifu02">
+		<atcion time="0" type="anim" name="jieyifu02"></atcion>
+	</actions>	 
+	<actions name="csback01">
+		<atcion time="0" type="anim" name="csback01"></atcion>
+		<atcion time="3" type="action" name="ready"></atcion>
+	</actions>	
+	
+</unit>

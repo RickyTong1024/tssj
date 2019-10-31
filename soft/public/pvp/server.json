@@ -1,0 +1,17 @@
+{
+	"master": {"host":"127.0.0.1","port":3580},
+	"servers": {
+		"gs": [
+			{"id":"pvp1","host":"127.0.0.1","port":3680,"mysql":1}
+		]
+	},
+	"other" : {
+		"gate": [
+			{"id":"gate1","host":"127.0.0.1","port":3980},
+			{"id":"gate2","host":"127.0.0.1","port":3981},
+            {"id":"gate3","host":"127.0.0.1","port":3982},
+            {"id":"gate4","host":"127.0.0.1","port":3983}
+		]
+	},
+	"db" : {"host":"127.0.0.1","username":"root","password":"root","db":"tsjhpvp","port":3306}
+}

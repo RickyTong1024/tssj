@@ -1,0 +1,27 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+    <script src="/static/js/mail.js?10" type="text/javascript"></script>
+     <script src="/static/js/libao.js?10" type="text/javascript"></script>
+	{% include "form.html" %}
+	<div>
+		<div class="well">
+			<form name="main" class="form-horizontal" action="" method="post">
+				{% csrf_token %}
+				{{ form|as_bootstrap }}
+				<div>
+					<input type="submit" name ="tijiao" value="确定" class="btn btn-primary" onclick="mask();"/>
+				</div>
+                {% if suc %}
+                <div>
+                    <div>账号：{{ username }}</div>
+					<div>密码：{{ passwd }}</div>
+					<div>邮箱：{{ mail }}</div>
+					<div>老账号：{{ old_username }}</div>
+			    </div>
+                {% endif %}
+			</form>
+		</div> 
+	</div>
+</body>
+</html>

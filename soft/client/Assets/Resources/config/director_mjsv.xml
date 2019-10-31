@@ -1,0 +1,84 @@
+<directors>
+
+	<director type="play_music" v0="music/ts_buttle05"/>
+	
+	<director type="wait" v0="0.1"/>
+	
+	<director type="show_unit" v0="ts_bot201"/>
+	
+		
+	<director type="unit_action" v0="ts_bot201" v1="run"/>
+	
+	<director type="play_sound" v0="sound/run021"/>
+	
+	<director type="wait" v0="0.5"/>
+	
+	<director type="show_unit" v0="ts_bot132"/>
+	
+	<director type="unit_action" v0="ts_bot132" v1="attack"/>
+	
+	<director type="play_sound" v0="sound/gun_a"/>
+	
+	<director type="show_unit" v0="ts_bot133"/>
+	
+	<director type="unit_action" v0="ts_bot133" v1="jn01"/>
+	
+	<director type="play_sound" v0="sound/fire_sf_a01"/>
+	
+	<director type="show_unit" v0="ts_bot107"/>
+	
+	<director type="unit_action" v0="ts_bot107" v1="jn01"/>
+	
+	<director type="play_sound" v0="sound/gun_b"/>
+	
+	
+	<director type="unit_moveto" v0="ts_bot201" v1="0.142" v2="0.0609" v3="-10.022" v4="2"/>
+
+	<director type="set_film_label" v0="director_mjsv_set_film_label_80"/>
+	<director type="play_anim" v0="sncx_d" v1="mjsv_cam"/>
+	<director type="wait" v0="0.1"/>
+
+	
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="play_sound" v0="sound/ss_hx"/>
+
+	<director type="unit_action" v0="ts_bot201" v1="fall"/>
+	
+	<director type="show_unit" v0="ts_bot132"/>
+	
+	<director type="unit_action" v0="ts_bot132" v1="win"/>
+	
+	<director type="wait" v0="0.5"/>
+	
+	<director type="show_unit" v0="ts_bot133"/>
+	
+	<director type="unit_action" v0="ts_bot133" v1="win"/>
+	
+	<director type="wait" v0="0.5"/>
+	
+	<director type="show_unit" v0="ts_bot107"/>
+	
+	<director type="unit_action" v0="ts_bot107" v1="win"/>
+	
+	
+
+	
+	<director type="unit_pos" v0="ts_bot201" v1="0.142" v2="0.0609" v3="-10.0223"/>
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="unit_action" v0="ts_bot201" v1="help"/>
+    <director type="set_film_label" v0="director_mjsv_set_film_label_81"/>
+	
+	<director type="play_anim" v0="sncx_d" v1="mjsv_cam01"/>
+	<director type="wait" v0="3"/>
+	
+	 <director type="set_film_label" v0="director_mjsv_set_film_label_82"/>
+	 
+	 <director type="hide_director"/>
+	
+	
+																								
+</directors>

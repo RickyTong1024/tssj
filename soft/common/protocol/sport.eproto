@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index player_guid 0
+
+message sport_t {
+	uint64 guid			= 1;
+	uint64 player_guid		= 2;
+	uint64 time			= 3;
+	int32 type				= 4;
+	uint64 other_guid		= 5;
+	bytes other_name		= 6;
+	int32 win				= 7;
+	int32 rank				= 8;
+	bytes text				= 9;
+}

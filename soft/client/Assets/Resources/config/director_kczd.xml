@@ -1,0 +1,614 @@
+<directors>
+
+    <director type="set_film_label" v0="director_kczd_set_film_label_39"/>
+    <director type="play_music" v0="music/ts_dtxz01"/>
+	<director type="wait" v0="2"/>
+	
+	<director type="play_anim" v0="director" v1="kczd_cam001"/>	
+	
+	<director type="wait" v0="0.6"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_nzj018"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_40"/>
+	
+	<director type="play_sound" v0="sound/chouka01"/>
+	<director type="show_object" v0="pt_ws_cx02"/>
+	
+	
+
+	
+	<director type="wait" v0="2"/>
+	
+	
+	<director type="show_unit" v0="ts_bot125"/>
+	<director type="show_unit" v0="ts_t01"/>
+	<director type="wait" v0="0.1"/>
+	<director type="unit_action" v0="ts_t01" v1="csback01"/>
+	<director type="show_object" v0="s_cj_liux02"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_nzj019"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_41"/>
+	
+	<director type="wait" v0="2"/>
+	<director type="show_object" v0="s_cj_liux01"/>
+	<director type="show_object" v0="s_cj_liux03"/>
+	
+	
+	
+	<director type="wait" v0="4"/>
+	<director type="show_object" v0="s_cj_liux04"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_42"/>
+	
+	<director type="unit_action" v0="ts_bot125" v1="ws_phone01"/>
+	
+	<director type="wait" v0="0.1"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_dr09"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_43"/>
+	
+	<director type="wait" v0="3"/>
+    <director type="unit_action" v0="ts_bot125" v1="ws_stand01"/>
+    <director type="wait" v0="1"/>
+    
+	<director type="play_sound" v0="sound/chouka01"/>
+    
+    <director type="show_object" v0="pt_ws_cx02a"/>
+    <director type="wait" v0="0.5"/>
+    
+    <director type="play_sound" v0="sound/ts_rwpy/tspy_dr10"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_44"/>
+	<director type="unit_action" v0="ts_bot125" v1="jq_left01"/>
+	
+	<director type="wait" v0="0.5"/>
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	
+	<director type="show_unit" v0="ts_bot143a"/>
+	<director type="wait" v0="0.01"/>
+	
+	<director type="unit_action" v0="ts_bot143a" v1="standup01"/>
+	
+	<director type="wait" v0="1.66"/>
+	
+	<director type="unit_action" v0="ts_bot143a" v1="walk"/>
+	
+	<director type="wait" v0="0.1"/>
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	<director type="wait" v0="0.1"/>
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	<director type="wait" v0="0.1"/>
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	
+	
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	
+	<director type="unit_moveto" v0="ts_bot143a" v1="-1.884562" v2="0" v3="2.921093" v4="6"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_dr11"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_45"/>
+	
+	<director type="play_music" v0="music/ts_buttle05"/>
+	
+	
+	
+	<director type="wait" v0="1.5"/>
+	
+	
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	
+	
+	<director type="play_sound" v0="sound/chouka01"/>
+	
+	<director type="show_object" v0="pt_ws_cx02b"/>
+	<director type="wait" v0="1.2"/>
+	
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	<director type="show_unit" v0="ts_bot143b"/>
+	<director type="wait" v0="0.01"/>
+	<director type="unit_action" v0="ts_bot143b" v1="standup01"/>
+	<director type="wait" v0="0.1"/>
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	<director type="wait" v0="0.1"/>
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	<director type="wait" v0="0.1"/>
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	
+
+	
+	<director type="wait" v0="1.3"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_nzj020"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_46"/>
+	
+	
+
+	<director type="unit_action" v0="ts_bot143b" v1="walk"/>
+	<director type="wait" v0="0.1"/>
+	<director type="unit_moveto" v0="ts_bot143b" v1="3.790036" v2="0" v3="7.476429" v4="4"/>
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	<director type="wait" v0="0.2"/>
+	<director type="play_sound" v0="sound/jiqi_s_03"/>
+	<director type="wait" v0="0.8"/>
+	
+	<director type="unit_action" v0="ts_bot125" v1="ready"/>
+	<director type="unit_action" v0="ts_t01" v1="ready"/>
+	
+	
+	<director type="wait" v0="2"/>
+	
+	
+	<director type="unit_action" v0="ts_bot143b" v1="ready"/>
+    <director type="unit_pos" v0="ts_bot143b" v1="4.136157" v2="0" v3="8.476429"/>
+	
+	
+	
+	<director type="unit_pos" v0="ts_t01" v1="0.01711901" v2="0" v3="-3.743491"/>
+	<director type="unit_angle" v0="ts_t01" v1="375"/>
+	
+	<director type="unit_pos" v0="ts_bot125" v1="-1.487065" v2="0" v3="-2.997154"/>
+	<director type="unit_angle" v0="ts_bot125" v1="10"/>
+	
+	<director type="unit_action" v0="ts_bot143a" v1="ready"/>
+	<director type="unit_pos" v0="ts_bot143a" v1="-1.884562" v2="0" v3="7.921093"/>	
+	
+	<director type="play_anim" v0="director" v1="kczd_cam002"/>
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_dr12"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_47"/>
+	
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="unit_target_ex" v0="ts_bot125" v1="ts_bot143a"/>
+	
+	<director type="unit_target" v0="ts_bot125" v1="-1.884562" v2="0" v3="6.0" v4="0"/>
+	<director type="unit_action" v0="ts_bot125" v1="attack"/>
+	
+	<director type="wait" v0="1"/>
+	
+	
+	
+	<director type="unit_target_ex" v0="ts_t01" v1="ts_bot143b"/>
+	<director type="unit_action" v0="ts_t01" v1="attack"/>
+
+	
+	<director type="set_film_label" v0="director_kczd_set_film_label_48"/>
+	
+	
+	
+    <director type="wait" v0="1"/>
+	<director type="show_object" v0="WFXMR_Bigb001"/>
+	
+	
+	<director type="unit_action" v0="ts_t01" v1="attack"/>
+	
+	
+	
+	<director type="play_sound" v0="sound/ab_afx_elec"/>
+	
+	<director type="show_object" v0="WFXMR_Ex001"/>
+	
+
+	<director type="play_sound" v0="sound/boom001"/>
+	<director type="hide_unit" v0="ts_bot143a"/>
+	
+	
+	<director type="unit_target_ex" v0="ts_t01" v1="ts_bot143b"/>
+	<director type="unit_action" v0="ts_t01" v1="attack"/>
+	<director type="wait" v0="0.8"/>
+	<director type="show_object" v0="WFXMR_Bigb002"/>
+	
+	
+	<director type="play_sound" v0="sound/ab_afx_elec"/>
+	
+	<director type="show_object" v0="WFXMR_Ex002"/>
+
+	
+	<director type="play_sound" v0="sound/boom001"/>
+	
+	<director type="hide_unit" v0="ts_bot143b"/>
+	<director type="wait" v0="2"/>
+	<director type="play_anim" v0="director" v1="kczd_cam003a"/>
+
+	
+	<director type="unit_pos" v0="ts_bot125" v1="-1.672197" v2="0" v3="-3.166302"/>
+	<director type="unit_angle" v0="ts_bot125" v1="86"/>
+	<director type="unit_angle" v0="ts_t01" v1="285"/>
+	
+	<director type="play_music" v0=" "/>
+	<director type="play_music" v0="music/ts_dtxz01"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_nzj021"/>
+	
+	<director type="set_film_label" v0="director_kczd_set_film_label_49"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_dr13"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_50"/>
+	
+	<director type="wait" v0="3.2"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_hs01"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_51"/>
+	
+	<director type="unit_action" v0="ts_bot125" v1="jq_left01"/>
+	<director type="wait" v0="0.2"/>
+	<director type="unit_action" v0="ts_t01" v1="dj_stand01"/>
+	
+	<director type="play_music" v0="  "/>
+	
+	<director type="play_music" v0="music/ts_buttle07"/>
+
+	<director type="wait" v0="0.2"/>
+	
+	<director type="play_sound" v0="sound/gaizao"/>
+	
+	<director type="show_object" v0="bot136_atk2_b01"/>
+	<director type="wait" v0="0.2"/>
+	
+	<director type="set_film_label" v0="director_kczd_set_film_label_52"/>
+	<director type="play_sound" v0="sound/ftjianzhan01"/>
+	<director type="show_object" v0="bot136_atk2_b02"/>
+	<director type="wait" v0="0.1"/>
+	
+	<director type="unit_angle" v0="ts_bot125" v1="365"/>
+	
+	<director type="unit_action" v0="ts_bot125" v1="jq_fy01"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_nzj006"/>
+	
+	<director type="set_film_label" v0="director_kczd_set_film_label_53"/>
+	
+	<director type="wait" v0="0.2"/>
+	<director type="unit_action" v0="ts_t01" v1="djfy01"/>
+	
+	<director type="wait" v0="1.5"/>
+	
+	<director type="set_film_label" v0="director_kczd_set_film_label_54"/>
+	
+	<director type="show_unit" v0="ts_bot136"/>
+	<director type="play_anim" v0="director" v1="kczd_cam003"/>
+	
+	<director type="unit_action" v0="ts_bot125" v1="ready"/>
+	<director type="unit_action" v0="ts_t01" v1="ready"/>
+	
+	<director type="wait" v0="0.1"/>
+	<director type="unit_action" v0="ts_bot136" v1="walk"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_hs02"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_55"/>
+	
+	<director type="unit_moveto" v0="ts_bot136" v1="9.387893" v2="0" v3="24.94506" v4="4"/>
+	
+
+	
+	<director type="wait" v0="3"/>
+	
+	
+	<director type="wait" v0="1"/>	
+	<director type="show_object" v0="s_cj_liux02"/>
+	<director type="show_object" v0="s_cj_liux03"/>
+	<director type="unit_action" v0="ts_bot136" v1="ready"/>
+	<director type="wait" v0="2"/>
+	<director type="play_anim" v0="director" v1="kczd_cam004"/>
+	<director type="unit_action" v0="ts_bot125" v1="ready"/>
+	<director type="unit_pos" v0="ts_bot125" v1="-1.687065" v2="0" v3="-2.997154"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_dr14"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_56"/>
+	
+	<director type="unit_angle" v0="ts_bot125" v1="10"/>
+	<director type="unit_pos" v0="ts_t01" v1="0.01711901" v2="0" v3="-3.743491"/>
+	<director type="unit_angle" v0="ts_t01" v1="375"/>
+	<director type="unit_pos" v0="ts_bot136" v1="2.790036" v2="0" v3="9.23803"/>
+	<director type="unit_angle" v0="ts_bot136" v1="198.4"/>
+	<director type="unit_angle" v0="ts_bot125" v1="21.5"/>	
+	<director type="wait" v0="1"/>
+	
+	
+	
+	<director type="unit_action" v0="ts_bot125" v1="ws_jianzhi01"/>
+	<director type="wait" v0="4"/>
+	<director type="play_anim" v0="director" v1="kczd_cam006"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_hs03"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_57"/>
+	
+	<director type="wait" v0="1"/>
+	<director type="play_anim" v0="director" v1="kczd_cam007"/>
+	
+	
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="unit_target" v0="ts_bot125" v1="2.190036" v2="0" v3="4.53803" v4="0"/>
+	<director type="unit_action" v0="ts_bot125" v1="jn01"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_dr04"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_58"/>
+	<director type="wait" v0="1.5"/>
+	
+	
+	
+	<director type="wait" v0="0.5"/>
+	<director type="play_sound" v0="sound/zth521423"/>
+	
+	<director type="unit_action" v0="ts_bot136" v1="fyback01"/>
+	
+	<director type="play_anim" v0="director" v1="kczd_cam005"/>
+	
+	<director type="set_film_label" v0="director_kczd_set_film_label_59"/>
+	
+
+	<director type="wait" v0="2"/>
+	<director type="play_sound" v0="sound/ab_afx_elec"/>
+	
+	<director type="play_anim" v0="director" v1="kczd_cam010"/>
+	
+	
+		
+	<director type="wait" v0="1.15"/>
+	<director type="play_sound" v0="sound/ss_hx"/>
+	
+	<director type="wait" v0="0.5"/>
+	
+	<director type="play_sound" v0="sound/EtherealH3"/>
+	
+	<director type="unit_action" v0="ts_bot136" v1="ready"/>
+	<director type="show_object" v0="bot130_atk2_sj01a"/>
+	
+	<director type="unit_pos" v0="ts_bot136" v1="2.790036" v2="0" v3="8.93803"/>
+	
+	<director type="show_object" v0="bot130_atk2_sj01"/>
+	<director type="wait" v0="0.3"/>
+
+	
+	
+	<director type="play_anim" v0="director" v1="kczd_cam008"/>
+	
+	
+	
+	
+	<director type="wait" v0="0.3"/>
+	
+	<director type="show_object" v0="s_juq_a02"/>
+	<director type="wait" v0="0.3"/>
+	<director type="show_object" v0="s_juq_a02"/>
+	<director type="wait" v0="0.3"/>
+	<director type="play_sound" v0="sound/effectsf01"/>
+	<director type="show_object" v0="s_juq_a02"/>
+	<director type="wait" v0="0.3"/>
+	<director type="show_object" v0="s_juq_a02"/>
+	<director type="wait" v0="0.5"/>
+	<director type="hide_object" v0="s_juq_a02"/>
+	<director type="unit_target" v0="ts_bot136" v1="-1.687065" v2="0" v3="-2.997154" v4="0"/>
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_hs01"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_60"/>
+	
+	
+	
+	<director type="unit_action" v0="ts_bot136" v1="jn01"/>
+	<director type="wait" v0="2"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_nzj006"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_61"/>
+	
+	<director type="play_anim" v0="director" v1="kczd_cam009"/>
+	<director type="wait" v0="0.1"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_dr16"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_62"/>
+	
+	<director type="unit_action" v0="ts_bot125" v1="jq_fy01"/>
+	<director type="wait" v0="0.1"/>
+	<director type="unit_action" v0="ts_t01" v1="djfy01"/>
+
+    <director type="play_sound" v0="sound/effectsf01"/>
+
+	<director type="wait" v0="0.1"/>
+	<director type="show_object" v0="s_juq_a02a"/>
+	<director type="wait" v0="0.1"/>
+	<director type="show_object" v0="s_juq_a02a"/>
+	<director type="wait" v0="0.1"/>
+	<director type="show_object" v0="s_juq_a02a"/>
+	<director type="wait" v0="0.1"/>
+	<director type="hide_object" v0="s_juq_a02a"/>
+	
+	<director type="wait" v0="0.1"/>
+	<director type="show_object" v0="buff_fyfl_a01"/>
+	<director type="wait" v0="0.1"/>
+	<director type="show_object" v0="buff_fyfl_a01"/>
+	<director type="wait" v0="0.1"/>
+	<director type="show_object" v0="buff_fyfl_a01"/>
+	<director type="play_sound" v0="sound/InnerFireA"/>
+
+	<director type="wait" v0="0.1"/>
+	<director type="show_object" v0="buff_fyfl_a01a"/>
+	<director type="wait" v0="0.1"/>
+	<director type="show_object" v0="buff_fyfl_a01a"/>
+	<director type="wait" v0="0.1"/>
+	<director type="show_object" v0="buff_fyfl_a01a"/>
+	<director type="play_sound" v0="sound/InnerFireA"/>
+	
+	<director type="wait" v0="1"/>
+	
+    <director type="play_sound" v0="sound/ts_rwpy/tspy_qs01"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_63"/>
+	<director type="wait" v0="1"/>
+	<director type="play_anim" v0="director" v1="kczd_cam011"/>
+	<director type="show_object" v0="saber_lx01"/>
+	
+	<director type="wait" v0="0.1"/>
+	<director type="play_sound" v0="sound/hj_kz"/>
+	<director type="unit_action" v0="ts_t01" v1="ready"/>
+	<director type="wait" v0="0.1"/>
+	<director type="play_sound" v0="sound/hj_kz"/>
+	<director type="unit_action" v0="ts_bot125" v1="ready"/>
+	
+	<director type="wait" v0="1"/>
+	<director type="play_sound" v0="sound/hj_kz"/>
+	
+	<director type="wait" v0="0.5"/>
+	<director type="play_sound" v0="sound/hj_ld"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="hide_object" v0="saber_lx01"/>
+	<director type="show_object" v0="buff_fyfl_a01b"/>
+	<director type="wait" v0="0.2"/>
+	
+	<director type="play_sound" v0="sound/ab_afx_elec"/>
+	<director type="wait" v0="0.2"/>
+	<director type="play_sound" v0="sound/boom001"/>
+	
+	
+	<director type="show_unit" v0="ts_t04"/>
+	<director type="wait" v0="2"/>
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_qs02"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_64"/>
+	<director type="wait" v0="1"/>
+	<director type="unit_action" v0="ts_t04" v1="jq_zt01"/>
+	
+	
+	
+	<director type="wait" v0="3"/>
+	<director type="unit_action" v0="ts_t04" v1="ready"/>
+	
+	<director type="play_anim" v0="director" v1="kczd_cam016"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_dr17"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_65"/>
+	
+	<director type="wait" v0="3"/>
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_nzj022"/>
+	<director type="set_film_label" v0=" director_kczd_set_film_label_66!"/>
+	
+	<director type="wait" v0="2.5"/>
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_nzj023"/>
+	<director type="set_film_label" v0=" director_kczd_set_film_label_67"/>
+	<director type="wait" v0="2"/>
+	<director type="play_anim" v0="director" v1="kczd_cam012"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_qs03"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_68"/>
+	
+	<director type="wait" v0="4"/>
+	<director type="play_anim" v0="director" v1="kczd_cam013"/>
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_hs01"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_69"/>
+	
+	
+	<director type="unit_target_ex" v0="ts_bot136" v1="ts_t04"/>
+	
+	
+	<director type="unit_action" v0="ts_bot136" v1="jn01"/>
+	<director type="wait" v0="2"/>
+	
+	<director type="unit_pos" v0="ts_t01" v1="2.444219" v2="0" v3="-3.743491"/>
+	<director type="unit_angle" v0="ts_t01" v1="344"/>
+	<director type="wait" v0="0.1"/>
+	
+	<director type="play_anim" v0="director" v1="kczd_cam014"/>
+	
+	<director type="play_sound" v0="sound/effectsf01"/>
+
+	<director type="wait" v0="0.5"/>
+	<director type="show_object" v0="buff_hudun_a01"/>
+	<director type="wait" v0="0.3"/>
+	<director type="show_object" v0="buff_hudun_a01"/>
+
+	<director type="wait" v0="2"/>
+	<director type="unit_target" v0="ts_t04" v1="2.790036" v2="0" v3="5.93803" v4="0"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_qs01"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_70"/>
+	
+	<director type="unit_target_ex" v0="ts_t04" v1="ts_bot136"/>
+	
+	<director type="unit_action" v0="ts_t04" v1="jn01"/>
+	<director type="wait" v0="1.5"/>
+	
+	<director type="set_film_label" v0="director_kczd_set_film_label_71"/>
+	
+	<director type="play_sound" v0="sound/zth521423"/>
+	
+	<director type="play_anim" v0="director" v1="kczd_cam005"/>
+	
+	<director type="wait" v0="3"/>
+
+	<director type="unit_action" v0="ts_bot136" v1="jq_injured01"/>
+	
+	<director type="play_music" v0="  "/>
+	<director type="play_music" v0="music/ts_dtxz01"/>
+	
+	
+	<director type="play_anim" v0="director" v1="kczd_cam015"/>
+	<director type="wait" v0="1"/>
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_hs05"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_72"/>
+	
+	<director type="wait" v0="3"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_73"/>
+	<director type="play_sound" v0="sound/chouka01"/>
+	<director type="show_object" v0="pt_ws_cx02c"/>
+	<director type="wait" v0="1.2"/>
+	<director type="hide_unit" v0="ts_bot136"/>
+	
+	
+	
+	<director type="unit_action" v0="ts_t01" v1="ws_stand01"/>
+	<director type="unit_action" v0="ts_bot125" v1="ws_stand01"/>
+	<director type="unit_action" v0="ts_t04" v1="ready"/>
+	
+	<director type="unit_pos" v0="ts_t01" v1="0.988139" v2="0" v3="-3.021316"/>
+	<director type="unit_angle" v0="ts_t01" v1="320"/>
+	
+	<director type="unit_pos" v0="ts_bot125" v1="-1.687065" v2="0" v3="-2.997154"/>
+	<director type="unit_angle" v0="ts_bot125" v1="44.5895"/>
+	
+	<director type="unit_pos" v0="ts_t04" v1="0.4466735" v2="0" v3="-1.380784"/>
+	<director type="unit_angle" v0="ts_t04" v1="225.8683"/>
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="play_anim" v0="director" v1="kczd_cam017"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_qs05"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_74"/>
+	<director type="wait" v0="1.5"/>
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_dr18"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_75"/>
+	<director type="wait" v0="2"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_76"/>
+	<director type="wait" v0="2"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_77"/>
+	<director type="wait" v0="3.5"/>
+	
+	<director type="play_sound" v0="sound/ts_rwpy/tspy_nzj024"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_78"/>
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="play_sound" v0="sound/chouka01"/>
+	<director type="show_object" v0="pt_ws_cx02d"/>
+	
+	<director type="wait" v0="1.3"/>
+	<director type="hide_unit" v0="ts_bot125"/>
+	<director type="hide_unit" v0="ts_t01"/>
+	<director type="hide_unit" v0="ts_t04"/>
+	<director type="set_film_label" v0="director_kczd_set_film_label_79"/>
+	
+	
+	<director type="play_anim" v0="director" v1="kczd_cam018"/>
+	
+	<director type="play_music" v0="  "/>
+	
+	<director type="wait" v0="0.5"/>
+	<director type="start_game"/>	
+																								
+</directors>

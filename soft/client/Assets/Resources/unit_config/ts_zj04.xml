@@ -1,0 +1,149 @@
+<unit name_height="2">
+	
+	<part name="face">
+		<mesh bone="" part="face" pack="ts_face01" type="body"/>
+	</part>
+	<part name="hair">
+		<mesh bone="" part="hair" pack="ts_hair03" type="body"/>
+	</part>
+			
+			
+			
+			
+	<actions name="ready">
+		<atcion time="0" type="anim" name="pt_stand1"></atcion>
+	</actions>	
+	<actions name="ready1">
+		<atcion time="0" type="anim" name="pt_stand2"></atcion>
+		<atcion time="2.5" type="action" name="ready"></atcion>
+	</actions>		
+	<actions name="ready2">
+		<atcion time="0" type="anim" name="pt_stand3"></atcion>
+		<atcion time="2.5" type="action" name="ready"></atcion>
+	</actions>	
+	
+	
+	<actions name="dl_cj01">
+		<atcion time="0" type="anim" name="dl_cj01"></atcion>
+	</actions>	
+	<actions name="dl_cj02">
+		<atcion time="0" type="anim" name="dl_cj02"></atcion>
+	</actions>	
+	
+	
+	<actions name="dl_czt01">
+		<atcion time="0" type="anim" name="dl_czt01"></atcion>
+	</actions>	
+	<actions name="dl_czt02">
+		<atcion time="0" type="anim" name="dl_czt02"></atcion>
+	</actions>	
+	<actions name="dl_czt_stand">
+		<atcion time="0" type="anim" name="dl_czt_stand"></atcion>
+	</actions>	
+	<actions name="dl_zct_walk">
+		<atcion time="0" type="anim" name="dl_zct_walk"></atcion>
+	</actions>	
+	
+	
+	
+	
+	<actions name="bq_xiongno01">
+		<atcion time="0" type="anim" name="bq_xiongno01"></atcion>
+		<atcion time="2.5" type="action" name="ready"></atcion>
+	</actions> 			
+	<actions name="bq_tuino01">
+		<atcion time="0" type="anim" name="bq_tuino01"></atcion>
+		<atcion time="2.5" type="action" name="ready"></atcion>
+	</actions> 			
+	<actions name="bq_shouno01">
+		<atcion time="0" type="anim" name="bq_shouno01"></atcion>
+		<atcion time="2.5" type="action" name="ready"></atcion>
+	</actions> 		
+	
+	
+	<actions name="bq_shengqi01">
+		<atcion time="0" type="anim" name="bq_shengqi01"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions> 		
+	<actions name="bq_maimeng01">
+		<atcion time="0" type="anim" name="bq_maimeng01"></atcion>
+		<atcion time="2.6" type="action" name="ready"></atcion>
+	</actions> 		
+	<actions name="bq_kaixin01">
+		<atcion time="0" type="anim" name="bq_kaixin01"></atcion>
+		<atcion time="3.5" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_haixiu01">
+		<atcion time="0" type="anim" name="bq_haixiu01"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_ganga01">
+		<atcion time="0" type="anim" name="bq_ganga01"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_feiwen01">
+		<atcion time="0" type="anim" name="bq_feiwen01"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_daxiao01">
+		<atcion time="0" type="anim" name="bq_daxiao01"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_cry01">
+		<atcion time="0" type="anim" name="bq_cry01"></atcion>
+		<atcion time="2.3" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_chijing01">
+		<atcion time="0" type="anim" name="bq_chijing01"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_aoman01">
+		<atcion time="0" type="anim" name="bq_aoman01"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_tuosai01">
+		<atcion time="0" type="anim" name="bq_tuosai01"></atcion>
+		<atcion time="2.5" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_huanyf01">
+		<atcion time="0" type="anim" name="bq_huanyf01"></atcion>
+		<atcion time="3" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_haixiu02">
+		<atcion time="0" type="anim" name="bq_haixiu02"></atcion>
+		<atcion time="2.3" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_sayhi01">
+		<atcion time="0" type="anim" name="bq_sayhi01"></atcion>
+		<atcion time="2.3" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_seeew01">
+		<atcion time="0" type="anim" name="bq_seeew01"></atcion>
+		<atcion time="3.3" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_sanerg01">
+		<atcion time="0" type="anim" name="bq_sanerg01"></atcion>
+		<atcion time="4" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_sayno01">
+		<atcion time="0" type="anim" name="bq_sayno01"></atcion>
+		<atcion time="2.3" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_seehand01">
+		<atcion time="0" type="anim" name="bq_seehand01"></atcion>
+		<atcion time="3.3" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_qqhua01">
+		<atcion time="0" type="anim" name="bq_qqhua01"></atcion>
+		<atcion time="2.65" type="action" name="ready"></atcion>
+	</actions> 	
+	<actions name="bq_think01">
+		<atcion time="0" type="anim" name="bq_think01"></atcion>
+		<atcion time="3" type="action" name="ready"></atcion>
+	</actions> 	
+	
+	
+	
+	
+	
+</unit>

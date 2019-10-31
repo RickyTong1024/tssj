@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package dhc;
+
+message huodong_t {
+	uint64	guid	= 1;
+	int32  id 		= 2;
+	int32  type 	= 3;
+	int32  subtype = 4;
+	uint64 start 	= 5;
+	uint64 end 	= 6;
+    string name    = 7;
+	int32  kai_start = 8;
+	int32  kai_end	  = 9;
+	string group_name 	= 10;
+	uint64 show_time	= 11;
+	uint64 noshow_time = 12;
+	repeated uint64 entrys	  	= 13;
+	uint64 jieri_time  = 14;
+	int32 kaikai_start = 15;
+	repeated uint64 player_guids = 16;
+	repeated int32  player_levels = 17;
+	repeated uint64 player_players = 18;
+	repeated uint64 player_subs	= 19;
+	uint64 rank_time = 20;
+	
+	string item_name1	= 30;
+	string item_des1	= 31;
+	string item_name2	= 32;
+	string item_des2	= 33;
+	
+	int32  extra_data  = 40;
+	int32  extra_data1 = 41;
+	int32  extra_data2 = 42;
+}

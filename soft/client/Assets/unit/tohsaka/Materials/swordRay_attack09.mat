@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: swordRay_attack09
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Alpha01:
+        m_Texture: {fileID: 2800000, guid: 1d820387b58ad83409b8cafe09db364a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisT01:
+        m_Texture: {fileID: 2800000, guid: 4e51f181444356f458eac091f4ee2144, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2ac4bad46bb234f4683a9cdbb5217b26, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: c28d87e1cd8a83443a25a96b1084a52d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskT02:
+        m_Texture: {fileID: 2800000, guid: c28d87e1cd8a83443a25a96b1084a52d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex01:
+        m_Texture: {fileID: 2800000, guid: 2dfab1b27cafae141869a0b52b66bfbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex02:
+        m_Texture: {fileID: 2800000, guid: 61768f446f8ba9244a57115e4b0712bc, type: 3}
+        m_Scale: {x: 0, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex03:
+        m_Texture: {fileID: 2800000, guid: c28d87e1cd8a83443a25a96b1084a52d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texalpha:
+        m_Texture: {fileID: 2800000, guid: 61768f446f8ba9244a57115e4b0712bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaRange: 3.7835822
+    - _DisT01Power: 0.3
+    - _Gloss: 0
+    - _Intensity: 3
+    - _Intensity_Mask: 1
+    - _Intensity_T02: 4
+    - _InvFade: 1
+    - _PanX_A01: 40
+    - _PanX_DisT01: -5
+    - _PanX_T01: -5
+    - _PanX_T02: 1
+    - _PanY_DisT01: -0.5
+    - _PanY_Mask: 0
+    - _PanY_MaskT02: 0
+    - _PanY_TexAlpha: 0
+    - _clip: 0.25
+    - _fresnel: 2.5
+    - _shininess: 0
+    m_Colors:
+    - _Color_T01: {r: 0.92048687, g: 0.7941176, b: 1, a: 1}
+    - _Color_diffuse: {r: 1, g: 1, b: 1, a: 1}
+    - _Color_emission: {r: 1, g: 1, b: 1, a: 1}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}

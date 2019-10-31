@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package dhc;
+
+//using autoinc
+//using datetime
+//using index orderno 8
+
+message recharge_heitao_t {
+	uint64 guid		= 1;
+	string orderno		= 2;
+	int32 rid			= 3;
+	uint64 player_guid	= 4;
+}

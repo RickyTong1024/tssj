@@ -1,0 +1,44 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	{% include "form.html" %}
+	<div>
+		<div class="well">
+			<form name="main" class="form-horizontal" action="" method="post">
+				{% csrf_token %}
+				{{ form|as_bootstrap }}
+				<div>
+					<input type="button" name ="tijiao" value="确定" class="btn btn-primary" onclick="mask();"/>
+				</div>
+                {% if form.suc %}
+                <script>
+                    alert("查询成功");
+                </script>
+                {% endif %}
+                {% if messages %}
+                {% for message in messages %}
+                <script>
+                    alert("{{ message }}");
+                </script>
+                {% endfor %}
+                {% endif %}
+			</form>
+            <table class="table table-striped table-hover">  
+            <tr>
+                <td><strong>档位</strong></td>  
+                <td><strong>次数</strong></td> 
+                <td><strong>人数</strong></td>
+            </tr>  
+            {% for line in line %}  
+                <tr> 
+                    <td>{{ line.value1 }}</td>
+                    <td>{{ line.value2 }}</td>
+                    <td>{{ line.value3 }}</td>   
+                </tr>  
+            {% endfor %}  
+        </table>
+        {{ line|pagination }} 
+		</div> 
+	</div>
+</body>
+</html>

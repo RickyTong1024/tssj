@@ -1,0 +1,69 @@
+<directors>	
+
+	<director type="show_unit" v0="ts_t01"/>
+	<director type="unit_action" v0="ts_t01" v1="ws_stand01"/>
+	
+	<director type="play_anim" v0="zjts_d" v1="zjts_cam01"/>
+
+
+	<director type="wait" v0="0.1"/>
+	<director type="show_unit" v0="ts_bot200"/>
+	
+	<director type="show_unit" v0="ts_bot201"/>
+	
+	<director type="unit_action" v0="ts_bot201" v1="stand"/>
+	
+    <director type="unit_action" v0="ts_t01" v1="jq_1"/>
+    <director type="unit_action" v0="ts_bot200" v1="stand"/>
+	
+	<director type="set_film_label" v0="director_zjts_set_film_label_1"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="play_anim" v0="zjts_d" v1="zjts_cam02"/>
+	
+	<director type="set_film_label" v0="director_zjts_set_film_label_2"/>		
+							
+	<director type="wait" v0="1.5"/>
+	
+	<director type="set_film_label" v0="director_zjts_set_film_label_3"/>
+	
+	<director type="wait" v0="0.5"/>
+	
+	<director type="unit_action" v0="ts_bot200" v1="talk_2"/>
+	
+	<director type="set_film_label" v0="director_zjts_set_film_label_4"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="show_unit" v0="ts_bot08"/>	
+	
+	<director type="set_film_label" v0="director_zjts_set_film_label_5"/>
+	
+	<director type="wait" v0="0.5"/>								
+	
+	<director type="play_anim" v0="zjts_d" v1="zjts_cam03"/>
+		
+	<director type="wait" v0="0.1"/>
+	
+
+	<director type="set_film_label" v0="director_zjts_set_film_label_6"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="set_film_label" v0="director_zjts_set_film_label_7"/>
+	
+	<director type="wait" v0="2.2"/>
+	
+	<director type="set_film_label" v0="director_zjts_set_film_label_8"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="set_film_label" v0="director_zjts_set_film_label_9"/>
+	
+	<director type="hide_director"/>
+
+	
+	
+																								
+</directors>

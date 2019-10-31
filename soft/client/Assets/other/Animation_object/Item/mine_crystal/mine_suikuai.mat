@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: mine_suikuai
+  m_Shader: {fileID: 4800000, guid: 28d0d3be5da163b4d9fa2435f125fec4, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Tex01
+        second:
+          m_Texture: {fileID: 2800000, guid: c04ff96383ef54c4493409512680fa18, type: 3}
+          m_Scale: {x: .300000012, y: .300000012}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Tex02
+        second:
+          m_Texture: {fileID: 2800000, guid: 899c5fd66853a0a4a976e047fe41bfd7, type: 3}
+          m_Scale: {x: .200000003, y: .200000003}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Tex03
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 2, y: 2}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DisT01
+        second:
+          m_Texture: {fileID: 2800000, guid: 899c5fd66853a0a4a976e047fe41bfd7, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskAlpha
+        second:
+          m_Texture: {fileID: 2800000, guid: a3de474356606594493c3c344cbf0f8f, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Mask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskT03
+        second:
+          m_Texture: {fileID: 2800000, guid: e7190b07e89bd3f4d8ef32b573098765, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TexLerp01
+        second:
+          m_Texture: {fileID: 2800000, guid: f07f6c223aa93fc4e9b22cd13e73ea52, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TexLerp
+        second:
+          m_Texture: {fileID: 2800000, guid: f07f6c223aa93fc4e9b22cd13e73ea52, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+          name: _Gloss
+        second: 0
+      data:
+        first:
+          name: _RimPow
+        second: 2.5
+      data:
+        first:
+          name: _Tex_power
+        second: 1
+      data:
+        first:
+          name: _PanY_T02
+        second: .200000003
+      data:
+        first:
+          name: _PanY_DisT01
+        second: -.100000001
+      data:
+        first:
+          name: _DisT01Power
+        second: .200000003
+      data:
+        first:
+          name: _IntensityA
+        second: 2
+      data:
+        first:
+          name: _PanX_T02
+        second: -10
+      data:
+        first:
+          name: _Intensity_T03
+        second: 1
+      data:
+        first:
+          name: _PanX_T01
+        second: 0
+      data:
+        first:
+          name: _Intensity_Mask
+        second: 1
+      data:
+        first:
+          name: _IntensityAlpha
+        second: 1
+      data:
+        first:
+          name: _liangdu_Lerp01
+        second: 2
+      data:
+        first:
+          name: _Intensity_Lerp
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Color_T01
+        second: {r: .433823526, g: .433823526, b: .433823526, a: 1}
+      data:
+        first:
+          name: _Color_T02
+        second: {r: .823529422, g: .823529422, b: .823529422, a: 1}
+      data:
+        first:
+          name: _Color_T03
+        second: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index player_guid 0
+
+message role_t {
+	uint64 guid			= 1;
+	uint64 player_guid		= 2;
+	int32 template_id		= 3;
+	int32 level			= 4;
+	int32 jlevel			= 7;
+	int32 glevel			= 8;
+	int32 pinzhi			= 9;
+	repeated int32 jskill_level		= 10;
+	repeated int32 dress_ids		= 11;
+	int32 dress_on_id		= 12;
+	repeated uint64 zhuangbeis		= 13;
+	repeated uint64 treasures		= 14;
+	int32 xq				= 15;
+	uint64 xq_time			= 16;
+	int32 bskill_level     = 17;
+	repeated int32 bskill_counts	= 18;
+	uint64 pet				= 19;
+}

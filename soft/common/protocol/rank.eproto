@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package dhc;
+
+message	rank_t {
+	uint64 guid			= 1;
+	repeated uint64 player_guid		= 2;
+	repeated string player_name		= 3;
+	repeated int32 player_level		= 4;
+	repeated int32 player_bf		= 5;
+	repeated int32 value			= 6;
+	repeated int32 player_template  = 7;
+    repeated int32 player_vip       = 8;
+    repeated int32 player_achieve   = 9;
+	repeated int32 player_huiyi		= 10;
+	repeated int32 player_chenghao  = 11;
+	repeated int32 player_nalflag	= 12;
+	
+	int32  reward_flag		= 20;
+}

@@ -1,0 +1,19 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	<div>
+		<div>
+			<h1>登陆</h1>
+		</div>
+		<div class="well">
+			<form name="main" class="form-horizontal" action="{% url "login" %}" method="post">
+				{% csrf_token %}
+				{{ form|as_bootstrap }}
+                <div>
+					<input type="submit" value="登录"/>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

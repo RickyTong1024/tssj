@@ -1,0 +1,33 @@
+<directors>	
+	
+	<director type="show_unit" v0="ts_zhs010a"/>
+	
+	<director type="wait" v0="0.1"/>
+	
+	<director type="play_music" v0="music/ts_bosz01"/>
+	
+	<director type="unit_action" v0="ts_zhs010a" v1="chuc"/>
+
+	<director type="play_anim" v0="zhs010a_d" v1="zhs010a_cam01"/>
+	
+
+	<director type="wait" v0="1"/>
+
+	<director type="unit_action" v0="ts_zhs010a" v1="jq01"/>
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="play_anim" v0="zhs010a_d" v1="zhs010a_cam03"/>
+
+	<director type="unit_action" v0="ts_zhs010a" v1="attack1"/>
+	
+	<director type="wait" v0="1"/>
+	
+	<director type="play_anim" v0="zhs010a_d" v1="zhs010a_cam05"/>
+
+	<director type="wait" v0="3"/>
+
+
+	  
+																								
+</directors>

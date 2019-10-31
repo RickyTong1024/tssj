@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package dhc;
+
+message guild_t {
+	uint64 guid				= 1;
+	string name				= 2;
+	int32 icon					= 3;
+	string gonggao				= 4;
+	int32 level				= 5;
+	int32 exp					= 6;
+	int32 bftj					= 7;
+	repeated uint64 member_guids		= 8;
+	repeated uint64 event_guids			= 9;
+	uint64 last_boss_time		= 13;
+	uint64 last_daily_time		= 14;
+	uint64 last_week_time		= 15;
+	string leader_name			= 16;
+	int32 honor                = 18;
+	uint64 mission             = 19;
+	repeated uint64 message_guids		= 20;
+	int32 mobai_num			= 21;
+	repeated int32 skill_ids			= 22;
+	repeated int32 skill_levels			= 23;
+    repeated uint64 apply_guids         = 24;
+    repeated string apply_names         = 25;
+    repeated int32  apply_template      = 26;
+    repeated int32  apply_level         = 27;
+    repeated int32  apply_bf            = 28;
+    repeated int32  apply_vip           = 29;
+    repeated int32  apply_achieve       = 30;
+    repeated int32  shop_ids            = 31;
+    repeated int32  shop_nums           = 32;
+	int32  last_level			= 33;
+	repeated uint64 red_guids			= 34;
+	repeated uint64 box_guids			= 35;
+	int32  change_name			= 36;
+	int32  juntuan_apply       = 37;
+	repeated uint64 pvp_guilds			= 38;
+	uint64 pvp_guild			= 39;
+	repeated int32 apply_nalfags		= 40;
+}

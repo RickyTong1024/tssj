@@ -1,0 +1,41 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	{% include "form.html" %}
+	<div>
+		<div>
+			<h1>统计</h1>
+		</div>
+        <div>
+            <h2>一般统计</h2>
+        </div>
+         <table class="table table-striped table-hover">  
+            <tr>
+                <td><strong>日期</strong></td>
+                <td><strong>服务器</strong></td>
+                <td><strong>新增用户</strong></td>    
+                <td><strong>活跃用户</strong></td>
+                <td><strong>收入</strong></td>
+                <td><strong>付费用户数</strong></td>
+                <td><strong>付费笔数</strong></td>
+                <td><strong>DAUAPKU</strong></td>
+                <td><strong>APKU</strong></td>   
+            </tr>  
+            {% for line in line %}  
+                <tr> 
+                    <td>{{ line.dt|date:"Y-m-d" }}</td>
+                    <td>{{ line.serverid }}</td>
+                    <td>{{ line.new_user_num }}</td> 
+                    <td>{{ line.huo_user_num }}</td>
+                    <td>{{ line.total_rmb }}</td>
+                    <td>{{ line.total_user_num }}</td>
+                    <td>{{ line.total_num }}</td>
+                    <td>{{ line.dpu }}</td>
+                    <td>{{ line.aku }}</td>
+                </tr>  
+            {% endfor %}  
+        </table>
+        {{ line|pagination }} 
+	</div>
+</body>
+</html>

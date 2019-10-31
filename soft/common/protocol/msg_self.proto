@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package protocol.self;
+
+message self_player_load {
+	bytes data				= 1;
+	int32 id				= 2;
+	string name			= 3;
+}
+
+message self_player_load_recharge {
+	uint64 player_guid		= 1;
+	int32 pid				= 2;
+	string order			= 3;
+	int32 count			= 4;
+	int32 huodong_id		= 5;
+	int32 entry_id			= 6;
+}
+
+message self_player_load_libao {
+	uint64 player_guid		= 1;
+	string code 			= 2;
+}
+
+message self_boss_change_name {
+	uint64 player_guid		= 1;
+	string player_name		= 2;
+}

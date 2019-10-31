@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index guild_guid 0
+
+message guild_member_t {
+	uint64 guid			= 1;
+	uint64 guild_guid		= 2;
+	uint64 player_guid		= 3;
+	int32  player_iocn_id	= 4;
+	string player_name		= 5;
+	int32  player_level	= 6;
+	int32 bf				= 7;
+	int32 zhiwu			= 8;
+	int32 sign_flag        = 9;
+	uint64 last_sign_time	= 10;
+	uint64 join_time		= 11;
+	int32 contribution		= 12;
+	repeated int32 honors           = 13;
+	int32 mnum             = 14;
+	int32 mbnum            = 15;
+	uint64 last_mbtime     = 16;
+	repeated int32 mission_rewards	= 17;
+    int32 msg_count        = 18;
+    int32 player_vip       = 19;
+    int32 player_achieve   = 20;
+	uint64 offline_time	= 21;
+	repeated int32 gongpo_rewards   = 22;
+	int32 map_star			= 23;
+	int32 nalflag			= 24;
+}

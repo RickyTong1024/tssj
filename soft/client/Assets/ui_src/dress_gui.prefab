@@ -1,0 +1,397 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &184294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484294}
+  - component: {fileID: 11484294}
+  m_Layer: 0
+  m_Name: dress_gui
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484294
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184294}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11484294
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 53b0e8f43d5830a46b0dc4307d096dd2, type: 2}
+  mSprites:
+  - name: ts_chib_001
+    x: 101
+    y: 488
+    width: 155
+    height: 156
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 4
+  - name: ts_chib_002
+    x: 2
+    y: 2
+    width: 155
+    height: 160
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ts_spzy_006
+    x: 101
+    y: 646
+    width: 99
+    height: 152
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 34
+    paddingRight: 22
+    paddingTop: 8
+    paddingBottom: 0
+  - name: ts_spzy_007
+    x: 349
+    y: 2
+    width: 107
+    height: 144
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 31
+    paddingRight: 17
+    paddingTop: 16
+    paddingBottom: 0
+  - name: ts_spzy_008
+    x: 159
+    y: 2
+    width: 105
+    height: 152
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 32
+    paddingRight: 18
+    paddingTop: 8
+    paddingBottom: 0
+  - name: ts_spzy_009
+    x: 353
+    y: 456
+    width: 107
+    height: 140
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 31
+    paddingRight: 17
+    paddingTop: 20
+    paddingBottom: 0
+  - name: ts_spzy_010
+    x: 2
+    y: 164
+    width: 127
+    height: 160
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 16
+    paddingRight: 12
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ts_szzy_001
+    x: 321
+    y: 154
+    width: 91
+    height: 146
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 31
+    paddingRight: 33
+    paddingTop: 14
+    paddingBottom: 0
+  - name: ts_szzy_002
+    x: 93
+    y: 812
+    width: 111
+    height: 158
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 25
+    paddingRight: 19
+    paddingTop: 2
+    paddingBottom: 0
+  - name: ts_szzy_003
+    x: 230
+    y: 156
+    width: 89
+    height: 150
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 31
+    paddingRight: 35
+    paddingTop: 10
+    paddingBottom: 0
+  - name: ts_szzy_004
+    x: 414
+    y: 148
+    width: 90
+    height: 139
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 35
+    paddingRight: 35
+    paddingTop: 16
+    paddingBottom: 0
+  - name: ts_szzy_005
+    x: 206
+    y: 798
+    width: 91
+    height: 150
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 31
+    paddingRight: 33
+    paddingTop: 10
+    paddingBottom: 0
+  - name: ts_szzy_006
+    x: 299
+    y: 798
+    width: 89
+    height: 150
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 32
+    paddingRight: 34
+    paddingTop: 10
+    paddingBottom: 0
+  - name: ts_szzy_007
+    x: 333
+    y: 608
+    width: 95
+    height: 144
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 30
+    paddingRight: 30
+    paddingTop: 16
+    paddingBottom: 0
+  - name: ts_szzy_008
+    x: 2
+    y: 812
+    width: 89
+    height: 160
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 31
+    paddingRight: 35
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ts_szzy_009
+    x: 313
+    y: 308
+    width: 93
+    height: 146
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 31
+    paddingRight: 31
+    paddingTop: 14
+    paddingBottom: 0
+  - name: ts_szzy_010
+    x: 127
+    y: 326
+    width: 101
+    height: 156
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 23
+    paddingRight: 31
+    paddingTop: 4
+    paddingBottom: 0
+  - name: ts_szzy_011
+    x: 131
+    y: 164
+    width: 97
+    height: 156
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 27
+    paddingRight: 31
+    paddingTop: 4
+    paddingBottom: 0
+  - name: ts_szzy_012
+    x: 258
+    y: 460
+    width: 93
+    height: 146
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 28
+    paddingRight: 34
+    paddingTop: 14
+    paddingBottom: 0
+  - name: ts_tfzy_001
+    x: 2
+    y: 326
+    width: 123
+    height: 160
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 17
+    paddingRight: 15
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ts_tfzy_002
+    x: 202
+    y: 646
+    width: 129
+    height: 150
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 20
+    paddingRight: 6
+    paddingTop: 10
+    paddingBottom: 0
+  - name: ts_tfzy_003
+    x: 2
+    y: 650
+    width: 97
+    height: 160
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 26
+    paddingRight: 32
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ts_tfzy_004
+    x: 408
+    y: 302
+    width: 102
+    height: 139
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 34
+    paddingRight: 24
+    paddingTop: 16
+    paddingBottom: 0
+  - name: ts_tfzy_005
+    x: 230
+    y: 308
+    width: 81
+    height: 150
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 36
+    paddingRight: 38
+    paddingTop: 10
+    paddingBottom: 0
+  - name: ts_tfzy_006
+    x: 266
+    y: 2
+    width: 81
+    height: 150
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 36
+    paddingRight: 38
+    paddingTop: 10
+    paddingBottom: 0
+  - name: ts_tfzy_007
+    x: 2
+    y: 488
+    width: 97
+    height: 160
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 26
+    paddingRight: 32
+    paddingTop: 0
+    paddingBottom: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 184294}
+  m_IsPrefabAsset: 1

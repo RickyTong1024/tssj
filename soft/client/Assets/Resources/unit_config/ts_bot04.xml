@@ -1,0 +1,43 @@
+<unit name_height="2.5"  accept="Bip01 Spine1"  speed="4">
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"></atcion>
+	</actions>	
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"></atcion>
+		<atcion time="0.5" type="action" name="ready"></atcion>
+	</actions>	 	 
+	<actions name="win">
+		<atcion time="0" type="anim" name="win"></atcion>
+		<atcion time="2" type="action" name="ready"></atcion>
+	</actions>	 
+	<actions name="jq01">
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="entity"  name="effect/npc/s_juq_a01" remove_time="10"></atcion>
+	</actions>	
+	<actions name="attack">
+		<atcion time="0" type="anim" name="attack1"></atcion>
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0.3" type="entity_bone"  bone="Bip01 Prop2"  name="unit/ts_bot04/bot04_atk1_a01" remove_time="1"></atcion>
+		<atcion time="0.3" type="sound"  sound="sound/NatureCast"></atcion>
+		<atcion time="0.6" type="sound"  sound="sound/RendTarget"></atcion>
+	    <atcion time="0.7" type="target_entity_bone" bone="accept" name="effect/npc/p_sj_pt01" remove_time="1" /> 
+		<atcion time="0.7" type="target_action" name="injured"></atcion>
+		<atcion time="0.7" type="shake_cam" shake="0.2" /> 
+		<atcion time="0.7" type="skill_export" export="1"></atcion>	
+		<atcion time="1" type="skill_end"></atcion>	
+		<atcion time="1.5" type="action" name="ready"></atcion>
+	</actions> 		
+	<actions name="jn01">
+		<atcion time="0" type="anim" name="attack2"></atcion>	
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0.5" type="entity"    name="unit/ts_bot04/bot04_atk2_a02" remove_time="1"></atcion>
+		<atcion time="0.5" type="sound"  sound="sound/ab_afx_elec"></atcion>
+	    <atcion time="0.7" type="target_entity"  name="effect/npc/p_sj_hyboom01" remove_time="1" /> 
+		<atcion time="0.7" type="target_action" name="injured"></atcion>
+		<atcion time="0.7" type="shake_cam" shake="0.2" /> 
+		<atcion time="0.7" type="skill_export" export="1"></atcion>	
+		<atcion time="1" type="skill_end"></atcion>	
+		<atcion time="1" type="action" name="ready"></atcion>
+	</actions> 	
+</unit>

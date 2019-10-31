@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TeamsBattle_Part03_blue
+  m_Shader: {fileID: 4800000, guid: 3a49d572e585272429ef3052c5191c91, type: 3}
+  m_ShaderKeywords: _DISE01_UVPAN_ON _E02_UVPAN_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Alpha01:
+        m_Texture: {fileID: 2800000, guid: 175a382331999f547907b52efeef290b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisE01:
+        m_Texture: {fileID: 2800000, guid: 2371dcf174649554e80ac9483968e3bc, type: 3}
+        m_Scale: {x: 2, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisEmiss:
+        m_Texture: {fileID: 2800000, guid: 4e51f181444356f458eac091f4ee2144, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _E01:
+        m_Texture: {fileID: 2800000, guid: b6173dd11d6e6344988eec7cce02f4f0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _E02:
+        m_Texture: {fileID: 2800000, guid: a7273633b1d7ff24ba82e830a24e4010, type: 3}
+        m_Scale: {x: 1, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e1b17716d8f071348852dbbf8c73b461, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskE01:
+        m_Texture: {fileID: 2800000, guid: 175a382331999f547907b52efeef290b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: 175a382331999f547907b52efeef290b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _T01:
+        m_Texture: {fileID: 2800000, guid: 899c5fd66853a0a4a976e047fe41bfd7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mask:
+        m_Texture: {fileID: 2800000, guid: 175a382331999f547907b52efeef290b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _niuqu:
+        m_Texture: {fileID: 2800000, guid: 899c5fd66853a0a4a976e047fe41bfd7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Alpha01_Bright: 1
+    - _AlphaClip: 0.108035706
+    - _Cutoff: 0.5
+    - _DisE01_UVpan: 1
+    - _DisE01_UVpan_Speed: -0.5
+    - _DisE01_Value: 0
+    - _DisE01_value: 0
+    - _DisE02_Value: 0
+    - _E01_Bright: 1
+    - _E01_UVangle: 0
+    - _E01_UVpan: 0
+    - _E01_UVpan_Speed: -0.2
+    - _E01_UVpan_TimeVertexAlpha: 0
+    - _E02_UVangle: 0
+    - _E02_UVpan: 1
+    - _E02_UVpan_Speed: -0.12
+    - _Intensity_T01: 1.2
+    - _Opacity_ONOff: 0
+    - _RimPower_max: 1
+    - _RimPower_min: 0
+    - _Tex_Bright: 1
+    - _niuqu_sudu: -0.1
+    - _niuqudu: 0.2
+    m_Colors:
+    - _Color: {r: 1, g: 0.6, b: 0, a: 1}
+    - _Color_T01: {r: 0, g: 1, b: 0.9586208, a: 1}
+    - _E01_Color: {r: 0, g: 0.5862067, b: 1, a: 1}
+    - _E02_Color: {r: 0, g: 0.66896534, b: 1, a: 1}
+    - _RimColor: {r: 0, g: 0.34472615, b: 0.4852941, a: 1}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.yymoon.xzn.official" android:installLocation="auto">
+  <application  android:name="com.yymoon.xzn.official.GameApplication" android:theme="@style/UnityThemeSelector" android:icon="@mipmap/app_icon" android:label="@string/app_name" android:isGame="true" android:banner="@drawable/app_banner">
+    <activity android:label="@string/app_name"
+        android:screenOrientation="sensorLandscape"
+        android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+        android:hardwareAccelerated="false"
+        android:name="com.yymoon.xzn.official.MainActivity">
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+    </activity>
+    <meta-data android:name="unity.build-id" android:value="70541bd1-e9c4-4cc8-94c4-b14894cd80ab" />
+
+    <activity
+        android:name="com.yymoon.xzn.official.SplashActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:screenOrientation="sensorLandscape" >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <!--yijie start-->
+    <service
+        android:name="com.snowfish.a.a.s.ABGSvc"
+        android:enabled="true"
+        android:process="com.snowfish.a.a.bg">
+
+      <intent-filter>
+        <action android:name="com.snowfish.a.a.s.ABGSvc"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </service>
+    <meta-data
+        android:name="com.snowfish.customer"
+        android:value="SNOWFISH">
+    </meta-data>
+    <meta-data
+        android:name="com.snowfish.channel"
+        android:value="SNOWFISH">
+    </meta-data>
+    <meta-data
+        android:name="com.snowfish.sdk.version"
+        android:value="2">
+    </meta-data>
+    <meta-data
+        android:name="com.snowfish.appid"
+        android:value="{32EECB02-B48B1D6E}">
+    </meta-data>
+    <meta-data
+        android:name="com.snowfish.channelid"
+        android:value="{4ff036a1-3254eafe}">
+    </meta-data>
+    <!--yijie end-->
+
+  </application>
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-feature android:name="android.software.leanback" android:required="false" />
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.GET_TASKS"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+</manifest>

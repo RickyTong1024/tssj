@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index guild_guid 0
+
+message guild_message_t {
+	uint64 guid			= 1;
+	uint64 guild_guid		= 2;
+  string name          = 3;
+  int32  zhiwu         = 4;
+	string text            = 5;
+	uint64 time            = 6;
+	int32  otype           = 7;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package dhc;
+
+//using autoinc
+//using index guid 0
+//using index receiver_guid 0
+
+message post_t {
+	uint64	pid				= 1;	// 邮件pid
+	uint64	guid			= 2;	// 邮件guid
+	uint64	receiver_guid	= 3;	// 接收者guid
+	uint64	sender_date		= 4;	// 发送日期
+	string	title			= 5;	// 邮件标题
+	string	text			= 6;	// 邮件正文
+	string	sender_name		= 7;	// 发件人
+	repeated int32 type				= 8;
+	repeated int32 value1			= 9;
+	repeated int32 value2			= 10;
+	repeated int32 value3			= 11;
+}

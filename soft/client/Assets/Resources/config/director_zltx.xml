@@ -1,0 +1,72 @@
+<directors>
+	<director type="guide" v0="s_10_1"></director>
+	<director type="wait" v0="0.5"/>
+	<director type="add_unit" v0="ts_t01" v1="ts_t01" v2="494.9421" v3="0.3301264" v4="13.05842" v5="263.465"/>
+	<director type="add_unit" v0="ts_bot200" v1="ts_bot200" v2="483.4864" v3="0.3249214" v4="13.29084" v5="94.20046"/>
+	<director type="hide_object" v0="ts_nzj001_wq"/>						
+	<director type="show_unit" v0="ts_bot200"/>
+	<director type="unit_action" v0="ts_bot200" v1="walk"/>
+	
+	<director type="show_unit" v0="ts_t01"/>
+	<director type="unit_action" v0="ts_t01" v1="walk"/>
+		
+	<director type="play_anim" v0="zltx_d" v1="zltx_cam01"/>
+	<director type="wait" v0="0.1"/>
+	<director type="play_music" v0="music/ts_dtxz01"/>
+	
+	<director type="wait" v0="0.1"/>
+
+
+
+	<director type="unit_moveto" v0="ts_bot200" v1="489.454" v2="0.33" v3="13.317" v4="3.2"/>		
+	<director type="unit_moveto" v0="ts_t01" v1="491.887" v2="0.33" v3="13.058" v4="3"/>
+			
+	<director type="wait" v0="3"/>
+	
+	<director type="unit_action" v0="ts_bot200" v1="stand"/>
+	
+	<director type="play_anim" v0="zltx_d" v1="zltx_cam02"/>
+	
+	<director type="unit_action" v0="ts_t01" v1="ws_stand01"/>
+	
+	<director type="unit_action" v0="ts_bot200" v1="talk_1"/>
+	
+	<director type="set_film_label" v0="director_zltx_set_film_label_10"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="play_anim" v0="zltx_d" v1="zltx_cam03"/>
+	
+	<director type="unit_action" v0="ts_t01" v1="jq_1"/>
+	
+	<director type="set_film_label" v0="director_zltx_set_film_label_11"/>
+	
+	<director type="wait" v0="2"/>
+	
+	<director type="play_anim" v0="zltx_d" v1="zltx_cam02"/>
+	
+	<director type="unit_action" v0="ts_bot200" v1="talk_2"/>
+	
+	<director type="set_film_label" v0="director_zltx_set_film_label_12"/>
+	<director type="wait" v0="3"/>
+	
+	<director type="play_anim" v0="zltx_d" v1="zltx_cam03"/>
+	
+	<director type="unit_action" v0="ts_t01" v1="jq_0"/>
+	
+	<director type="set_film_label" v0="director_zltx_set_film_label_13"/>
+	<director type="wait" v0="2"/>
+	
+	<director type="play_anim" v0="zltx_d" v1="zltx_cam02"/>
+	<director type="unit_action" v0="ts_bot200" v1="talk_3"/>
+	<director type="set_film_label" v0="director_zltx_set_film_label_14"/>
+	<director type="wait" v0="4"/>
+	
+	<director type="play_anim" v0="zltx_d" v1="zltx_cam03"/>
+		
+	<director type="set_film_label" v0="director_zltx_set_film_label_15"/>
+	<director type="wait" v0="2"/>
+	<director type="set_film_label" v0="director_zltx_set_film_label_16"/>
+	<director type="start_game"/>		
+																								
+</directors>

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package dhc;
+
+//using index player_guid 0
+
+message treasure_t {
+	uint64 guid			= 1;
+	uint64 player_guid		= 2;
+	int32 template_id		= 3;
+	uint64 role_guid		= 4;
+	int32 enhance			= 5;
+	int32 enhance_exp		= 6;
+	int32 jilian			= 7;
+	int32 locked			= 8;
+	int32 enhance_counts	= 9;
+	int32 star				= 10;
+	int32 star_exp			= 11;
+	int32 star_gold		= 12;
+	int32 star_jewel		= 13;
+	int32 star_var			= 14;
+	repeated int32 star_rates		= 15;
+	repeated int32 star_bjs		    = 16;
+	int32 star_luck		= 17;
+}

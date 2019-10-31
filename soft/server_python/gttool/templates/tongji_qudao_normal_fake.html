@@ -1,0 +1,42 @@
+﻿{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	{% include "form.html" %}
+	<div>
+		<div>
+			<h1>统计</h1>
+		</div>
+        <div>
+            <h2>昨日统计</h2>
+        </div>
+         <table class="table table-striped table-hover">  
+            <tr>
+				<td><strong>渠道</strong></td>
+                <td><strong>日期</strong></td>
+                <td><strong>新增用户</strong></td>    
+                <td><strong>活跃用户</strong></td>
+                <td><strong>收入</strong></td>
+                <td><strong>付费用户数</strong></td>
+                <td><strong>付费笔数</strong></td>
+                <td><strong>DAUAPKU</strong></td>
+                <td><strong>APKU</strong></td>
+				<td><strong>操作</strong></td>
+            </tr>  
+            {% for line in line %}  
+                <tr>
+					<td>{{ line.0 }}</td>
+                    <td>{{ line.1.dt|date:"Y-m-d" }}</td>
+                    <td>{%  widthratio line.1.new_user_num 100 20 %}</td> 
+                    <td>{%  widthratio line.1.huo_user_num 100 20 %}</td>
+                    <td>{%  widthratio line.1.total_rmb 100 20 %}</td>
+                    <td>{%  widthratio line.1.total_user_num 100 20 %}</td>
+                    <td>{%  widthratio line.1.total_num 100 20 %}</td>
+                    <td>{{ line.1.dpu }}</td>
+                    <td>{{ line.1.aku }}</td>
+					<td><a href="{% url 'engine.manage.tongji_qudao_normal_xiangxi' line.2 %}">查看更多</a></td>
+                </tr>  
+            {% endfor %} 
+        </table>
+	</div>
+</body>
+</html>

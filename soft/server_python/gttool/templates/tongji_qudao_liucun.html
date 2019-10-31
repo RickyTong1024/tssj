@@ -1,0 +1,62 @@
+{% include "include.html" %}
+{% load bootstrap_toolkit %}
+<body>
+	{% include "form.html" %}
+	<div>
+		<div>
+			<h1>统计</h1>
+		</div>
+        <div>
+            <h2>前天留存统计</h2>
+        </div>
+         <table class="table table-striped table-hover">  
+            <tr>
+                <td><strong>渠道</strong></td>
+                <td><strong>日期</strong></td>
+                <td><strong>注册用户</strong></td>  
+                <td><strong>次日留存</strong></td>
+                <td><strong>次日LTV</strong></td>
+                <td><strong>3日留存</strong></td>
+                <td><strong>3日LTV</strong></td>
+                <td><strong>4日留存</strong></td>
+                <td><strong>4日LTV</strong></td>
+                <td><strong>5日留存</strong></td>
+                <td><strong>5日LTV</strong></td>
+                <td><strong>6日留存</strong></td>
+                <td><strong>6日LTV</strong></td>
+                <td><strong>7日留存</strong></td>
+                <td><strong>7日LTV</strong></td>
+                <td><strong>15日留存</strong></td>
+                <td><strong>15日LTV</strong></td>
+                <td><strong>30日留存</strong></td>
+                <td><strong>30日LTV</strong></td>
+                <td><strong>操作</strong></td>
+            </tr>  
+            {% for line in line %}  
+                <tr> 
+                    <td>{{ line.0 }}</td>
+                    <td>{{ line.1.dt|date:"Y-m-d" }}</td>
+                    <td>{{ line.1.total_num }}</td> 
+                    <td>{{ line.1.liucun_2rate }}</td>
+                    <td>{{ line.1.liucun_2ltv }}</td>
+                    <td>{{ line.1.liucun_3rate }}</td>
+                    <td>{{ line.1.liucun_3ltv }}</td>
+                    <td>{{ line.1.liucun_4rate }}</td>
+                    <td>{{ line.1.liucun_4ltv }}</td>
+                    <td>{{ line.1.liucun_5rate }}</td>
+                    <td>{{ line.1.liucun_5ltv }}</td>
+                    <td>{{ line.1.liucun_6rate }}</td>
+                    <td>{{ line.1.liucun_6ltv }}</td>
+                    <td>{{ line.1.liucun_7rate }}</td>
+                    <td>{{ line.1.liucun_7ltv }}</td>
+                    <td>{{ line.1.liucun_15rate }}</td>
+                    <td>{{ line.1.liucun_15ltv }}</td>
+                    <td>{{ line.1.liucun_30rate }}</td>
+                    <td>{{ line.1.liucun_30ltv }}</td>
+                    <td><a href="{% url 'engine.manage.tongji_qudao_liucun_xiangxi' line.2 %}">查看更多</a></td>
+                </tr>  
+            {% endfor %}  
+        </table>
+	</div>
+</body>
+</html>

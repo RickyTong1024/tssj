@@ -1,0 +1,143 @@
+<unit name_height="3.6"  accept="Bip01 Spine1" speed="8">
+	
+	<actions name="ready">
+		<atcion time="0" type="anim" name="ready"></atcion>
+	</actions>	
+	<actions name="injured">
+		<atcion time="0" type="anim" name="injured"></atcion>
+		<atcion time="0.5" type="action" name="ready"></atcion>
+	</actions>	 	 
+	<actions name="win">
+		<atcion time="0" type="anim" name="win"></atcion>
+		<atcion time="2.3" type="action" name="ready"></atcion>
+	</actions>	
+	<actions name="jq01">
+		<atcion time="0" type="anim" name="jq01"></atcion>
+		<atcion time="0" type="entity"  name="effect/npc/s_juq_a01" remove_time="10"></atcion>
+	</actions>	
+	
+	<actions name="attack">
+		<atcion time="0" type="sound"  sound="effect/sound/swordRay_attack02"></atcion>	
+		<atcion time="0" type="anim" name="attack1"></atcion>
+	    <atcion time="0" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_bot27/bot27_atk1_weapon" remove_time="0.5" /> 
+	    <atcion time="0" type="entity_bone" bone="Bip01 Prop2" name="unit/ts_bot27/bot27_atk1_weapon" remove_time="0.5" />
+		<atcion time="0" type="action_wait" v0="0.4"></atcion>
+
+		<atcion time="0" type="goto_target"></atcion>
+	    
+		<atcion time="0" type="action_wait" v0="0.1"></atcion>
+
+	    <atcion time="0" type="show_effect_object2" name="effect_3" follow="0" remove_time="1" />    
+	    <atcion time="0" type="show_effect_object2" name="effect_4" follow="0" remove_time="1" />	
+	    
+		<atcion time="0" type="action_wait" v0="0.05"></atcion>	  
+		  
+		<atcion time="0" type="sound"  sound="effect/sound/hit_sword_metal_0"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_entity_bone2" bone="accept" name="effect/common/hit_All_SwordSkill_metal_blue" follow="0" remove_time="1" /> 
+	    <atcion time="0" type="target_copy_effect_object" bone="accept" name="effect_0" follow="0" remove_time="1" />    
+	    <atcion time="0" type="target_copy_effect_object" bone="accept" name="effect_1" follow="0" remove_time="1" />	 
+		<atcion time="0" type="skill_export" export="1"></atcion>
+		<atcion time="0" type="game_speed" speed="0.1"></atcion>
+		<atcion time="0" type="shake_cam" shake="0.2" />		
+		<atcion time="0" type="action_wait" v0="0.4"></atcion>
+				
+		<atcion time="0" type="goto_home"></atcion>	
+		
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>
+				
+		<atcion time="0" type="skill_end"></atcion>
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 
+		
+	<actions name="attack2">
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="anim" name="jump"></atcion>
+		<atcion time="0.2" type="goto_target"></atcion>
+		
+		<atcion time="0.5" type="anim" name="attack1"></atcion>
+	    <atcion time="0.5" type="entity_bone" bone="Bip01 Prop1" name="unit/ts_bot27/bot27_atk1_weapon" remove_time="0.5" /> 
+	    <atcion time="0.5" type="entity_bone" bone="Bip01 Prop2" name="unit/ts_bot27/bot27_atk1_weapon" remove_time="0.5" /> 
+		<atcion time="0.9" type="sound"  sound="sound/UnarmedAttackMediumA"></atcion>
+		<atcion time="1" type="target_action" name="injured"></atcion>
+	    <atcion time="1" type="target_entity_bone" bone="accept" name="effect/npc/sj_001" remove_time="1" /> 
+		<atcion time="1" type="shake_cam" shake="0.2" /> 	
+		<atcion time="1" type="skill_export" export="1"></atcion>	
+		
+		<atcion time="1.4" type="anim" name="jump"></atcion>
+		<atcion time="1.6" type="goto_home"></atcion>	
+		
+		<atcion time="1.7" type="skill_end"></atcion>
+		<atcion time="1.8" type="action" name="ready"></atcion>
+	</actions> 		
+	<actions name="jn02">
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="anim" name="attack2"></atcion>
+		
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>
+		<atcion time="0" type="goto_target2"></atcion>
+				
+		<atcion time="0" type="action_wait" v0="1.5"></atcion>
+
+		<atcion time="0" type="goto_home2"></atcion>	
+		<atcion time="0" type="skill_end"></atcion>
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 		
+	
+	
+	<actions name="jn01">
+	
+		<atcion time="0" type="skill_release"></atcion>
+		<atcion time="0" type="anim" name="attack2"></atcion>
+	    
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>	    
+		
+		<atcion time="0" type="goto_target"></atcion>
+		
+		<atcion time="0" type="sound"  sound="effect/sound/swordRay_attack02"></atcion>			
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>	 
+	    
+		<atcion time="0" type="sound2"  sound="sound/man_d_04"></atcion>
+		<atcion time="0" type="sound"  sound="effect/sound/hit_sword_metal"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_copy_effect_object" bone="accept" name="effect_0" follow="0" remove_time="1" />   
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		<atcion time="0" type="skill_export" export="0.2"></atcion>
+		
+		<atcion time="0" type="sound"  sound="effect/sound/swordRay_attack02"></atcion>			
+		<atcion time="0" type="action_wait" v0="0.4"></atcion>	 
+				
+		<atcion time="0" type="sound"  sound="effect/sound/hit_sword_metal_0"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_copy_effect_object" bone="accept" name="effect_0" follow="0" remove_time="1" />    
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		<atcion time="0" type="skill_export" export="0.2"></atcion>
+		
+		<atcion time="0" type="sound"  sound="effect/sound/swordRay_attack02"></atcion>			
+		<atcion time="0" type="action_wait" v0="0.4"></atcion>	 
+				
+		<atcion time="0" type="sound"  sound="effect/sound/hit_sword_metal"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_copy_effect_object" bone="accept" name="effect_0" follow="0" remove_time="1" />   
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		<atcion time="0" type="skill_export" export="0.3"></atcion>
+		
+		<atcion time="0" type="sound"  sound="effect/sound/swordRay_attack02"></atcion>			
+		<atcion time="0" type="action_wait" v0="0.3"></atcion>	 
+				
+		<atcion time="0" type="sound"  sound="effect/sound/hit_sword_metal_0"></atcion>
+		<atcion time="0" type="target_action" name="injured"></atcion>
+	    <atcion time="0" type="target_copy_effect_object" bone="accept" name="effect_0" follow="0" remove_time="1" />   
+		<atcion time="0" type="shake_cam" shake="0.2" /> 	
+		<atcion time="0" type="skill_export" export="0.3"></atcion>
+		
+		<atcion time="0" type="action_wait" v0="0.4"></atcion>	 
+				
+		<atcion time="0" type="goto_home"></atcion>	
+		
+		<atcion time="0" type="action_wait" v0="0.2"></atcion>	 
+				
+		<atcion time="0" type="skill_end"></atcion>
+		<atcion time="0" type="action" name="ready"></atcion>
+	</actions> 	
+</unit>

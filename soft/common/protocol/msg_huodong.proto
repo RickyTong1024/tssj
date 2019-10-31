@@ -1,0 +1,335 @@
+syntax = "proto3";
+
+import "role.eproto";
+import "equip.eproto";
+import "global.eproto";
+import "treasure.eproto";
+import "msg_player.proto";
+import "pet.eproto";
+
+package protocol.game;
+
+message cmsg_huodong_reward {
+  msg_common comm    = 1;
+  int32      huodong = 2;
+  int32      id      = 3;
+  int32      index   = 4;
+  int32      num	  = 5;
+}
+
+message smsg_huodong_reward {
+  repeated int32 types      = 1;
+  repeated int32 value1s    = 2;
+  repeated int32 value2s    = 3;
+  repeated int32 value3s    = 4;
+  repeated dhc.equip_t equips        = 5;
+  repeated dhc.treasure_t treasures  = 6;
+  repeated dhc.role_t roles          = 7;
+  repeated dhc.pet_t pets            = 8;
+}
+
+message smsg_huodong_pttq_view {
+	dhc.global_t data = 1;
+}
+
+message cmsg_huodong_pttq {
+	msg_common comm		= 1;
+	int32 id				= 2;
+	int32 vip				= 3;
+}
+
+
+message cmsg_huodong_kaifu_look {
+	msg_common comm		= 1;
+	int32  stype			= 2;
+}
+
+message smsg_huodong_kaifu_look {
+	repeated int32  ids				= 1;
+	repeated int32	counts			= 2;
+}
+
+message cmsg_huodong_kaifu_reward {
+	msg_common comm		= 1;
+	int32 id				= 2;
+	int32 index			= 3;
+	int32 num				= 4;
+}
+
+message smsg_huodong_kaifu_reward {
+	repeated dhc.role_t roles		= 1;
+	repeated dhc.equip_t equips		= 2;
+	repeated dhc.treasure_t treasures = 3;
+    repeated int32 types    = 4;
+    repeated int32 value1s  = 5;
+    repeated int32 value2s  = 6;
+    repeated int32 value3s  = 7;
+}
+
+message smsg_huodong_view {
+	repeated int32 huodong_ids		= 1;
+	repeated uint64 huodong_times	= 2;
+    repeated int32 huodong_types    = 3;
+    repeated string huodong_names   = 4;
+	int32 czjh_count = 5;
+}
+
+
+message huodong_reward_sub {
+  int32   id     = 1;
+  int32   arg1   = 2;
+  int32   arg2   = 3;
+  int32   arg3   = 4;
+  int32   arg4   = 5;
+  int32  arg5   = 6;
+  repeated int32   arg6	  = 7;
+  repeated int32   arg7	  = 8;
+  repeated int32   arg8	  = 9;
+  repeated int32   types  = 10;
+  repeated int32   value1s = 11;
+  repeated int32   value2s = 12;
+  repeated int32   value3s = 13;
+}
+
+message cmsg_huodong_reward_view {
+  msg_common comm = 1;
+  int32      id   = 2;
+}
+
+message smsg_huodong_reward_view {
+  repeated huodong_reward_sub   subs = 1;
+  string               name = 2;
+}
+
+message huodong_jiri {
+	int32 id							= 1;
+	uint64 time						= 2;
+	int32  type						= 3;
+	smsg_huodong_reward_view reward 	= 4;
+}
+
+message smsg_huodong_jiri_view {
+	repeated huodong_jiri huodongs 	= 1;
+}
+
+message smsg_huodong_tanbao_view {
+	int32  buy_num 	 = 1;
+	int32  dice_num     = 2;
+	int32  final_num    = 3;
+	int32  gezi         = 4;
+	int32  point        = 5;
+	int32  luck_num     = 6;
+	int32  shop_type    = 7;
+	repeated int32  rewards      = 8;
+	repeated int32  shop_ids     = 9;
+	repeated int32  shop_nums    = 10;
+	uint64 time		 = 11;
+	int32  rank         = 12;
+	repeated string names        = 13;
+	repeated int32  points       = 14;
+	repeated int32  ids          = 15;
+	repeated int32  vips		 = 16;
+	repeated int32  achieves	 = 17;
+	repeated int32  chenghaos	 = 18;
+	repeated int32  shop_types   = 19;
+	repeated int32  shop_type_nums = 20;
+	repeated int32  nalflag        = 21;
+}
+
+message cmsg_tanbao_dice {
+	msg_common comm = 1;
+	int32 type = 2;
+	int32 dice = 3;
+}
+
+message smsg_tanbao_dice {
+	repeated int32 dianshu = 1;
+	repeated int32 gezi    = 2;
+	repeated int32 events  = 3;
+	repeated int32 gold    = 4;
+	repeated int32 item    = 5;
+	repeated int32 yidong  = 6;
+	int32 pass_num = 7;
+	int32 final_gezi = 8;
+}
+
+message cmsg_tanbao_active {
+	msg_common comm = 1;
+	int32 id = 2;
+}
+
+message smsg_huodong_fanpai_view {
+	int32  point = 1;
+	int32  num1 = 2;
+	repeated int32  ids1 = 3;
+	int32  num2 = 4;
+	repeated int32  ids2 = 5;
+	uint64 time = 6;
+	int32  use  = 7;
+}
+
+message cmsg_huodong_fanpai {
+	msg_common comm = 1;
+	int32 type = 2;
+	int32 index = 3;
+}
+
+message smsg_huodong_fanpai {
+	int32 id = 1;
+}
+
+message cmsg_huodong_fanpai_cz {
+	msg_common comm = 1;
+	int32 type = 2;
+}
+
+message smsg_huodong_yueka_view {
+	int32 level         = 1;
+	repeated int32 reward1       = 2;
+	repeated int32 reward2       = 3;
+	uint64 stat_time    = 4;
+	uint64 rem_time     = 5;
+	uint64 end_time     = 6;
+}
+
+message cmsg_huodong_yueka_reward {
+	msg_common comm   = 1;
+	int32 level       = 2;
+	int32 day         = 3;
+}
+
+message cmsg_huodong_huigui_reward {
+	msg_common comm    = 1;
+	int32 id           = 2;
+	int32 type         = 3;
+	int32 num          = 4;
+}
+
+message smsg_huodong_zhuanpan_view {
+	int32  num1  		= 1;
+	int32  jewel_pool1 = 2;
+	int32  num2 		= 3;
+	int32  jewel_pool2 = 4;
+	int32  point       = 5;
+	int32  rank        = 6;
+	repeated string names        = 7;
+	repeated int32  points       = 8;
+	repeated int32  ids          = 9;
+	repeated int32  vips		 = 10;
+	repeated int32  achieves	 = 11;
+	repeated int32  chenghaos	 = 12;
+	uint64 time         = 13;
+	repeated int32  nalfalgs     = 14;
+}
+
+message cmsg_huodong_zhuanpan {
+	msg_common comm = 1;
+	int32 type = 2;
+	int32 num  = 3;
+}
+
+message smsg_huodong_zhuan {
+	repeated int32 id 			= 1;
+	repeated int32 jewel 		= 2;
+	int32 pool_jewel 	= 3;
+}
+
+message tansuo_event {
+	int32 id 			= 1;
+	int32 ts_id   		= 2;
+	int32 qiyu_id 		= 3;
+	uint64 qiyu_time	= 4;
+	int32 qiyu_arg1	= 5;
+	int32 qiyu_arg2	= 6;
+	int64 qiyu_arg3	= 7;
+	int64 qiyu_arg4	= 8;
+}
+
+
+message smsg_huodong_tansuo_view {
+	int32  point       	= 1;
+	int32  rank        	= 2;
+	int32  count			= 3;
+	uint64 time        	= 4;
+	int32  num         	= 5;
+	repeated int32  rewards         = 6;
+	repeated tansuo_event events 	= 7;
+	repeated string names        	= 8;
+	repeated int32  points       	= 9;
+	repeated int32  ids          	= 10;
+	repeated int32  vips		 	= 11;
+	repeated int32  achieves	 	= 12;
+	repeated int32  chenghaos	 	= 13;
+	repeated int32  nalflags        = 14;
+}
+
+message cmsg_huodong_tansuo {
+	msg_common comm = 1;
+	int32 type = 2;
+}
+
+
+message smsg_huodong_tansuo {
+	repeated tansuo_event events 	= 1;
+}
+
+message cmsg_huodong_tansuo_event {
+	msg_common comm 	= 1;
+	int32 id 			= 2;
+	int32 type         = 3;
+}
+
+message smsg_huodong_tansuo_event {
+	repeated dhc.role_t roles			= 1;
+	repeated dhc.equip_t equips			= 2;
+	repeated dhc.treasure_t treasures 	= 3;
+    repeated int32 types    			= 4;
+    repeated int32 value1s  			= 5;
+    repeated int32 value2s  			= 6;
+    repeated int32 value3s  			= 7;
+	int32 result       		= 8;
+	bytes text					= 9;
+	int64 hp					= 10;
+}
+
+message smsg_huodong_tansuo_event_refresh {
+	int32  qiyu_id				= 1;
+}
+
+message cmsg_huodong_tansuo_mubiao {
+	msg_common comm 	= 1;
+	int32 id 			= 2;
+}
+
+message smsg_huodong_mofang_view {
+	int32 total_point  = 1;
+	int32 left_point = 2;
+	int32 server_point = 3;
+	int32 num = 4;
+	int32 free_num = 5;
+	int32 stat = 6;
+	uint64 time = 7;
+	repeated int32 ids = 8;
+	repeated int32 rewards = 9;
+	repeated int32 shop_ids  = 10;
+	repeated int32 shop_nums = 11;
+}
+
+message smsg_huodong_mofang_refresh {
+	repeated int32 ids = 1;
+}
+
+message cmsg_huodong_mofang {
+	msg_common comm 	= 1;
+	int32 index		= 2;
+}
+
+message smsg_huodong_mofang {
+	int32 id			= 1;
+	repeated int32 refresh_ids 	= 2;
+}
+
+message cmsg_huodong_mofang_mubiao {
+	msg_common comm 	= 1;
+	int32 id 			= 2;
+}

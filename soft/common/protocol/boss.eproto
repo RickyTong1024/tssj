@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package dhc;
+             
+message boss_t {
+	uint64	guid              = 1;
+	int32  level		      = 2;
+	double  cur_hp			  = 3;
+	double  max_hp           = 4;
+	repeated uint64 player_guids      = 5;
+    repeated int32  player_templates  = 6;
+	repeated string player_names      = 7;
+    repeated int32  player_levels     = 8;
+	repeated int64  player_damages    = 9;
+	repeated int32  player_nums       = 10;
+	repeated int64  player_tops       = 11;
+    repeated int32  player_vips       = 12;
+    repeated int32  player_achieves   = 13;
+	repeated int32  player_chenghaos  = 14;
+	repeated int32  player_nalflags   = 15;
+	uint64 last_time         = 16;
+	repeated uint64 player_rank_guids = 17;
+	repeated int32  player_ranks	  = 18;
+	int32  boss_last_num	  = 19;
+}

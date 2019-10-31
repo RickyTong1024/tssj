@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Kurumi_fenshen_gun
+  m_Shader: {fileID: 4800000, guid: ba9373bbd2d10b24fb33994c9f4bbd75, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Alpha01:
+        m_Texture: {fileID: 2800000, guid: 85f167918619c874aa60ba3fae6d0ed7, type: 3}
+        m_Scale: {x: 6, y: 6}
+        m_Offset: {x: 0, y: 0}
+    - _Alpha02:
+        m_Texture: {fileID: 2800000, guid: a3de474356606594493c3c344cbf0f8f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _D01:
+        m_Texture: {fileID: 2800000, guid: 7ca73984fc2dbab458782cc61e61467b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LightTex:
+        m_Texture: {fileID: 2800000, guid: e85666ae5a6e82549af52e0ceee9ab90, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3c9ec10a0d9a0fe4aa6b846635750be4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AnimVertexAlpha: 0
+    - _Cutoff: 0.5
+    - _Dissovle_Bright: 0
+    - _Dissovle_Time: 1
+    - _Dissovle_Width: 0.010357143
+    - _Tex_Power: 0.7
+    - _alpha: 1.3
+    - _back: 1
+    - _bh: 0
+    - _level: 1
+    - _light: 0.5
+    - _uv_x: 4
+    - _uv_y: 4
+    - _while: 0
+    m_Colors:
+    - _BackColor: {r: 0.35294116, g: 0, b: 0, a: 0.7607843}
+    - _Color: {r: 0.588, g: 0.588, b: 0.588, a: 1}
+    - _Dissovle_Color: {r: 1, g: 0.9724138, b: 0, a: 1}
+    - _HSV: {r: 1, g: 1, b: 2, a: 1}
